@@ -2,7 +2,7 @@
 					<h3 class="form-signin-heading"><i class="icon-lock"></i> Registrar como Profesor</h3>
 					<input type="text" class="input-block-level"  name="lastname" placeholder="Apellidos" required>
 					<input type="text" class="input-block-level"  name="firstname" placeholder="Nombres" required>
-					<label>Curso / Curso</label>
+					<label>Materia</label>
 					<select name="department_id" class="input-block-level span12">
 						<option></option>
 						<?php
