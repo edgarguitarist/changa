@@ -9,6 +9,7 @@ $con = mysqli_connect("$host", "$user", "$pass", "$name");
 // Check connection
 if (mysqli_connect_errno()) {
   echo "<script>console.log('Usted esta en el entorno Online')</script>";
+  mysqli_close($con);
   $user = 'u440807742_prueba';
   $pass = '1q2w3e4r5t6Y';
   $name = 'u440807742_prueba';
