@@ -22,7 +22,7 @@ if($bandera){
   $pass = '1q2w3e4r5t6Y';
   $name = 'u440807742_prueba';
   $con = mysqli_connect("$host", "$user", "$pass", "$name");
-  echo "<script>//console.log('Usted esta en el entorno Online')</script>";
+  echo "<script>console.log('C:')</script>";
   mysqli_query($con, "SET NAMES 'utf8'");
 }
 
