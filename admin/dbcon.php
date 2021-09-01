@@ -1,30 +1,22 @@
 <?php
-//mysqli_select_db('capstone',mysql_connect('localhost','root',''))or die(mysqli_error($con));
-$host = 'localhost';
-$user = 'root';
-$pass = '';
-$name = 'platea21_virtual';
-$con = mysqli_connect("$host", "$user", "$pass", "$name");
+$hostname = 'localhost';
+$username = 'u440807742_prueba';
+$password = '1q2w3e4r5t6Y';
 
-// Check connection
-if (mysqli_connect_errno()) {  
-  echo "<script>console.log(':C')</script>";
-  mysqli_close($con);
-  $bandera = true;
-}else{
-  echo "<script>//console.log('Usted esta en el entorno Local')</script>";
-  mysqli_query($con, "SET NAMES 'utf8'");
+$hostname2 = 'localhost'; //puede ser reemplazado por el nombre de tu servidor local si fuera otro nombre
+$username2 = 'root';
+$password2 = '';
+
+$dbname = 'u440807742_prueba';
+#Para efectos del ejemplo supondremos que es la misma base de datos en ambas bases de datos tanto la remota como la local 
+
+$con = @mysqli_connect($hostname, $username, $password);
+#notese el @ antes del comando mysql_connect para evitar que arroje mensaje de error de PHP 
+
+if (!($con)) {
+  $con = @mysqli_connect($hostname2, $username2, $password2) or die('No puedo conectarme a la base de datos local! Intentelo nuevamente.');
 }
 
-if($bandera){
-  $host = 'localhost';
-  $user = 'u440807742_prueba';
-  $pass = '1q2w3e4r5t6Y';
-  $name = 'u440807742_prueba';
-  $con = mysqli_connect("$host", "$user", "$pass", "$name");
-  echo "<script>console.log('C:')</script>";
-  mysqli_query($con, "SET NAMES 'utf8'");
-}
-
-
+mysqli_select_db($con, $dbname);
+mysqli_query($con, "SET NAMES 'utf8'");
 ?>
