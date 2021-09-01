@@ -8,11 +8,13 @@ $con = mysqli_connect("$host", "$user", "$pass", "$name");
 
 // Check connection
 if (mysqli_connect_errno()) {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
+  echo "<script>console.log('Usted esta en el entorno Online')</script>";
   $user = 'u440807742_prueba';
   $pass = '1q2w3e4r5t6Y';
   $name = 'u440807742_prueba';
   $con = mysqli_connect("$host", "$user", "$pass", "$name");
+}else{
+  echo "<script>console.log('Usted esta en el entorno Local')</script>";
 }
 
 mysqli_query($con, "SET NAMES 'utf8'");
