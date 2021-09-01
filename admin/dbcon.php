@@ -7,15 +7,20 @@ $name = 'platea21_virtual';
 $con = mysqli_connect("$host", "$user", "$pass", "$name");
 
 // Check connection
-if (mysqli_connect_errno()) {
-  echo "<script>console.log('Usted esta en el entorno Online')</script>";
+if (mysqli_connect_errno()) {  
   mysqli_close($con);
+  $bandera = true;
+}else{
+  echo "<script>//console.log('Usted esta en el entorno Local')</script>";
+}
+
+if($bandera){
+  $host = 'localhost';
   $user = 'u440807742_prueba';
   $pass = '1q2w3e4r5t6Y';
   $name = 'u440807742_prueba';
   $con = mysqli_connect("$host", "$user", "$pass", "$name");
-}else{
-  echo "<script>console.log('Usted esta en el entorno Local')</script>";
+  echo "<script>//console.log('Usted esta en el entorno Online')</script>";
 }
 
 mysqli_query($con, "SET NAMES 'utf8'");
