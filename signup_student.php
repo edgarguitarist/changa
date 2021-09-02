@@ -2,7 +2,7 @@
 
 <body id="login">
 
-	<?php //include('teacher/navbar_teacher.php'); 
+	<?php //sads include('teacher/navbar_teacher.php'); 
 	?>
 	<div class="container-fluid">
 		<div class="row-fluid">
@@ -19,7 +19,6 @@
 					<div id="" class="block mincon">
 						<div class="block-content collapse in">
 							<div class="span12" id="">
-
 								<?php include('title_index.php'); ?>
 							</div>
 						</div>
