@@ -25,7 +25,7 @@
 										<thead>
 											<tr>
 												<th></th>
-												<th>Aula</th>
+												<th>Curso</th>
 												<th></th>
 											</tr>
 										</thead>

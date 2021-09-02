@@ -23,7 +23,7 @@
 												<th>Descripcion</th>
 												<th>Fecha Subida</th>
 												<th>Subido Por</th>
-												<th>Aula</th>
+												<th>Curso</th>
                                    
 												</tr>
 												

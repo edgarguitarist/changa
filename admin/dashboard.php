@@ -99,14 +99,14 @@
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student; ?></div>
-                                                                    <div>Aulas</div><br />
+                                                                    <div>Cursos</div><br />
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <a href="class.php">
                                                         <div class="modal-footer">
-                                                            <span class="pull-left">Agregar aula</span>
+                                                            <span class="pull-left">Agregar Curso</span>
                                                             <span class="pull-right"><i class="icon-chevron-right"></i></span>
                                                             <div class="clearfix"></div>
                                                         </div>

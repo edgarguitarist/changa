@@ -2,14 +2,14 @@
      <!-- block -->
      <div class="block mincon">
        <div class="navbar navbar-inner block-header">
-         <div class="muted pull-left">Añadir Aula</div>
+         <div class="muted pull-left">Añadir Curso</div>
        </div>
        <div class="block-content collapse in">
          <div class="span12">
            <form method="post">
              <div class="control-group">
                <div class="controls">
-                 <input name="class_name" class="input focused" id="focusedInput" type="text" placeholder="Nombre de Aula" required>
+                 <input name="class_name" class="input focused" id="focusedInput" type="text" placeholder="Nombre de Curso" required>
                </div>
              </div>
 

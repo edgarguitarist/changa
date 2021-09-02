@@ -22,7 +22,7 @@
 												<th>Nombre de Archivo</th>
 												<th>Descripcion</th>
 												<th>Subido Por</th>
-												<th>Aula</th>
+												<th>Curso</th>
                                    
 												</tr>
 												

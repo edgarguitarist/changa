@@ -24,7 +24,7 @@
 												<th>Nombre</th>
 												<th>Celular</th>
 												<th>Paralelo</th>
-												<th>Aula</th>
+												<th>Curso</th>
 												<th></th>
 												<th></th>
 												

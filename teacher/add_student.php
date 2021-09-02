@@ -52,7 +52,7 @@
                                
                                     <th>Foto</th>
                                     <th>Nombre</th>
-                                    <th>Aula</th>
+                                    <th>Curso</th>
                   
                                     <th></th>
                                 </tr>
@@ -126,7 +126,7 @@ if (isset($_POST['submit'])){
 			if ($count > 0)
 			{ ?>
 				<script>
-				 alert('El alumno ya pertenece al aula <?php echo "estudiante".$test1." claseid".$class_id; ?>'); 
+				 alert('El alumno ya pertenece al Curso <?php echo "estudiante".$test1." claseid".$class_id; ?>'); 
 				</script>
 				<script>
 				window.location = "add_student.php<?php echo '?id='.$get_id; ?>"; 

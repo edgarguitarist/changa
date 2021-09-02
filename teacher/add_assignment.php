@@ -16,7 +16,7 @@
 							$school_year_query_row = mysqli_fetch_array($school_year_query);
 							$school_year_id = $school_year_query_row['school_year_id'];
 							?>
-							<li><a href="#"><b>Mis aulas</b></a><span class="divider">/</span></li>
+							<li><a href="#"><b>Mis Cursos</b></a><span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a></li>
 						</ul>
 					</div><!-- end breadcrumb -->
@@ -81,7 +81,7 @@
 							</div>
 							<div class="span8">
 
-								<div class="alert alert-info">Seleccione el aula que desea enviar el archivo.</div>
+								<div class="alert alert-info">Seleccione el Curso al que desea enviar el archivo.</div>
 
 								<div class="pull-left">
 									Seleccionar Todo <input type="checkbox" name="selectAll" id="checkAll" />
@@ -96,7 +96,7 @@
 									<thead>
 										<tr>
 											<th></th>
-											<th>Número de Aula</th>
+											<th>Número de Curso</th>
 											<th>Codigo Curso</th>
 										</tr>
 

@@ -27,7 +27,7 @@ if (isset($_POST['agregar_class'])){
 		
 		if ($count > 0){ ?>
 		<script>
-		 alert('El alumno ya pertenece al aula <?php echo "estudiante".$id." claseid".$class_id; ?>'); 
+		 alert('El alumno ya pertenece al Curso <?php echo "estudiante".$id." claseid".$class_id; ?>'); 
 		</script>
 		<!--<script>
 		window.location = "add_student.php<?php echo '?id='.$get_id; ?>"; 

@@ -49,12 +49,12 @@
 							<div class="modal-content">
 								<div class="modal-header">
 									<button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:#ffffff; opacity:0.7">x</button>
-									<h4 class="modal-title" id="exampleModalLabel">¿Esta seguro de eliminar el aula <?php //echo $student_name;?> ?</h4>
+									<h4 class="modal-title" id="exampleModalLabel">¿Esta seguro de eliminar el Curso <?php //echo $student_name;?> ?</h4>
 								</div>
 								<div class="modal-body">
 								
 								<div class="alert alert-danger">
-									¿Esta seguro de eliminar el aula seleleccionada?
+									¿Esta seguro de eliminar el Curso seleleccionada?
 								</div>				
 							  </div>
 								<div class="modal-footer">

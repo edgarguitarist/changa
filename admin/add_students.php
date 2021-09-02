@@ -8,27 +8,13 @@
    			<div class="span12">
    				<form id="add_student" method="post">
 
-   					<div class="control-group">
 
-   						<div class="controls">
-   							<select name="class_id" class="" style="width:95%" required>
-   								<option></option>
-   								<?php
-									$cys_query = mysqli_query($con, "select * from class order by class_name");
-									while ($cys_row = mysqli_fetch_array($cys_query)) {
-
-									?>
-   									<option value="<?php echo $cys_row['class_id']; ?>"><?php echo $cys_row['class_name']; ?></option>
-   								<?php } ?>
-   							</select>
-   						</div>
-   					</div>
-
-   					<div class="control-group">
+				   <!-- TODO: Verificar y validar Formulario -->
+   					<!-- <div class="control-group">
    						<div class="controls">
    							<input name="un" class="input focused" id="focusedInput" type="text" placeholder="Codigo" style="width:95%" required>
-   						</div>
-   					</div>
+   						</div> 
+   					</div> --> 
    					<div class="control-group">
    						<div class="controls">
    							<input name="dni" class="input focused" id="focusedInput" type="text" placeholder="Cedula" style="width:95%" required>
@@ -63,8 +49,23 @@
    					<div class="control-group">
 
    						<div class="controls">
+   							<select name="class_id" class="" style="width:95%" required>
+   								<option disabled selected>Seleccione un Curso</option>
+   								<?php
+									$cys_query = mysqli_query($con, "select * from class order by class_name");
+									while ($cys_row = mysqli_fetch_array($cys_query)) {
+
+									?>
+   									<option value="<?php echo $cys_row['class_id']; ?>"><?php echo $cys_row['class_name']; ?></option>
+   								<?php } ?>
+   							</select>
+   						</div>
+   					</div>
+   					<div class="control-group">
+
+   						<div class="controls">
    							<select name="carrera_id" class="" style="width:95%" required>
-   								<option></option>
+   								<option disabled selected>Seleccione un Paralelo</option>
    								<?php
 									$car_query = mysqli_query($con, "select * from department order by department_id");
 									while ($car_row = mysqli_fetch_array($car_query)) {

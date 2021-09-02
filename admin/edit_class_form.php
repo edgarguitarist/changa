@@ -1,9 +1,9 @@
    <div class="row-fluid">
-       <a href="class.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i>Añadir Aula</a>
+       <a href="class.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i>Añadir Curso</a>
        <!-- block -->
        <div class="block mincon">
            <div class="navbar navbar-inner block-header">
-               <div class="muted pull-left">Editar Aula</div>
+               <div class="muted pull-left">Editar Curso</div>
            </div>
            <?php
             $query = mysqli_query($con, "select * from class where class_id = '$get_id'") or die(mysqli_error($con));
@@ -14,7 +14,7 @@
                    <form method="post">
                        <div class="control-group">
                            <div class="controls">
-                               <input name="class_name" value="<?php echo $row['class_name']; ?>" class="input focused" id="focusedInput" type="text" placeholder="Número de Aula" required>
+                               <input name="class_name" value="<?php echo $row['class_name']; ?>" class="input focused" id="focusedInput" type="text" placeholder="Número de Curso" required>
                            </div>
                        </div>
 

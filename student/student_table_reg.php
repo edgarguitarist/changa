@@ -22,7 +22,7 @@
 					<th>Username</th>
 					<th>Nombre</th>
 					<th>Paralelo</th>
-					<th>Aula</th>
+					<th>Curso</th>
 					<th></th>
 					<th></th>
 		</tr>

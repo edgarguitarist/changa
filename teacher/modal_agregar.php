@@ -8,7 +8,7 @@
 								<div class="modal-body">
 								
 								<div class="alert alert-danger">
-									¿Esta seguro de agregar al estudiante en aula actual?
+									¿Esta seguro de agregar al estudiante en Curso actual?
 								</div>				
 							  </div>
 								<div class="modal-footer">

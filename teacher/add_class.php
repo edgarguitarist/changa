@@ -2,14 +2,14 @@
 						<div class="block mincon" style=" min-height:min-content;">
 							<div class="navbar navbar-inner block-header">
 								<div id="" class="muted pull-left">
-									<h4><i class="icon-plus-sign"></i>Asignar aula y curso</h4>
+									<h4><i class="icon-plus-sign"></i>Asignar Curso y curso</h4>
 								</div>
 							</div>
 							<div class="block-content collapse in">
 								<div class="span12">
 									<form method="post" id="add_class">
 										<div class="control-group">
-											<label>Número de Aula:</label>
+											<label>Número de Curso:</label>
 											<div class="controls">
 												<input type="hidden" name="session_id" value="<?php echo $session_id; ?>">
 												<select name="class_id" class="" required>
@@ -82,12 +82,12 @@
 													data: formData,
 													success: function(html) {
 														if (html == "true") {
-															$.jGrowl("Aula existente", {
-																header: 'El aula ya existe'
+															$.jGrowl("Curso existente", {
+																header: 'El Curso ya existe'
 															});
 														} else {
-															$.jGrowl("Aula agregada exitosamente", {
-																header: 'Aula agregada'
+															$.jGrowl("Curso agregado exitosamente", {
+																header: 'Curso agregado'
 															});
 															var delay = 500;
 															setTimeout(function() {

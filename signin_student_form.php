@@ -3,7 +3,7 @@
 			<input type="text" class="input-block-level" id="username" name="username" placeholder="Código (06 digitos)" maxlength="6" required>
 			<input type="text" class="input-block-level" id="lastname" name="lastname" placeholder="Apellidos" required>
 			<input type="text" class="input-block-level" id="firstname" name="firstname" placeholder="Nombres" required>
-			<label>Aula</label>
+			<label>Curso</label>
 			<select name="class_id" class="input-block-level span5">
 				<option></option>
 				<?php
@@ -46,7 +46,7 @@
 							var delay = 2000;
 								setTimeout(function(){ window.location = 'student/dashboard_student.php'  }, delay);  
 							}else if(html=='false'){
-								$.jGrowl("Estudiante no registrado en la base de datos, Porfavor verifique su codigo, nombres y apellidos, aula", { header: 'Registro Fallido' });
+								$.jGrowl("Estudiante no registrado en la base de datos, Porfavor verifique su codigo, nombres y apellidos, curso", { header: 'Registro Fallido' });
 							}
 							}
 							

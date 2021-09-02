@@ -16,7 +16,7 @@
 										$school_year_query_row = mysqli_fetch_array($school_year_query);
 										$school_year_id = $school_year_query_row['school_year_id'];
 										?>
-										<li><a href="#"><b>Mis aulas</b></a><span class="divider">/</span></li>
+										<li><a href="#"><b>Mis Cursos</b></a><span class="divider">/</span></li>
 										<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
 										<li><a href="#"><b>Pregunta de Examen</b></a></li>
 									</ul>

@@ -68,7 +68,7 @@
 								
 			
 									<?php }}else{ ?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i> Aún no tiene cursos en su aula</div>
+									<div class="alert alert-info"><i class="icon-info-sign"></i> Aún no hay nada en este Curso</div>
 									<?php } ?>	
 									</ul>
 						

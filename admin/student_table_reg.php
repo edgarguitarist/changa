@@ -19,10 +19,10 @@
 			<thead>
 				<tr>
 					<th></th>
-					<th>Username</th>
 					<th>Nombre</th>
+					<th>Curso</th>
 					<th>Paralelo</th>
-					<th>Aula</th>
+					<th>Periodo</th>
 					<th></th>
 					<th></th>
 				</tr>
@@ -30,10 +30,10 @@
 			<tbody>
 
 				<?php
-				$query = mysqli_query($con, "select student.student_id, student.status, student.username, student.firstname, student.lastname, department.department_name, class.class_name from student 
+				$query = mysqli_query($con, "SELECT student.student_id, student.status, student.username, student.firstname, student.lastname, department.department_name, class.class_name, school_year.school_year FROM student 
 								LEFT JOIN class ON student.class_id = class.class_id 
 								LEFT JOIN department ON department.department_id=student.paralelo 
-								LEFT JOIN school_year ON school_year.school_year_id= student.cod_ciclo where school_year.status='Activated' AND student.status = 'Registered' ORDER BY student.student_id DESC") or die(mysqli_error($con));
+								LEFT JOIN school_year ON school_year.school_year_id= student.cod_ciclo WHERE school_year.status='Activated' AND student.status = 'Registered' ORDER BY student.student_id DESC") or die(mysqli_error($con));
 				while ($row = mysqli_fetch_array($query)) {
 					$id = $row['student_id'];
 					$est_status = $row['status'];
@@ -43,13 +43,12 @@
 						<td width="30">
 							<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 						</td>
-						<td><?php echo $row['username']; ?></td>
-
 						<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-						<td><?php echo $row['department_name']; ?></td>
-
 						<td width="100"><?php echo $row['class_name']; ?></td>
-
+						<td><?php echo $row['department_name']; ?></td>
+						<td width="100">
+							<?php echo $row['school_year']; ?>
+						</td>
 						<td width="30"><a href="edit_student.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
 						<?php if ($est_status == "Registered") { ?>
 							<td width="120"><a href="es_desactivate.php<?php echo '?id=' . $id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>

@@ -26,6 +26,6 @@
 											</li>
 										<?php include("delete_class_modal.php"); ?>
 									<?php } }else{ ?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i>No tiene aula agregada aún</div>
+									<div class="alert alert-info"><i class="icon-info-sign"></i>No tiene Curso agregado aún</div>
 									<?php  } ?>
 									</ul>

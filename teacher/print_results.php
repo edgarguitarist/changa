@@ -179,7 +179,7 @@ normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
   background:#BFBFBF;mso-background-themecolor:background1;mso-background-themeshade:
   191;padding:0in 5.4pt 0in 5.4pt;height:23.25pt'>
   <p class=msoNormal style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
-  normal'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Times New Roman","serif"'>Aula<o:p></o:p></span></b></p>
+  normal'><b style='mso-bidi-font-weight:normal'><span style='font-family:"Times New Roman","serif"'>Curso<o:p></o:p></span></b></p>
   </td>
   <td width=188 style='width:140.9pt;border:solid windowtext 1.0pt;border-left:
   none;mso-border-left-alt:solid windowtext .5pt;mso-border-alt:solid windowtext .5pt;

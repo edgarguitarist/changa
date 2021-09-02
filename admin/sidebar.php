@@ -3,7 +3,7 @@
         <ul class="nav nav-list bs-docs-sidenav nav-collapse collapse">
             <li> <a href="dashboard.php"><i class="icon-chevron-right"></i><i class="icon-home"></i>Tablero</a> </li>
             <li> <a href="subjects.php"><i class="icon-chevron-right"></i><i class="icon-list-alt"></i>Materias</a> </li>
-            <li> <a href="class.php"><i class="icon-chevron-right"></i><i class="icon-group"></i>Aulas</a> </li>
+            <li> <a href="class.php"><i class="icon-chevron-right"></i><i class="icon-group"></i>Curso</a> </li>
             <li> <a href="department.php"><i class="icon-chevron-right"></i><i class="icon-building"></i>Paralelo</a> </li>
             <li> <a href="school_year.php"><i class="icon-chevron-right"></i><i class="icon-calendar"></i>Periodo</a> </li>
             <li> <a href="admin_user.php"><i class="icon-chevron-right"></i><i class="fas fa-user-shield mr5px"></i>Administrador</a> </li>

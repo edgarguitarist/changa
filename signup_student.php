@@ -7,7 +7,6 @@
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span2" id="">
-
 			</div>
 			<div class="span6" id="content">
 				<div class="row-fluid">
