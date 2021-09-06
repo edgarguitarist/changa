@@ -39,7 +39,7 @@
    					</div>
    					<div class="control-group">
    						<div class="controls">
-   							<input name="un" value="<?php echo $row['username']; ?>" class="input focused" id="focusedInput" type="text" placeholder="Codigo" required>
+   							<input name="un" value="<?php echo $row['username']; ?>" class="input focused" id="focusedInput" type="text" placeholder="Username" required>
    						</div>
    					</div>
 

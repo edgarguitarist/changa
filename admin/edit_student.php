@@ -26,35 +26,34 @@
 										<thead>
 											<tr>
 												<th></th>
-
-												<th>Usuario</th>
-												<th>Cedula</th>
 												<th>Nombre</th>
-												<!-- <th>Celular</th> -->
-												<th>Paralelo</th>
 												<th>Curso</th>
-												<th></th>
+												<th>Paralelo</th>
+												<th>Periodo</th>
+												<th></th>g
 											</tr>
 										</thead>
 										<tbody>
 
 											<?php
-											$query = mysqli_query($con, "select * from student LEFT JOIN class ON class.class_id = student.class_id 
-																		LEFT JOIN department ON department.department_id=student.paralelo  ORDER BY student.student_id DESC") or die(mysqli_error($con));
+											$query = mysqli_query($con, "SELECT * FROM student LEFT JOIN class ON class.class_id = student.class_id 
+																		LEFT JOIN department ON department.department_id=student.paralelo LEFT JOIN school_year ON school_year.school_year_id = student.cod_ciclo ORDER BY student.student_id DESC") or die(mysqli_error($con));
 											while ($row = mysqli_fetch_array($query)) {
 												$id = $row['student_id'];
 											?>
 
 												<tr>
 													<td width="30"><input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>"></td>
-													<td><?php echo $row['username']; ?></td>
-													<td><?php echo $row['dni']; ?></td>
+													<!-- <td><?php //echo $row['username']; ?></td> -->
 													<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
+													<!-- <td><?php //echo $row['dni']; ?></td> -->
+													<td width="100"><?php echo $row['class_name']; ?></td>
 													<!--<td> <?php //echo $row['celular']; 
 																?></td> -->
 													<td><?php echo $row['department_name']; ?></td>
-													<td width="100"><?php echo $row['class_name']; ?></td>
-
+													<td width="100">
+														<?php echo $row['school_year']; ?>
+													</td>
 													<td width="30"><a href="edit_student.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
 
 												</tr>

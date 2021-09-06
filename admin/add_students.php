@@ -10,11 +10,11 @@
 
 
 				   <!-- TODO: Verificar y validar Formulario -->
-   					<!-- <div class="control-group">
+   					<div class="control-group">
    						<div class="controls">
-   							<input name="un" class="input focused" id="focusedInput" type="text" placeholder="Codigo" style="width:95%" required>
+   							<input name="un" class="input focused" id="focusedInput" type="text" placeholder="Username" style="width:95%" required>
    						</div> 
-   					</div> --> 
+   					</div> 
    					<div class="control-group">
    						<div class="controls">
    							<input name="dni" class="input focused" id="focusedInput" type="text" placeholder="Cedula" style="width:95%" required>
