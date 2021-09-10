@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.observaciones.ObservacionFragment">
+
+    <ImageView
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/fondo"
+        android:contentDescription="@string/desc_fondo"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/opaco"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/logo_default"
+            android:layout_height="@dimen/logo_default"
+            android:layout_gravity="center"
+            android:layout_marginVertical="@dimen/marging_default"
+            android:src="@drawable/logo"
+            android:contentDescription="@string/desc_logo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="-30dp"
+            android:text="@string/menu_observacion"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_text_size" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/marging_default"
+                    android:text="@string/parcial1"
+                    android:textSize="@dimen/subtitle_text_size" />
+
+                <EditText
+                    android:id="@+id/et_observacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/marging_default"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/msg_multiline"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:padding="@dimen/padding_default"
+                    android:text="@string/loremipsum_300"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    tools:ignore="Autofill,LabelFor" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/marging_default"
+                    android:text="@string/parcial2"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/subtitle_text_size" />
+
+                <EditText
+                    android:id="@+id/et_observacion2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="@dimen/marging_default"
+                    android:layout_marginTop="-10dp"
+                    android:background="@drawable/msg_multiline"
+                    android:clickable="false"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:gravity="start|top"
+                    android:inputType="textMultiLine"
+                    android:padding="@dimen/padding_default"
+                    android:text="@string/loremipsum_300"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    tools:ignore="Autofill,LabelFor" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

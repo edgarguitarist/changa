@@ -1,0 +1,51 @@
+<resources>
+    <!-- App Info. -->
+    <string name="app_name">Lecto-Escritura</string>
+
+    <!-- Recursos de Activitys. -->
+    <string name="email">Correo Electronico</string>
+    <string name="contra">Contraseña</string>
+    <string name="incontra">Ingrese su Contraseña</string>
+    <string name="recontra">Repita su Contraseña</string>
+    <string name="ask_pass">¿Olvidaste tu Contraseña?</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="send">Iniciar Correo</string>
+    <string name="ask_account">¿Ya tienes cuenta?</string>
+    <string name="parcial1">Parcial 1</string>
+    <string name="parcial2">Parcial 2</string>
+
+    <!-- Descripcion de Recursos de imagenes. -->
+    <string name="desc_logo">Logo del Sistema Lecto-Escritura</string>
+    <string name="desc_fondo">Fondo del Sistema Lecto-Escritura</string>
+
+    <!-- Menu. -->
+    <string name="menu_home">Inicio</string>
+    <string name="menu_calificacion">Calificaciones</string>
+    <string name="menu_observacion">Observaciones</string>
+    <string name="menu_info">Información</string>
+    <string name="menu_about">Acerca de Nosotros</string>
+    <string name="menu_salir">Cerrar Sesión</string>
+    <string name="title_activity_menu">Menú</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Titulo de Cabecera</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Cabecera de Navegación</string>
+    <string name="action_settings">Configuraciones</string>
+
+    <!-- Mensajes. -->
+    <string name="salir_msg">Cerrando Sesión…</string>
+    <string name="msg_bienvenido">Bienvenido al Sistema de Notas</string>
+    <string name="msg_splash">Sistema de Notas</string>
+    <string name="msg_blank">    </string>
+    <string name="email_msg">Ingrese su correo para recuperar su cuenta</string>
+    <string name="skip">Saltar Login</string>
+
+    <!-- Loremipsums. -->
+    <string name="loremipsum_600">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="loremipsum_500">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop.</string>
+    <string name="loremipsum_400">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release.</string>
+    <string name="loremipsum_300">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap.</string>
+    <string name="loremipsum_200">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s</string>
+
+</resources>
