@@ -2,14 +2,14 @@
 						<div class="block mincon" style=" min-height:min-content;">
 							<div class="navbar navbar-inner block-header">
 								<div id="" class="muted pull-left">
-									<h4><i class="icon-plus-sign"></i>Asignar Curso y curso</h4>
+									<h4><i class="icon-plus-sign"></i> Asignar Curso</h4>
 								</div>
 							</div>
 							<div class="block-content collapse in">
 								<div class="span12">
 									<form method="post" id="add_class">
 										<div class="control-group">
-											<label>Número de Curso:</label>
+											<label>Curso:</label>
 											<div class="controls">
 												<input type="hidden" name="session_id" value="<?php echo $session_id; ?>">
 												<select name="class_id" class="" required>
@@ -26,7 +26,7 @@
 										</div>
 
 										<div class="control-group">
-											<label>Curso:</label>
+											<label>Materia:</label>
 											<div class="controls">
 												<select name="subject_id" class="" required>
 													<option></option>

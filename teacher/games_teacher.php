@@ -59,8 +59,8 @@
 													<?php } else { ?>
 														<td width="120"><a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>
 													<?php } ?>
-													<td>
-													<a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class=""><i class="fab fa-facebook"></i> Desactivar</a>
+													<td width="100">
+													<a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-info"><i class="fas fa-clipboard-check"></i> Revisar</a>
 													</td>
 												</tr>
 											<?php } ?>
