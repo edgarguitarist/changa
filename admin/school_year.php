@@ -49,9 +49,9 @@
 													</td>
 
 													<?php if ($year_status == "Activated") { ?>
-														<td width="120"><a href="year_desactivate.php<?php echo '?id=' . $id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
+														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
 													<?php } else { ?>
-														<td width="120"><a href="year_activate.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>
+														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>
 													<?php } ?>
 												</tr>
 											<?php } ?>

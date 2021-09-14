@@ -357,6 +357,10 @@ font-size: 20px;
   text-align: center;
 }
 
+.v-center{
+  
+}
+
 footer {
   position: absolute;
   bottom: 20;

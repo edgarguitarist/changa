@@ -9,12 +9,12 @@
    				<form id="add_student" method="post">
 
 
-				   <!-- TODO: Verificar y validar Formulario -->
+   					<!-- TODO: Verificar y validar Formulario -->
    					<div class="control-group">
    						<div class="controls">
    							<input name="un" class="input focused" id="focusedInput" type="text" placeholder="Username" style="width:95%" required>
-   						</div> 
-   					</div> 
+   						</div>
+   					</div>
    					<div class="control-group">
    						<div class="controls">
    							<input name="dni" class="input focused" id="focusedInput" type="text" placeholder="Cedula" style="width:95%" required>
@@ -104,6 +104,7 @@
    	</div>
    	<!-- /block -->
    </div>
+   
 
    <script>
    	jQuery(document).ready(function($) {
@@ -125,7 +126,7 @@
    							"sDom": "<'row'<'span6'l><'span6'f>r>t<'row'<'span6'i><'span6'p>>",
    							"sPaginationType": "bootstrap",
    							"oLanguage": {
-   								"sLengthMenu": "_MENU_ records per page"
+   								"sLengthMenu": "_MENU_ Registros por pagina"
    							}
    						});
    						$(_this).find(":input").val('');
