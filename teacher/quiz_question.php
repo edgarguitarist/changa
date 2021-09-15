@@ -5,7 +5,7 @@
 		<?php include('navbar_teacher.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-				<?php include('quiz_sidebar_teacher.php'); ?>
+				<?php include('sidebar_teacher.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
 					    <!-- breadcrumb -->	
