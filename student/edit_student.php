@@ -40,7 +40,7 @@
 
 											<?php
 											$query = mysqli_query($con, "select * from student LEFT JOIN class ON class.class_id = student.class_id 
-																		LEFT JOIN department ON department.department_id=student.paralelo  ORDER BY student.student_id DESC") or die(mysqli_error($con));
+																		LEFT JOIN paralelo ON paralelo.paralelo_id=student.paralelo  ORDER BY student.student_id DESC") or die(mysqli_error($con));
 											while ($row = mysqli_fetch_array($query)) {
 												$id = $row['student_id'];
 											?>
@@ -51,7 +51,7 @@
 													<!-- <td><?php //echo $row['dni']; ?></td> -->
 													<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
 													<!-- <td><?php //echo $row['celular']; ?></td> -->
-													<td><?php echo $row['department_name']; ?></td>
+													<td><?php echo $row['paralelo_name']; ?></td>
 													<td width="100"><?php echo $row['class_name']; ?></td>
 
 													<td width="30"><a href="edit_student.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>

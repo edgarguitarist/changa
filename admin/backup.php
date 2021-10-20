@@ -2,7 +2,6 @@
 <?php include('session.php'); ?>
 
 <body>
-
 	<?php include('navbar.php') ?>
 	<div class="container-fluid">
 		<div class="row-fluid">
@@ -13,28 +12,31 @@
 				<div id="block_bg" class="block mincon">
 
 					<div class="block-content collapse in">
-						<div class="span8">
+						<div class="span12">
 							<!-- block -->
 							<div class="navbar navbar-inner block-header">
 								<div class="muted pull-left">Copia de Seguridad</div>
 							</div>
 							<div>
-
-								<a href="backup_script.php" id="sss">
-									<img src="images/backup.png" alt="backup" />
+<br>
+								<a class="btn btn-success f-20 p-10" href="backup_script.php" id="sss">
+									<!-- <img src="images/backup.png" alt="backup" /> -->
+									<i class="fas fa-database"></i>	Click aqui para Respaldar la Base de Datos.
 								</a>
-								<br />
-								<br />
-								Copias de Seguridad
-								<br />
-								<table <tr id="head">
-									<td>
-										Archivo
-									</td>
-									<td style='padding-left: 20px;'>
-										Acción
-									</td>
+								<br>
+								<br>
+								<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
+									<thead>
+									<tr>
+										<td>
+											Archivo
+										</td>
+										<td style='padding-left: 20px;'>
+											Acción
+										</td>
 									</tr>
+									</thead>
+									<tbody>
 									<?php
 									// List the files
 									$dir = opendir("./DB_backup");
@@ -50,11 +52,12 @@
 
 											echo "<tr id='eee'>";
 											echo '<td>' . $filenameboth . ".sql" . '</td>';
-											echo "<td style='padding-left: 20px;'>" . "<a href='DB_backup/" . $filenameboth . ".sql' class='view'> Descargar SQL</a>" . "</td>";
+											echo "<td style='padding-left: 20px;'>" . "<a href='DB_backup/" . $filenameboth . ".sql' class='view'><i class='fas fa-download'></i> Descargar SQL</a>" . "</td>";
 											echo "</tr>";
 										}
 									}
 									?>
+									</tbody>
 								</table>
 
 							</div>

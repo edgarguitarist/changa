@@ -44,7 +44,7 @@
 								<div class="control-group">
 									<div class="controls tcenter">
 
-										<button name="update" type="submit" class="btn btn-info"><i class="icon-save icon-large"></i> Actualizar</button>
+										<button name="update" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i> Actualizar</button>
 									</div>
 								</div>
 							</form>

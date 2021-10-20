@@ -145,7 +145,7 @@
                                     </div>
                                     <div id="page-wrapper">
                                         <?php
-                                        $student = mysqli_query($con, "select * from department") or die(mysql_error());
+                                        $student = mysqli_query($con, "select * from paralelo") or die(mysql_error());
                                         $student = mysqli_num_rows($student);
                                         ?>
                                         <div class="row-fluid">
@@ -164,7 +164,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <a href="department.php">
+                                                    <a href="paralelo.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Agregar programa de estudios</span>
                                                             <span class="pull-right"><i class="icon-chevron-right"></i></span>

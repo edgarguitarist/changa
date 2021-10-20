@@ -1345,7 +1345,7 @@ Zone America/Moncton	-4:19:08 -	LMT	1883 Dec  9
 # Matthews and Vincent (1998) also write that Quebec east of the -63
 # meridian is supposed to observe AST, but residents as far east as
 # Natashquan use EST/EDT, and residents east of Natashquan use AST.
-# In "Official time in Quebec" the Quebec department of justice writes in
+# In "Official time in Quebec" the Quebec paralelo of justice writes in
 # http://www.justice.gouv.qc.ca/english/publications/generale/temps-regl-1-a.htm
 # that "The residents of the Municipality of the
 # Cote-Nord-du-Golfe-Saint-Laurent and the municipalities of Saint-Agostoin,
@@ -1713,7 +1713,7 @@ Zone America/Winnipeg	-6:28:36 -	LMT	1887 Jul 16
 
 # From W. Jones (1992-11-06):
 # The. . .below is based on information I got from our law library, the
-# provincial archives, and the provincial Community Services department.
+# provincial archives, and the provincial Community Services paralelo.
 # A precise history would require digging through newspaper archives, and
 # since you didn't say what you wanted, I didn't bother.
 #

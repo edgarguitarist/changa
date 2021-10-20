@@ -38,7 +38,7 @@
 									<form method="post" action="">
 
 							
-										<button name="submit" type="submit" class="btn btn-info"><i class="icon-save"></i>&nbsp;Agregar Estudiante</button>
+										<button name="submit" type="submit" class="btn btn-success"><i class="icon-save"></i>&nbsp;Agregar Estudiante</button>
 										<!--<a data-toggle="modal" href="#class_agregar" id="agregar"  class="btn btn-info" name=""><i class="icon-save icon-large"></i>&nbsp;Agregar Estudiante</a>-->
 									
 												<br>

@@ -40,7 +40,7 @@
 								<div class="control-group">
 									<div class="controls tcenter">
 
-										<button name="save" type="submit" class="btn btn-info"><i class="icon-save icon-large"></i> Guardar</button>
+										<button name="save" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i> Guardar</button>
 									</div>
 								</div>
 							</form>

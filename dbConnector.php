@@ -9,9 +9,9 @@ function DbConnector(){
 
         // Get the main settings from the array we just loaded
         $host = 'localhost';
-        $db = 'platea21_virtual';
+        $db = 'u440807742_prueba';
         $user = 'root';
-        $pass = '';
+        $pass = '1q2w3e4r5t6Y';
 
         // Connect to the database
         $this->link = mysqli_connect($host, $user, $pass, $db);

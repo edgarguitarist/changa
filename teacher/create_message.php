@@ -39,14 +39,14 @@
                                         </div>
 										
 										<div class="control-group">
-											<label>Contenido mensaje:</label>
+											<label>Contenido del mensaje:</label>
                                           <div class="controls">
 											<textarea name="my_message" class="my_message" required></textarea>
                                           </div>
                                         </div>
 										<div class="control-group">
                                           <div class="controls" style="text-align: center;">
-												<button name="Upload" type="submit" value="Upload" class="btn btn-info"><i class="icon-envelope-alt"></i> Enviar </button>
+												<button name="Upload" type="submit" value="Upload" class="btn btn-success"><i class="icon-envelope-alt"></i> Enviar </button>
 												
 												
 

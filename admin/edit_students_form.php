@@ -9,7 +9,7 @@
    			<?php
 				$query = mysqli_query($con, "select * from student 
 							LEFT JOIN class ON class.class_id = student.class_id 
-							LEFT JOIN department ON department.department_id= student.paralelo
+							LEFT JOIN paralelo ON paralelo.paralelo_id= student.paralelo
 							LEFT JOIN school_year ON school_year.school_year_id= student.cod_ciclo
 							where student_id = '$get_id' ") or die(mysqli_error($con));
 				$row = mysqli_fetch_array($query);
@@ -63,13 +63,13 @@
 
    						<div class="controls">
    							<select name="carrera_id" class="" required>
-   								<option value="<?php echo $row['department_id']; ?>"><?php echo $row['department_name']; ?></option>
+   								<option value="<?php echo $row['paralelo_id']; ?>"><?php echo $row['paralelo_name']; ?></option>
    								<?php
-									$cys_query = mysqli_query($con, "select * from department order by department_id");
+									$cys_query = mysqli_query($con, "select * from paralelo order by paralelo_id");
 									while ($cys_row = mysqli_fetch_array($cys_query)) {
 
 									?>
-   									<option value="<?php echo $cys_row['department_id']; ?>"><?php echo $cys_row['department_name']; ?></option>
+   									<option value="<?php echo $cys_row['paralelo_id']; ?>"><?php echo $cys_row['paralelo_name']; ?></option>
    								<?php } ?>
    							</select>
    						</div>

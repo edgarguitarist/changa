@@ -3,7 +3,7 @@
  	<input type="text" class="input-block-level datepicker" name="date_start" id="date01" placeholder="Fecha Inicio" required />
  	<input type="text" class="input-block-level datepicker" name="date_end" id="date01" placeholder="Fecha Fin" required />
  	<input type="text" class="input-block-level" id="username" name="title" placeholder="Titulo Evento" required />
- 	<button id="signin" name="add" class="btn btn-info" type="submit"><i class="icon-save"></i> Guardar</button>
+ 	<button id="signin" name="add" class="btn btn-success" type="submit"><i class="icon-save"></i> Guardar</button>
  </form>
  <?php
 	if (isset($_POST['add'])) {

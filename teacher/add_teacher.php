@@ -19,14 +19,14 @@
 										  <div class="control-group">
 											<label>Area:</label>
                                           <div class="controls">
-                                            <select name="department"  class="" required>
+                                            <select name="paralelo"  class="" required>
                                              	<option></option>
 											<?php
-											$query = mysqli_query($con,"select * from department order by department_name");
+											$query = mysqli_query($con,"select * from paralelo order by paralelo_name");
 											while($row = mysqli_fetch_array($query)){
 											
 											?>
-											<option value="<?php echo $row['department_id']; ?>"><?php echo $row['department_name']; ?></option>
+											<option value="<?php echo $row['paralelo_id']; ?>"><?php echo $row['paralelo_name']; ?></option>
 											<?php } ?>
                                             </select>
                                           </div>
@@ -69,7 +69,7 @@
                            
                                 $firstname = $_POST['firstname'];
                                 $lastname = $_POST['lastname'];
-                                $department_id = $_POST['department'];
+                                $paralelo_id = $_POST['paralelo'];
 								$phone = $_POST['phone'];
 								
 								$query = mysqli_query($con,"select * from teacher where firstname = '$firstname' and lastname = '$lastname' ")or die(mysqli_error($con));
@@ -82,8 +82,8 @@
 								<?php
 								}else{
 
-                                mysqli_query($con,"insert into teacher (firstname,lastname,location,about,department_id)
-								values ('$firstname','$lastname','uploads/NO-IMAGE-AVAILABLE.jpg','$phone','$department_id')         
+                                mysqli_query($con,"insert into teacher (firstname,lastname,location,about,paralelo_id)
+								values ('$firstname','$lastname','uploads/NO-IMAGE-AVAILABLE.jpg','$phone','$paralelo_id')         
 								") or die(mysqli_error($con)); ?>
 								<script>
 							 	window.location = "teachers.php"; 

@@ -88,7 +88,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                          <button type="submit" class="btn btn-primary btn-block">ACTUALIZAR</a>
+                          <button type="submit" class="btn btn-success btn-block">ACTUALIZAR</a>
                         </div>
                       </form>
                       <center><a href="./index.php">Iniciar Sesión</a></center>

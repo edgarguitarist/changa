@@ -42,7 +42,7 @@
 					<center>
 						<div class="control-group">
 							<div class="controls tcenter">
-								<button name="Upload" type="submit" value="Upload" class="btn btn-success" /><i class="icon-check"></i>&nbsp;Publicar</button>
+								<button name="Upload" type="submit" value="Upload" class="btn btn-success"><i class="icon-check"></i>&nbsp;Publicar</button>
 							</div>
 						</div>
 					</center>

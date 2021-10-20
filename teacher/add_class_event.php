@@ -4,7 +4,7 @@
  	<input type="text" class="input-block-level datepicker" name="date_end" id="date01" placeholder="Fecha Fin" required />
  	<input type="text" class="input-block-level" id="username" name="title" placeholder="Titulo Evento" required />
  	<div class="tcenter">
-		 <button id="signin" name="add" class="btn btn-info" type="submit"><i class="icon-save"></i> Guardar</button>
+		 <button id="signin" name="add" class="btn btn-success" type="submit"><i class="icon-save"></i> Guardar</button>
 	 </div>
  </form>
  <?php

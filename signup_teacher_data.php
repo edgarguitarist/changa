@@ -5,9 +5,9 @@ $username = $_POST['username'];
 $password = $_POST['password'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
-$department_id = $_POST['department_id'];
+$paralelo_id = $_POST['paralelo_id'];
 
-$query = mysqli_query($con,"select * from teacher where firstname='$firstname' and lastname='$lastname' and department_id = '$department_id'")or die(mysqli_error($con));
+$query = mysqli_query($con,"select * from teacher where firstname='$firstname' and lastname='$lastname' and paralelo_id = '$paralelo_id'")or die(mysqli_error($con));
 $row = mysqli_fetch_array($query);
 $id = $row['teacher_id'];
 

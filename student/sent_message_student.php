@@ -45,7 +45,7 @@
 											<div class="post"  id="del<?php echo $id; ?>">
 											<?php echo $row['content']; ?>
 													<hr>
-											Enviar a: <strong><?php echo $row['reciever_name']; ?></strong>
+											Enviado a: <strong><?php echo $row['reciever_name']; ?></strong>
 											<i class="icon-calendar"></i> <?php echo $row['date_sended']; ?>
 													<div class="pull-right">
 													<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><i class="icon-remove"></i> Eliminar </a>

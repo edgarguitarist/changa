@@ -96,8 +96,9 @@
 									<thead>
 										<tr>
 											<th></th>
-											<th>Número de Curso</th>
-											<th>Codigo Curso</th>
+											<th>Curso</th>
+											<th>Paralelo</th>
+											<th>Materia</th>
 										</tr>
 
 									</thead>
@@ -106,6 +107,7 @@
 										<?php $query = mysqli_query($con, "SELECT * from teacher_class
 										LEFT JOIN class ON class.class_id = teacher_class.class_id
 										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
+										LEFT JOIN paralelo ON paralelo.paralelo_id = teacher_class.paralelo_id
 										where teacher_id = '$session_id' and school_year = '$school_year_id' ") or die(mysqli_error($con));
 										$count = mysqli_num_rows($query);
 
@@ -119,7 +121,8 @@
 													<input id="" class="" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 												</td>
 												<td><?php echo $row['class_name']; ?></td>
-												<td><?php echo $row['subject_code']; ?></td>
+												<td><?php echo $row['paralelo_name']; ?></td>
+												<td><?php echo $row['subject_title']; ?></td>
 											</tr>
 
 										<?php } ?>

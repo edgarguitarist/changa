@@ -71,9 +71,9 @@
 	</h4>
 	<hr>
 	<h3 class="form-signin-heading"><i class="icon-edit"></i> Registro</h3>
-	<button data-placement="top" title="Iniciar sesión como estudiante" id="signin_student" onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-info" type="submit"><i class="icon-group icon"></i>&nbsp;Soy Estudiante</button>
+	<button data-placement="top" title="Iniciar sesión como estudiante" id="signin_student" onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-success" type="submit"><i class="icon-group icon"></i>&nbsp;Soy Estudiante</button>
 	<div class="pull-right">
-		<button data-placement="top" title="Iniciar sesión como docente" id="signin_teacher" onclick="window.location='signup_teacher.php'" name="login" class="btn btn-info" type="submit"><i class="icon-user icon"></i>&nbsp;Soy Profesor</button>
+		<button data-placement="top" title="Iniciar sesión como docente" id="signin_teacher" onclick="window.location='signup_teacher.php'" name="login" class="btn btn-success" type="submit"><i class="icon-user icon"></i>&nbsp;Soy Profesor</button>
 	</div>
 
 	<script type="text/javascript">

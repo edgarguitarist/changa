@@ -14,7 +14,8 @@
 							<center>	
 								<div class="control-group">
 								<div class="controls">
-									<input name="image" class="input-file uniform_on" id="fileInput" type="file" accept="image/*" required>
+									<label for="fileInput">Seleccione una nueva imagen para su perfil.</label>
+									<input style="width:60%" name="image" class="input-file uniform_on" id="fileInput" type="file" accept="image/*" required>
 								</div>
 								</div>
 							</center>				

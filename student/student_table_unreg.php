@@ -31,9 +31,9 @@
 		<tbody>
 			
 		<?php
-	$query = mysqli_query($con,"select student.student_id, student.status, student.username, student.firstname, student.lastname, department.department_name, class.class_name from student 
+	$query = mysqli_query($con,"select student.student_id, student.status, student.username, student.firstname, student.lastname, paralelo.paralelo_name, class.class_name from student 
 								LEFT JOIN class ON student.class_id = class.class_id 
-								LEFT JOIN department ON department.department_id=student.paralelo 
+								LEFT JOIN paralelo ON paralelo.paralelo_id=student.paralelo 
 								LEFT JOIN school_year ON school_year.school_year_id= student.cod_ciclo where school_year.status='Activated' AND student.status = 'Unregistered' ORDER BY student.student_id DESC") or die(mysqli_error($con));
 	while ($row = mysqli_fetch_array($query)) {
 		$id = $row['student_id'];
@@ -47,7 +47,7 @@
 		<td><?php echo $row['username']; ?></td> 
 	
 		<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td> 
-		<td width="100"><?php echo $row['department_name']; ?></td> 
+		<td width="100"><?php echo $row['paralelo_name']; ?></td> 
 		<td width="100"><?php echo $row['class_name']; ?></td> 
 	
 		<td width="30"><a href="edit_student.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>

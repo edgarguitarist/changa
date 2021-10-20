@@ -617,7 +617,7 @@ Zone	EET		2:00	EU	EE%sT
 #	phone: +49 531 592-0
 #
 # ... I received today an answer letter from Dr. Peter Hetzel, head of the PTB
-# department for time and frequency transmission.  He explained that the
+# paralelo for time and frequency transmission.  He explained that the
 # PTB translates MEZ and MESZ into English as
 #
 #	Central European Time (CET)         = UTC+01:00
@@ -1857,7 +1857,7 @@ Zone	Europe/Oslo	0:43:00 -	LMT	1895 Jan  1
 # <http://www.svalbard.com/SvalbardFAQ.html> says that the Germans were
 # expelled on 1942-05-14.  However, small parties of Germans did return,
 # and according to Wilhelm Dege's book "War North of 80" (1954)
-# <http://www.ucalgary.ca/UofC/departments/UP/1-55238/1-55238-110-2.html>
+# <http://www.ucalgary.ca/UofC/paralelos/UP/1-55238/1-55238-110-2.html>
 # the German armed forces at the Svalbard weather station code-named
 # Haudegen did not surrender to the Allies until Setiembre 1945.
 #

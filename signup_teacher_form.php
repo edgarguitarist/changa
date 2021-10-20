@@ -3,13 +3,13 @@
 					<input type="text" class="input-block-level"  name="lastname" placeholder="Apellidos" required>
 					<input type="text" class="input-block-level"  name="firstname" placeholder="Nombres" required>
 					<label>Materia</label>
-					<select name="department_id" class="input-block-level span12">
+					<select name="paralelo_id" class="input-block-level span12">
 						<option></option>
 						<?php
-						$query = mysqli_query($con,"select * from department order by department_name ")or die(mysqli_error($con));
+						$query = mysqli_query($con,"select * from paralelo order by paralelo_name ")or die(mysqli_error($con));
 						while($row = mysqli_fetch_array($query)){
 						?>
-						<option value="<?php echo $row['department_id'] ?>"><?php echo $row['department_name']; ?></option>
+						<option value="<?php echo $row['paralelo_id'] ?>"><?php echo $row['paralelo_name']; ?></option>
 						<?php
 						}
 						?>
@@ -17,7 +17,7 @@
 					<input type="text" class="input-block-level" id="username" name="username" placeholder="Usuario" required>
 					<input type="password" class="input-block-level" id="password" name="password" placeholder="Contraseña" required>
 					<input type="password" class="input-block-level" id="cpassword" name="cpassword" placeholder="Repita Contraseña" required>
-					<button id="signin" name="login" class="btn btn-info" type="submit"><i class="icon-check icon-large"></i> Registrar</button>
+					<button id="signin" name="login" class="btn btn-success" type="submit"><i class="icon-check icon-large"></i> Registrar</button>
 			</form>
 			<script>
 			jQuery(document).ready(function(){
@@ -50,7 +50,7 @@
 				});
 			});
 			</script>
-			<a onclick="window.location='index.php'" id="btn_login" name="login" class="btn" type="submit"><i class="icon-signin icon-large"></i> Clic para Iniciar Sesión</a>
+			<a onclick="window.location='index.php'" id="btn_login" name="login" class="btn btn-success" type="submit"><i class="icon-signin icon-large"></i> Clic para Iniciar Sesión</a>
 			
 			
 			

@@ -24,22 +24,22 @@
 										  <div class="control-group">
 											<label>Paralelo</label>
                                           <div class="controls">
-                                            <select name="department"  class="chzn-select"required>
+                                            <select name="paralelo"  class="chzn-select"required>
 											<?php
-											$query_teacher = mysqli_query($con,"select * from teacher join  department")or die(mysqli_error($con));
+											$query_teacher = mysqli_query($con,"select * from teacher join  paralelo")or die(mysqli_error($con));
 											$row_teacher = mysqli_fetch_array($query_teacher);
 											
 											?>
 											
-                                             	<option value="<?php echo $row_teacher['department_id']; ?>">
-												<?php echo $row_teacher['department_name']; ?>
+                                             	<option value="<?php echo $row_teacher['paralelo_id']; ?>">
+												<?php echo $row_teacher['paralelo_name']; ?>
 												</option>
 											<?php
-											$department = mysqli_query($con,"select * from department order by department_name");
-											while($department_row = mysqli_fetch_array($department)){
+											$paralelo = mysqli_query($con,"select * from paralelo order by paralelo_name");
+											while($paralelo_row = mysqli_fetch_array($paralelo)){
 											
 											?>
-											<option value="<?php echo $department_row['department_id']; ?>"><?php echo $department_row['department_name']; ?></option>
+											<option value="<?php echo $paralelo_row['paralelo_id']; ?>"><?php echo $paralelo_row['paralelo_name']; ?></option>
 											<?php } ?>
                                             </select>
                                           </div>
@@ -82,7 +82,7 @@
                        
                                 $firstname = $_POST['firstname'];
                                 $lastname = $_POST['lastname'];
-                                $department_id = $_POST['department'];
+                                $paralelo_id = $_POST['paralelo'];
 								$phone = $_POST['phone'];
 								
 								$query = mysqli_query($con,"select * from teacher where firstname = '$firstname' and lastname = '$lastname' ")or die(mysqli_error($con));
@@ -95,7 +95,7 @@
 								<?php
 								}else{
 								
-								mysqli_query($con,"update teacher set firstname = '$firstname' , lastname = '$lastname' , department_id = '$department_id' , about = '$phone' where teacher_id = '$get_id' ")or die(mysqli_error($con));	
+								mysqli_query($con,"update teacher set firstname = '$firstname' , lastname = '$lastname' , paralelo_id = '$paralelo_id' , about = '$phone' where teacher_id = '$get_id' ")or die(mysqli_error($con));	
 								
 								?>
 								<script>

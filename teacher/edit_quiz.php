@@ -5,7 +5,7 @@
 		<?php include('navbar_teacher.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-				<?php include('quiz_sidebar_teacher.php'); ?>
+				<?php include('sidebar_teacher.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
 					    <!-- breadcrumb -->	
@@ -17,7 +17,7 @@
 										?>
 											<li><a href="#"><b>Mis clases</b></a><span class="divider">/</span></li>
 										<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
-										<li><a href="#"><b>Quiz</b></a></li>
+										<li><a href="#"><b>Examen</b></a></li>
 									</ul>
 						 </div><!-- end breadcrumb -->
                         <!-- block -->
@@ -26,15 +26,16 @@
                                 <div id="" class="muted pull-right"></div>
                             </div>
                             <div class="block-content collapse in">
+								<div class="pull-right">
+								<a href="teacher_quiz.php" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
+								</div>
                                 <div class="span12">
-									<div class="pull-right">
-									<a href="teacher_quiz.php" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
-									</div>
 								<?php
 								$query = mysqli_query($con,"SELECT * from quiz where quiz_id = '$get_id'")or die(mysqli_error($con));
 								$row  = mysqli_fetch_array($query);
 								
 								?>
+								<br>
 									    <form class="form-horizontal" method="post">
 										<div class="control-group">
 											<label class="control-label" for="inputEmail">Titulo de Examen</label>
@@ -46,7 +47,7 @@
 										<div class="control-group">
 											<label class="control-label" for="inputPassword">Descripcion de Examen</label>
 											<div class="controls">
-											<input type="text" value="<?php echo $row['quiz_description']; ?>" class="span8" name="description" id="inputPassword" placeholder="Descripcion de Examen" required>
+											<input type="text" value="<?php echo $row['quiz_description']; ?>" class="" name="description" id="inputPassword" placeholder="Descripcion de Examen" required>
 											</div>
 										</div>										
 										<div class="control-group">

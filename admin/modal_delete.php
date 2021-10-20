@@ -21,8 +21,8 @@
 					</div>		
 					
 									
-					<!-- department delete modal -->
-					<div id="department_delete" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<!-- paralelo delete modal -->
+					<div id="paralelo_delete" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 					<div class="modal-dialog" role="document">
 							<div class="modal-content">
 								<div class="modal-header">
@@ -37,7 +37,7 @@
 							  </div>
 								<div class="modal-footer">
 									<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
-									<button name="delete_department" class="btn btn-danger"><i class="icon-check icon-large"></i> Si</button>
+									<button name="delete_paralelo" class="btn btn-danger"><i class="icon-check icon-large"></i> Si</button>
 								</div>
 							</div>
 						</div>

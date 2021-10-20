@@ -1,5 +1,6 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('../session.php'); ?>
+<?php include('../admin/dbcon.php'); ?>
 
 <body>
 	<?php include('navbar_teacher.php'); ?>
@@ -29,13 +30,14 @@
 						<div class="block-content collapse in">
 							<div class="span12">
 								<div class="pull-right">
-									<a href="add_quiz.php" class="btn btn-info"><i class="icon-plus-sign"></i> Agregar Examen</a>
+									<a href="add_quiz.php" class="btn btn-info"><i class="icon-plus-sign"></i> Crear un Nuevo Examen</a>
 									<td width="30"><a href="add_quiz_to_class.php" class="btn btn-success"><i class="icon-plus-sign"></i> Agregar Examen a Clase</a></td>
 								</div>
-
+								<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i> Eliminar Examen</a>
+<br>
 								<form action="delete_quiz.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+										<br>
 										<?php include('modal_delete_quiz.php'); ?>
 										<thead>
 											<tr>
@@ -44,7 +46,7 @@
 												<th>Descripcion</th>
 												<th>Fecha Añadida</th>
 												<th>Preguntas</th>
-												<th></th>
+												<th>Editar</th>
 											</tr>
 										</thead>
 										<tbody>
@@ -61,7 +63,7 @@
 													<td><?php echo $row['quiz_description']; ?></td>
 													<td><?php echo $row['date_added']; ?></td>
 													<td><a href="quiz_question.php<?php echo '?id=' . $id; ?>">Preguntas</a></td>
-													<td width="30"><a href="edit_quiz.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i></a></td>
+													<td><a href="edit_quiz.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i></a></td>
 												</tr>
 											<?php } ?>
 										</tbody>

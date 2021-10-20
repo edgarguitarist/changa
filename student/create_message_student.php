@@ -40,7 +40,7 @@
 								
 							
 										<div class="control-group">
-											<label>Contenido:</label>
+											<label>Contenido del mensaje:</label>
                                           <div class="controls">
 											<textarea name="my_message" class="my_message" required></textarea>
                                           </div>

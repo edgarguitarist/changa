@@ -174,7 +174,7 @@ else if($roww['question_type_id']=='3') {
 <td></td>
 <td>
 <button class="btn btn-info" id="submit-test" name="submit_answer"><i class="icon-check"></i> Enviar respuesta</button>
-<!-- <input type="submit" value="Submit My Answers"  class="btn btn-info" id="submit-test" name="submit_answer"><br /> -->
+<!-- <input type="submit" value="Submit My Answers"  class="btn btn-success" id="submit-test" name="submit_answer"><br /> -->
 </td>
 </tr>
 </table>

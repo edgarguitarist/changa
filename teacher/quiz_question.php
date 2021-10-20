@@ -28,13 +28,13 @@
                             <div class="block-content collapse in">
                                 <div class="span12">
 									<div class="pull-right">
-									<a href="teacher_quiz.php" class="btn btn-success"><i class="icon-arrow-left"></i> Atrás</a>
-									<a href="add_question.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Agregar pregunta</a>
+									<a href="teacher_quiz.php" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
+									<a href="add_question.php<?php echo '?id='.$get_id; ?>" class="btn btn-success"><i class="icon-plus-sign"></i> Agregar pregunta</a>
 									</div>
 									<form action="delete_quiz_question.php" method="post">
 									<input type="hidden" name="get_id" value="<?php echo $get_id; ?>">
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
-									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i> Eliminar Pregunta</a>
 									<?php include('modal_delete_quiz_question.php'); ?>
 										<thead>
 										        <tr>

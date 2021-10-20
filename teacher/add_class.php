@@ -2,7 +2,7 @@
 						<div class="block mincon" style=" min-height:min-content;">
 							<div class="navbar navbar-inner block-header">
 								<div id="" class="muted pull-left">
-									<h4><i class="icon-plus-sign"></i> Asignar Curso</h4>
+									<h4><i class="icon-plus-sign"></i> Agregar Curso</h4>
 								</div>
 							</div>
 							<div class="block-content collapse in">
@@ -26,6 +26,22 @@
 										</div>
 
 										<div class="control-group">
+											<label>Paralelo:</label>
+											<div class="controls">
+												<select name="paralelo_id" class="" required>
+													<option></option>
+													<?php
+													$query = mysqli_query($con, "SELECT * from paralelo order by paralelo_name");
+													while ($row = mysqli_fetch_array($query)) {
+
+													?>
+														<option value="<?php echo $row['paralelo_id']; ?>"><?php echo $row['paralelo_name']; ?></option>
+													<?php } ?>
+												</select>
+											</div>
+										</div>
+
+										<div class="control-group">
 											<label>Materia:</label>
 											<div class="controls">
 												<select name="subject_id" class="" required>
@@ -33,9 +49,8 @@
 													<?php
 													$query = mysqli_query($con, "SELECT * from subject order by subject_code");
 													while ($row = mysqli_fetch_array($query)) {
-
 													?>
-														<option value="<?php echo $row['subject_id']; ?>"><?php echo $row['subject_code']; ?></option>
+														<option value="<?php echo $row['subject_id']; ?>"><?php echo $row['subject_title']; ?></option>
 													<?php } ?>
 												</select>
 											</div>
@@ -43,13 +58,6 @@
 
 										<div class="control-group">
 											<label>Periodo:</label>
-											<!--<div class="controls">
-											<?php
-											//$query = mysqli_query($con,"SELECT * from school_year where status='Activated' order by school_year DESC");
-											//$row = mysqli_fetch_array($query);
-											?>
-											<input id="" class="span5" type="text" class="" name="school_year" value="<?php echo $row['school_year']; ?>" >
-                                          </div> -->
 											<div class="controls">
 												<select name="school_year" class="" required>
 													<option></option>

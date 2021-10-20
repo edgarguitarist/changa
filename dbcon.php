@@ -1,15 +1,24 @@
 <?php
-//mysql_select_db('capstone',mysql_connect('localhost','root',''))or die(mysqli_error($con));
-$host='localhost';
-$user='root';
-$pass='';
-$name='platea21_virtual';
-$con = mysqli_connect("$host","$user","$pass","$name");
+$hostname = 'localhost';
+$username = 'u440807742_prueba';
+$password = '1q2w3e4r5t6Y';
 
-// Check connection
-if (mysqli_connect_errno())
-  {
-  echo "Failed to connect to MySQL: " . mysqli_connect_error();
-  }
- mysqli_query($con,"SET NAMES 'utf8'");
+$username2 = 'root';
+$password2 = '';
+
+$dbname = 'u440807742_prueba';
+
+$selector='online';
+#Para efectos del ejemplo supondremos que es la misma base de datos en ambas bases de datos tanto la remota como la local 
+
+$con = @mysqli_connect($hostname, $username, $password);
+#notese el @ antes del comando mysql_connect para evitar que arroje mensaje de error de PHP 
+
+if (!($con)) {
+  $con = @mysqli_connect($hostname, $username2, $password2) or die('No puedo conectarme a ninguna base de datos! Intentelo nuevamente.');
+  $selector='local';
+}
+
+mysqli_select_db($con, $dbname);
+mysqli_query($con, "SET NAMES 'utf8'");
 ?>

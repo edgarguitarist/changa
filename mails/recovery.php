@@ -65,7 +65,7 @@
                             </div>
                         </div>
                         <div class="form-group">
-                          <button type="submit" class="btn btn-primary btn-block">ENVIAR</a>
+                          <button type="submit" class="btn btn-success btn-block">ENVIAR</a>
                         </div>
                       </form>
                       <center><a href="./index.php">Iniciar Sesión</a></center>

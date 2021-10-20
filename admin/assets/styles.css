@@ -125,7 +125,7 @@ body {
 }
 /* Revisar si funcionar el margin */
 .btn{
-  margin: 10px 0px !important; 
+  margin: 0px 0px !important; 
 }
 
 textarea{

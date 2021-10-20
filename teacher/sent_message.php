@@ -15,7 +15,7 @@
 								$school_year_id = $school_year_query_row['school_year_id'];
 								?>
 								<li><a href="#">Mensaje</a><span class="divider">/</span></li>
-								<li><a href="#"><b>Enviar Mensajes</b></a><span class="divider">/</span></li>
+								<li><a href="#"><b>Buzón de Salida</b></a><span class="divider">/</span></li>
 								<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a></li>
 						</ul>
 						 </div><!-- end breadcrumb -->
@@ -50,7 +50,7 @@
 											<div class="post"  id="del<?php echo $id; ?>">
 											<?php echo $row['content']; ?>
 													<hr>
-											Enviar a: <strong><?php echo $row['reciever_name']; ?></strong>
+											Enviado a: <strong><?php echo $row['reciever_name']; ?></strong>
 											<i class="icon-calendar"></i> <?php echo $row['date_sended']; ?>
 													<div class="pull-right">
 													<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><i class="icon-remove"></i> Eliminar </a>

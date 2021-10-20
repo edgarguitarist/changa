@@ -67,11 +67,11 @@
    							<select name="carrera_id" class="" style="width:95%" required>
    								<option disabled selected>Seleccione un Paralelo</option>
    								<?php
-									$car_query = mysqli_query($con, "select * from department order by department_id");
+									$car_query = mysqli_query($con, "select * from paralelo order by paralelo_id");
 									while ($car_row = mysqli_fetch_array($car_query)) {
 
 									?>
-   									<option value="<?php echo $car_row['department_id']; ?>"><?php echo $car_row['department_name']; ?></option>
+   									<option value="<?php echo $car_row['paralelo_id']; ?>"><?php echo $car_row['paralelo_name']; ?></option>
    								<?php } ?>
    							</select>
    						</div>

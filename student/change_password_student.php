@@ -54,7 +54,7 @@
 										</div>
 										<div class="control-group">
 											<div class="controls">
-											<button type="submit" class="btn btn-info"><i class="icon-save"></i> Guardar</button>
+											<button type="submit" class="btn btn-success"><i class="icon-save"></i> Guardar</button>
 											</div>
 										</div>
 									</form>

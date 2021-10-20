@@ -20,7 +20,7 @@
 			</div>
 		</div>
 		<div class="control-group">
-			<label class="control-label" for="inputPassword">Contenido:</label>
+			<label class="control-label" for="inputPassword">Contenido del mensaje:</label>
 			<div class="controls">
 				<textarea name="my_message"></textarea>
 			</div>
