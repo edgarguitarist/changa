@@ -21,7 +21,6 @@
 							<div class="span12">
 								<form action="delete_gs.php" method="post">
 									<table border="0" class="table" id="example" aria-describedby="tabla">
-
 										<thead>
 											<tr>
 												<!-- <th></th> -->
@@ -38,11 +37,7 @@
 												$id = $row['game_id'];
 												$status = $row['status'];
 											?>
-
 												<tr>
-													<!-- <td width="30">
-														<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
-													</td> -->
 													<td>
 														<?php echo $row['name']; ?>
 													</td>
@@ -50,7 +45,8 @@
 														<?php echo $row['description']; ?>
 													</td>
 													<td width="100">
-														<?php $estado = ($row['status'] =='Activated') ? 'Activado' : 'Desactivado'; echo $estado; ?>
+														<?php $estado = ($row['status'] == 'Activated') ? 'Activado' : 'Desactivado';
+														echo $estado; ?>
 													</td>
 													<?php if ($status == "Activated") { ?>
 														<td width="120"><a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>

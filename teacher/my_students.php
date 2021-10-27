@@ -8,11 +8,11 @@
 				<?php include('sidebar_class.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
-						<div class="pull-right">
-							<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Agregar Estudiante</a>
+						 <?php include('my_students_breadcrums.php'); ?>
+						 <div class="right">
+						 	<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Agregar Estudiante</a>
 							<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><i class="icon-list"></i> Lista Estudiantes</a>
 						</div>
-						<?php include('my_students_breadcrums.php'); ?>
                         <!-- block -->
                         <div id="block_bg" class="block mincon">
                             <div class="navbar navbar-inner block-header">

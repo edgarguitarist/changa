@@ -54,13 +54,14 @@
    							<input name="ln" value="<?php echo $row['lastname']; ?>" class="input focused" id="focusedInput" type="text" placeholder="Apellidos" required>
    						</div>
    					</div>
+
    					<div class="control-group">
    						<div class="controls">
    							<input name="celular" value="<?php echo $row['celular']; ?>" class="input focused" id="focusedInput" type="text" placeholder="Celular" required>
    						</div>
    					</div>
+					   
    					<div class="control-group">
-
    						<div class="controls">
    							<select name="carrera_id" class="" required>
    								<option value="<?php echo $row['paralelo_id']; ?>"><?php echo $row['paralelo_name']; ?></option>
@@ -76,7 +77,6 @@
    					</div>
 
    					<div class="control-group">
-
    						<div class="controls">
    							<select name="ciclo_id" class="" required>
    								<option value="<?php echo $row['school_year_id']; ?>"><?php echo $row['school_year']; ?></option>
@@ -95,7 +95,6 @@
    					<div class="control-group">
    						<div class="controls tcenter">
    							<button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></button>
-
    						</div>
    					</div>
    				</form>

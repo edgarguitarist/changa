@@ -25,7 +25,6 @@
 					<th>Periodo</th>
 					<th></th>
 					<th></th>
-
 				</tr>
 			</thead>
 			<tbody>
@@ -44,14 +43,12 @@
 						<td width="30">
 							<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 						</td>
-
-						
 						<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
 						<td width="100"><?php echo $row['class_name']; ?></td>
 						<td><?php echo $row['paralelo_name']; ?></td>
 						<td width="100">
 							<?php echo $row['school_year']; ?>
-					</td>
+						</td>
 						<td width="30"><a href="edit_student.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
 						<?php if ($est_status == "Registered") { ?>
 							<td width="120"><a href="es_desactivate.php<?php echo '?id=' . $id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>

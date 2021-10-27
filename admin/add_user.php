@@ -9,13 +9,13 @@
            <form method="post">
              <div class="control-group">
                <div class="controls">
-                 <input class="input focused" name="firstname" id="focusedInput" type="text" placeholder="Nombres" required>
+                 <input class="input focused" name="firstname" id="focusedInput" type="text" placeholder="Nombre" required>
                </div>
              </div>
 
              <div class="control-group">
                <div class="controls">
-                 <input class="input focused" name="lastname" id="focusedInput" type="text" placeholder="Apellidos" required>
+                 <input class="input focused" name="lastname" id="focusedInput" type="text" placeholder="Apellido" required>
                </div>
              </div>
 

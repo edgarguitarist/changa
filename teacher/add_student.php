@@ -9,9 +9,7 @@
                 <div class="span9" id="content">
                      <div class="row-fluid">
 					     <!-- breadcrumb -->
-				<div class="pull-right">
-							<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
-						</div>
+						
 										<?php $class_query = mysqli_query($con,"SELECT * from teacher_class
 										LEFT JOIN class ON class.class_id = teacher_class.class_id
 										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
@@ -27,7 +25,9 @@
 						</ul>
 						
 						 </div><!-- end breadcrumb -->
-					 
+						 <div class="right">
+							<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
+						</div>
                         <!-- block -->
                         <div id="block_bg" class="block mincon">
                             <div class="navbar navbar-inner block-header">

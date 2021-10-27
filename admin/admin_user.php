@@ -25,7 +25,7 @@
 										<thead>
 											<tr>
 												<th></th>
-												<th>Nombre</th>
+												<th>Nombres</th>
 												<th>Usuario</th>
 
 												<th></th>

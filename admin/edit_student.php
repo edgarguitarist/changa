@@ -23,6 +23,7 @@
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
 										<a data-toggle="modal" href="#student_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
 										<?php include('modal_delete.php'); ?>
+										
 										<thead>
 											<tr>
 												<th></th>
@@ -30,7 +31,7 @@
 												<th>Curso</th>
 												<th>Paralelo</th>
 												<th>Periodo</th>
-												<th></th>g
+												<th></th>
 											</tr>
 										</thead>
 										<tbody>

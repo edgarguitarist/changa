@@ -22,6 +22,7 @@
 body {
   background: -moz-linear-gradient(center top, #ffffff, #d3d8e8) repeat fixed 0
     0 rgba(0, 0, 0, 0);
+    zoom: 80% !important;
 }
 body {
   background: -moz-linear-gradient(center top, #ffffff, #d3d8e8) repeat fixed 0
@@ -187,7 +188,7 @@ th {
   display: none;
 }
 #delete {
-  margin-bottom: 10px;
+  margin-bottom:  20px !important;
 }
 #adduser {
   margin-left: 0;
@@ -736,6 +737,8 @@ user agent stylesheet div {
   display: block;
 }
 
+
+
 .f-14{
   font-size: 14px !important;
 }
@@ -823,4 +826,8 @@ user agent stylesheet div {
 }
 .ph-20{
   padding: 0px 20px;
+}
+
+.right{
+  text-align: right;
 }

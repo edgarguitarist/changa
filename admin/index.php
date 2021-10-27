@@ -31,7 +31,7 @@
 						success: function(html) {
 							if (html == 'true') {
 								$.jGrowl("Bienvenido al Sistema Lecto-Escritura", {
-									header: 'Access Granted'
+									header: 'Acceso Permitido'
 								});
 								var delay = 2000;
 								setTimeout(function() {
