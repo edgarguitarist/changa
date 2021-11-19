@@ -231,8 +231,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 													if($j=='1')
 													{?>
 													<div class="bhoechie-tab-content active">
-														<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><i class="icon-download icon-large"></i></a>
-														<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><i class="icon-remove icon-large"></i></a>
+														<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><em class="icon-download icon-large"></em></a>
+														<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><em class="icon-remove icon-large"></em></a>
 												 
 														<div style="width: 640px; height: 480px; position: relative;">
 														
@@ -242,16 +242,16 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 														</div>
 														<hr>
 																										
-																	<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																	<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																	<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																	<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 													
 													<?php
 													}
 													else
 													{?>
 													<div class="bhoechie-tab-content">
-													<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><i class="icon-download icon-large"></i></a>
-														<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><i class="icon-remove icon-large"></i></a>
+													<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><em class="icon-download icon-large"></em></a>
+														<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><em class="icon-remove icon-large"></em></a>
 												 
 														<div style="width: 640px; height: 480px; position: relative;">
 														
@@ -261,8 +261,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 														</div>
 														<hr>
 																										
-																	<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																	<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																	<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																	<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 													
 													<?php
 													}
@@ -273,8 +273,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 												
 													</div>
 													<div class="bhoechie-tab-content">
-													<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><i class="icon-download icon-large"></i></a>
-													<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><i class="icon-remove icon-large"></i></a>
+													<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><em class="icon-download icon-large"></em></a>
+													<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><em class="icon-remove icon-large"></em></a>
 															<div style="width: 640px; height: 480px; position: relative;">
 																<video width="640px" height="480px" controls>
 																	<source src="../admin/uploads/<?php echo $direccion_v2; ?>" type="video/mp4">
@@ -285,8 +285,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 															
 															<hr>
 																									
-																<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 													</div>
 											    <?php
 												}
@@ -305,8 +305,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 														<?php
 														}
 														?>
-														<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><i class="icon-download icon-large"></i></a>
-														<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><i class="icon-remove icon-large"></i></a>
+														<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><em class="icon-download icon-large"></em></a>
+														<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><em class="icon-remove icon-large"></em></a>
 												 
 														<div style="width: 640px; height: 480px; position: relative;">
 														
@@ -319,8 +319,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 																
 																	<hr>
 																										
-																	<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																	<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																	<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																	<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 																	
 														</div>
 													<?php 
@@ -338,8 +338,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 															<?php
 														}
 															?>
-															<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><i class="icon-download icon-large"></i></a>
-															<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><i class="icon-remove icon-large"></i></a>
+															<a  data-placement="bottom" title="Descargar" id="<?php echo $id2; ?>download" href="descarga.php?file=<?php echo $row2['floc']; ?> " class="btn btn-info"><em class="icon-download icon-large"></em></a>
+															<a  data-placement="bottom" title="Eliminar" id="<?php echo $id2; ?>remove" href="#<?php echo $id2; ?>" data-toggle="modal" class="btn btn-danger"><em class="icon-remove icon-large"></em></a>
 													 
 															<div style="width: 640px; height: 480px; position: relative;">
 															
@@ -350,8 +350,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 																	
 																		<hr>
 																											
-																		<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																		<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																		<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																		<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 																		
 															</div>
 													<?php
@@ -369,7 +369,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 							else
 							{ 
 								?>
-								<div class="alert alert-info"><i class="icon-info-sign"></i> No hay videos subidos.</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> No hay videos subidos.</div>
 								<?php 
 							} 	?>
 						 

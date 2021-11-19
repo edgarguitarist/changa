@@ -23,7 +23,7 @@
                                         </div>
 											<div class="control-group">
                                           <div class="controls">
-												<button name="search" class="btn btn-info"><i class="icon-search"></i> Buscar</button>
+												<button name="search" class="btn btn-info"><em class="icon-search"></em> Buscar</button>
 
                                           </div>
                                         </div>

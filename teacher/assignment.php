@@ -55,16 +55,16 @@
 												<td><?php echo $row['fdesc']; ?></td>
 												<td width="150">
 													<form method="post" action="view_submit_assignment.php<?php echo '?id=' . $get_id ?>&<?php echo 'post_id=' . $id ?>">
-														<button data-placement="bottom" title="Ver estudiante que envío practica" id="<?php echo $id; ?>view" class="btn btn-success"><i class="icon-folder-open-alt icon-large"></i></button>
+														<button data-placement="bottom" title="Ver estudiante que envío practica" id="<?php echo $id; ?>view" class="btn btn-success"><em class="icon-folder-open-alt icon-large"></em></button>
 													</form>
 													<?php
 													if ($floc == "") {
 													} else {
 													?>
-														<!--<a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download"  class="btn btn-info" href="<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a> -->
-														<a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" class="btn btn-info" href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>
+														<!--<a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download"  class="btn btn-info" href="<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a> -->
+														<a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" class="btn btn-info" href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>
 													<?php } ?>
-													<a data-placement="bottom" title="Eliminar" id="<?php echo $id; ?>remove" class="btn btn-danger" href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-remove icon-large"></i></a>
+													<a data-placement="bottom" title="Eliminar" id="<?php echo $id; ?>remove" class="btn btn-danger" href="#<?php echo $id; ?>" data-toggle="modal"><em class="icon-remove icon-large"></em></a>
 													<?php include('delete_assigment_modal.php'); ?>
 												</td>
 												<script type="text/javascript">

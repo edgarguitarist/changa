@@ -53,7 +53,7 @@
 								<form id="domainTable" action="read_teacher.php" method="post">
 									<?php if ($not_read == '0') {
 									} else {  ?>
-										<button id="delete" class="btn btn-info" name="read"><i class="icon-check"></i> Leer</button>
+										<button id="delete" class="btn btn-info" name="read"><em class="icon-check"></em> Leer</button>
 
 									<?php  }  ?>
 
@@ -96,7 +96,7 @@
 												</a>
 												<hr>
 												<div class="pull-right">
-													<i class="icon-calendar"></i>&nbsp;<?php echo $row['date_of_notification']; ?>
+													<em class="icon-calendar"></em>&nbsp;<?php echo $row['date_of_notification']; ?>
 												</div>
 											</div>
 											<script>
@@ -106,7 +106,7 @@
 										}
 									} else {
 										?>
-										<div class="alert alert-info"><strong><i class="icon-info-sign"></i> No tiene notificaciones</strong></div>
+										<div class="alert alert-info"><strong><em class="icon-info-sign"></em> No tiene notificaciones</strong></div>
 										<script>
 											ocultar_select();
 										</script>

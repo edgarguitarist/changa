@@ -16,11 +16,11 @@
                                 games_words gw	
                             ORDER BY gw.word") or die(mysqli_error($con));
                                 while ($row = mysqli_fetch_array($user_query)) {
-                                    $id = $row['game_word_id'];
+                                    $word_id = $row['game_word_id'];
                                     $word = $row['word'];
                                     if ($row['estado'] == 'no_existe') {
                                 ?>
-                                        <option value="<?php echo $id; ?>"><?php echo $word; ?></option>
+                                        <option value="<?php echo $word_id; ?>"><?php echo $word; ?></option>
                                 <?php
                                     }
                                 } ?>
@@ -33,7 +33,7 @@
 
                     <div class="control-group">
                         <div class="controls tcenter">
-                            <button name="saves" class="btn btn-info"><i class="icon-plus-sign icon-large"></i></button>
+                            <button name="saves" class="btn btn-info"><em class="icon-plus-sign icon-large"></em></button>
                         </div>
                     </div>
                 </form>
@@ -45,24 +45,41 @@
 
     <div class="center">
         <?php
-        $other = mysqli_query($con, "SELECT *
-        FROM
-            games_words gw
-        LEFT JOIN games_words_class gwc ON
-            gw.game_word_id = gwc.game_word_id
-        WHERE 
-            gwc.games_class_id = $get_class_id AND gw.game_id = $get_game_id
-        ORDER BY gw.word") or die(mysqli_error($con));
+        $other = mysqli_query($con, "SELECT
+        *, (SELECT word FROM games_words  WHERE gwc.game_word_id = game_word_id) AS word, (SELECT clue FROM games_words_clue WHERE gwc.games_words_class_id = games_words_class_id) AS clue
+    FROM
+        games_words_class gwc
+    WHERE gwc.games_class_id = $get_class_id AND gwc.game_id = $get_game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
+
+        $words = array();
+        $clues = array();
+
+        while ($row = mysqli_fetch_assoc($other)) {
+            $words[] = $row['word'];
+            if($row['clue'] != null){
+                $clues[] = $row['clue'];
+            }
+        }
+
+        $pistas = json_encode($clues);
+        $num_pistas = count($clues);
+        $pistas = base64_encode($pistas);
+        $palabras = json_encode($words);
+        $num_palabras = count($words);
+        $palabras = base64_encode($palabras);
 
         $num_rows = mysqli_num_rows($other);
-        if ($num_rows < 5) {
-            ?>
-            <span class="error_critic f-20"> El juego necesita al menos 5 palabras</span>
-            <?php
-        }else{
-            ?>
-            <a href="games_check.php?game=<?php echo $get_game_id ?>&class=<?php echo $get_class_id ?>" class="btn btn-info"><i class="icon-check"></i> Revisar Juego</a>
-            <?php
+        if ($num_rows < 5) { ?>
+            <span class="error_critic f-20"> El juego necesita al menos 5 palabras agregadas y activadas. </span>
+        <?php
+        } else if ($num_pistas != $num_palabras && $get_game_id == 2) { ?>
+
+            <span class="error_critic f-20"> Edite el juego y agregue las pistas a las palabras en uso.</span>
+
+        <?php } else {
+        ?>
+            <a href="games_check.php?id=<?php echo $get_class_id ?>&game=<?php echo $get_game_id ?>&words=<?php echo $palabras ?>&clues=<?php echo $pistas ?>" class="btn btn-success f-20 p-10"><em class="icon-check"></em> Revisar Juego</a>
+        <?php
         }
 
         ?>
@@ -74,7 +91,16 @@
             $class = $_POST['class'];
             $game = $_POST['game'];
             $game_word = $_POST['word'];
-            mysqli_query($con, "insert into games_words_class (games_class_id, game_id, game_word_id) values('$class', '$game', '$game_word')") or die(mysqli_error($con));
+
+            //hacer una consulta para preguntar si ya existe la palabra en la clase
+            $check_word = mysqli_query($con, "SELECT * FROM games_words_class WHERE games_class_id = $class AND game_word_id = $game_word AND game_id = $game") or die(mysqli_error($con));
+            $num_rows = mysqli_num_rows($check_word);
+            if ($num_rows > 0) {
+                echo "<script>window.location = 'games_edit.php?id=" . $class . "&game=" . $game . "</script>";
+            } else {
+
+                mysqli_query($con, "insert into games_words_class (games_class_id, game_id, game_word_id) values('$class', '$game', '$game_word')") or die(mysqli_error($con));
+            }
         ?>
     <script>
         var selectobject = document.getElementById("word");

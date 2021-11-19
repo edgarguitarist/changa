@@ -27,8 +27,8 @@
 
 					</div>
 	<div class="modal-footer">
-					<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
-					<button name="delete_user" class="btn btn-danger"><i class="icon-check icon-large"></i> Si</button>
+					<button class="btn" data-dismiss="modal" aria-hidden="true"><em class="icon-remove icon-large"></em> Cerrar</button>
+					<button name="delete_user" class="btn btn-danger"><em class="icon-check icon-large"></em> Si</button>
 	</div>
   </div>
 </div>

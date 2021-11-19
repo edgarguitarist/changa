@@ -1,5 +1,6 @@
 <?php
 $hostname = 'localhost';
+
 $username = 'u440807742_prueba';
 $password = '1q2w3e4r5t6Y';
 

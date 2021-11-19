@@ -10,8 +10,8 @@
                      <div class="row-fluid">
 						 <?php include('my_students_breadcrums.php'); ?>
 						 <div class="right">
-						 	<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-plus-sign"></i> Agregar Estudiante</a>
-							<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><i class="icon-list"></i> Lista Estudiantes</a>
+						 	<a href="add_student.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><em class="icon-plus-sign"></em> Agregar Estudiante</a>
+							<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><em class="icon-list"></em> Lista Estudiantes</a>
 						</div>
                         <!-- block -->
                         <div id="block_bg" class="block mincon">
@@ -59,7 +59,7 @@
 													</a>
 													<p class="class"><?php echo $row['lastname'];?></p>
 													<p class="subject"><?php echo $row['firstname']; ?></p>
-													<a  href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Eliminar</a>	
+													<a  href="#<?php echo $id; ?>" data-toggle="modal"><em class="icon-trash"></em> Eliminar</a>	
 											</li>
 											<?php include("remove_student_modal.php"); ?>
 											<?php } ?>

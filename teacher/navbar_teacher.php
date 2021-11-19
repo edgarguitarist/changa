@@ -13,15 +13,15 @@
 						?>
 						<li class="dropdown">
 							<a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown">
-								<i class="icon-user icon-large"></i><?php echo $row['firstname'] . " " . $row['lastname'];  ?> <i class="caret"></i></a>
+								<em class="icon-user icon-large"></em><?php echo $row['firstname'] . " " . $row['lastname'];  ?> <em class="caret"></em></a>
 							<ul class="dropdown-menu">
 								<li>
-									<a href="change_password_teacher.php"><i class="icon-circle"></i> Cambiar Contraseña</a>
-									<a href="#myModal" data-toggle="modal"><i class="icon-picture"></i> Cambiar imagen de perfil</a>
-									<a href="profile_teacher.php"><i class="icon-user"></i> Perfil</a>
+									<a href="change_password_teacher.php"><em class="icon-circle"></em> Cambiar Contraseña</a>
+									<a href="#myModal" data-toggle="modal"><em class="icon-picture"></em> Cambiar imagen de perfil</a>
+									<a href="profile_teacher.php"><em class="icon-user"></em> Perfil</a>
 								</li>
 								<li class="divider"></li>
-								<li><a href="logout.php"><i class="icon-signout"></i>&nbsp;Cerrar Sesión</a></li>
+								<li><a href="logout.php"><em class="icon-signout"></em>&nbsp;Cerrar Sesión</a></li>
 							</ul>
 						</li>
 					</ul>

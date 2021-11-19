@@ -20,7 +20,7 @@
 							<div class="span12">
 								<form action="delete_aviso.php" method="post">
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-									<a data-toggle="modal" href="#aviso_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+									<a data-toggle="modal" href="#aviso_delete" id="delete"  class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 									<?php include('modal_delete.php'); ?>
 										<thead>
 										  <tr>
@@ -47,16 +47,16 @@
 												<td width="60%"> <?php echo $nombre_aviso; ?></td>
 												<td width="60%"> <?php echo $tiempo; ?></td>
 												<!--<td width="5%" style="padding-right: 1px;">
-												<a href="edit_year.php<?php echo '?id='.$id; ?>"  data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
+												<a href="edit_year.php<?php echo '?id='.$id; ?>"  data-toggle="modal" class="btn btn-success"><em class="icon-pencil icon-large"></em></a>
 												</td>
 												<td width="5%" style="padding-left: 1px;padding-right:1px;">
-												<a href="edit_year.php<?php echo '?id='.$id; ?>"  data-toggle="modal" class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
+												<a href="edit_year.php<?php echo '?id='.$id; ?>"  data-toggle="modal" class="btn btn-danger"><em class="icon-trash icon-large"></em></a>
 												</td>-->
 		
 												<?php if ($status == "Activo" ){ ?>
-												<td width="5%" style="padding-left: 1px;"><a href="aviso_desactivate.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
+												<td width="5%" style="padding-left: 1px;"><a href="aviso_desactivate.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
 												<?php }else{ ?>
-												<td width="5%" style="padding-left: 1px;"><a href="aviso_activate.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>				
+												<td width="5%" style="padding-left: 1px;"><a href="aviso_activate.php<?php echo '?id='.$id; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>				
 												<?php } ?>
 												</tr>
 												<?php } ?>

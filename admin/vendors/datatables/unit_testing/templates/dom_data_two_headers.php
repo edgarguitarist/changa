@@ -29,7 +29,7 @@
 	<body id="dt_example">
 		<div id="container">
 			<div class="full_width big">
-				<i>DataTables</i> unit test template for reading DOM data - with two rows in header
+				<em>DataTables</em> unit test template for reading DOM data - with two rows in header
 			</div>
 			
 			<div id="demo">

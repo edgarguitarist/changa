@@ -41,7 +41,7 @@
 									</div>
 									<form action="delete_backpack_teacher.php" method="post">
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
-									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 									<?php include('modal_backpack_delete.php'); ?>
 										<thead>
 										        <tr>
@@ -65,14 +65,14 @@
 										 <td><?php echo $row['fdatein']; ?></td>
                                          <td><?php  echo $row['fname']; ?></td>
                                          <td><?php echo $row['fdesc']; ?></td>                                      
-                                         <td width="30"><a href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a></td>                                      
+                                         <td width="30"><a href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a></td>                                      
 										</tr>
 									<?php } ?>
 										</tbody>
 									</table>
 									</form>
 									<?php }else{ ?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i> No hay archivos en tu portafolio</div>
+									<div class="alert alert-info"><em class="icon-info-sign"></em> No hay archivos en tu portafolio</div>
 									<?php } ?>
                                 </div>
                             </div>

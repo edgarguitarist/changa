@@ -77,10 +77,10 @@
 											if ($floc == ""){
 											}else{
 										 ?>
-										  <!--<a data-placement="bottom" title="Descagar" id="<?php echo $id; ?>download"  class="btn btn-info" href="<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>-->
-										  <a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" class="btn btn-info" href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>
+										  <!--<a data-placement="bottom" title="Descagar" id="<?php echo $id; ?>download"  class="btn btn-info" href="<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>-->
+										  <a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" class="btn btn-info" href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>
 										 <?php } ?>
-										 <button  data-placement="bottom" title="Enviar practica" id="<?php echo $id; ?>submit" class="btn btn-success" name="btn_assign"><i class="icon-upload icon-large"></i> Enviar Practica</button>
+										 <button  data-placement="bottom" title="Enviar practica" id="<?php echo $id; ?>submit" class="btn btn-success" name="btn_assign"><em class="icon-upload icon-large"></em> Enviar Practica</button>
 										 </form>
 										 </td>                                      
 														<script type="text/javascript">

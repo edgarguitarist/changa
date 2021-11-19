@@ -1,3 +1,16 @@
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+user agent stylesheet html {
+  color: -internal-root-color;
+}
+
 #hide {
   display: none;
 }
@@ -15,16 +28,12 @@
 }
 
 .error_critic {
-    color: red !important;
-    font-weight: bold !important;
-  }
+  color: red !important;
+  font-weight: bold !important;
+}
 
 body {
-  background: -moz-linear-gradient(center top, #ffffff, #d3d8e8) repeat fixed 0
-    0 rgba(0, 0, 0, 0);
-    zoom: 80% !important;
-}
-body {
+  zoom: 80% !important;
   background: -moz-linear-gradient(center top, #ffffff, #d3d8e8) repeat fixed 0
     0 rgba(0, 0, 0, 0);
   -webkit-background-size: cover !important;
@@ -188,7 +197,7 @@ th {
   display: none;
 }
 #delete {
-  margin-bottom:  20px !important;
+  margin-bottom: 20px !important;
 }
 #adduser {
   margin-left: 0;
@@ -475,20 +484,6 @@ body {
   font-family: "ProximaNova-Light", Helvetica, Arial, sans-serif !important;
 }
 
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-user agent stylesheet html {
-  color: -internal-root-color;
-}
-
 v.bhoechie-tab-menu div.list-group > a.active:after {
   content: "";
   position: absolute;
@@ -571,26 +566,6 @@ body {
   line-height: 20px;
   color: #333;
   background-color: #fff;
-}
-html {
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
-
-html {
-  font-size: 62.5%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-}
-
-html {
-  font-family: sans-serif;
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%;
-}
-
-user agent stylesheet html {
-  color: -internal-root-color;
 }
 
 div.bhoechie-tab-menu div.list-group > a.active:after {
@@ -737,97 +712,94 @@ user agent stylesheet div {
   display: block;
 }
 
-
-
-.f-14{
+.f-14 {
   font-size: 14px !important;
 }
-.f-16{
+.f-16 {
   font-size: 16px !important;
 }
-.f-18{
+.f-18 {
   font-size: 18px !important;
 }
-.f-20{
+.f-20 {
   font-size: 20px !important;
 }
-.f-22{
+.f-22 {
   font-size: 22px !important;
 }
-.f-24{
+.f-24 {
   font-size: 24px !important;
 }
-.f-26{
+.f-26 {
   font-size: 26px !important;
 }
-.f-28{
+.f-28 {
   font-size: 28px !important;
 }
-.f-30{
+.f-30 {
   font-size: 30px !important;
 }
 
-.m-10{
+.m-10 {
   margin: 10px;
 }
-.m-15{
+.m-15 {
   margin: 15px;
 }
-.m-20{
+.m-20 {
   margin: 20px;
 }
 
-.mv-10{
+.mv-10 {
   margin: 10px 0px;
 }
-.mv-15{
+.mv-15 {
   margin: 15px 0px;
 }
-.mv-20{
+.mv-20 {
   margin: 20px 0px;
 }
 
-.mh-10{
+.mh-10 {
   margin: 0px 10px;
 }
-.mh-15{
+.mh-15 {
   margin: 0px 15px;
 }
-.mh-20{
+.mh-20 {
   margin: 0px 20px;
 }
 
-
-.p-10{
+.p-10 {
   padding: 10px;
 }
-.p-15{
+.p-15 {
   padding: 15px;
 }
-.p-20{
+.p-20 {
   padding: 20px;
 }
 
-.pv-10{
+.pv-10 {
   padding: 10px 0px;
 }
-.pv-15{
+.pv-15 {
   padding: 15px 0px;
 }
-.pv-20{
+.pv-20 {
   padding: 20px 0px;
 }
 
-.ph-10{
+.ph-10 {
   padding: 0px 10px;
 }
-.ph-15{
+.ph-15 {
   padding: 0px 15px;
 }
-.ph-20{
+.ph-20 {
   padding: 0px 20px;
 }
 
-.right{
+.right {
   text-align: right;
 }

@@ -50,14 +50,14 @@
 									$query = mysqli_query($con,"SELECT * FROM files where class_id = '$get_id' order by fdatein DESC ")or die(mysqli_error($con));
 									$count = mysqli_num_rows($query);	
 								if ($count == '0'){ ?>
-								<div class="alert alert-info"><i class="icon-info-sign"></i> No hay material descargable aún</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> No hay material descargable aún</div>
 								<?php
 								}else{
 								?>
 								
 									<form action="copy_file_student.php" method="post">
 								
-									<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-info" name=""><i class="icon-copy"></i> Copiar lo seleccionado al portafolio</a>
+									<a data-toggle="modal" href="#user_delete" id="delete"  class="btn btn-info" name=""><em class="icon-copy"></em> Copiar lo seleccionado al portafolio</a>
 									
 									<?php include('copy_to_backpack_modal.php'); ?>
   									
@@ -92,8 +92,8 @@
                                          <td><?php echo $row['fdesc']; ?></td>                                      
                                          <td><?php echo $row['uploaded_by']; ?></td>                                      
                                          <td width="30">
-										 <!--<a  data-placement="bottom" title="Descargar" id="<?php echo $id; ?>Descargar" href="<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>-->
-										 <a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>Descargar"  href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>
+										 <!--<a  data-placement="bottom" title="Descargar" id="<?php echo $id; ?>Descargar" href="<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>-->
+										 <a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>Descargar"  href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>
 										 </td>            
 														<script type="text/javascript">
 														$(document).ready(function(){

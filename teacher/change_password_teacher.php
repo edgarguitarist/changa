@@ -29,7 +29,7 @@
 						<div class="block-content collapse in">
 							<div class="span3"></div>
 							<div class="span6">
-								<div class="alert alert-info"><i class="icon-info-sign"></i> Porfavor rellene los campos indicados:</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> Porfavor rellene los campos indicados:</div>
 								<?php
 								$query = mysqli_query($con, "SELECT * from teacher where teacher_id = '$session_id'") or die(mysqli_error($con));
 								$row = mysqli_fetch_array($query);
@@ -57,7 +57,7 @@
 									</div>
 									<div class="control-group">
 										<div class="controls">
-											<button type="submit" class="btn btn-success"><i class="icon-save"></i> Guardar</button>
+											<button type="submit" class="btn btn-success"><em class="icon-save"></em> Guardar</button>
 										</div>
 									</div>
 								</form>

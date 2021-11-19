@@ -46,14 +46,14 @@
 											<hr>
 											
 										
-											<strong><i class="icon-calendar"></i> <?php echo $row['date']; ?></strong>
+											<strong><em class="icon-calendar"></em> <?php echo $row['date']; ?></strong>
 											
 										
 											
 											</div>
 											
 								<?php }}else{ ?>
-								<div class="alert alert-info"><i class="icon-info-sign"></i> No hay avisos importantes.</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> No hay avisos importantes.</div>
 								<?php } ?>
                                 </div>
 								

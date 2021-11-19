@@ -47,7 +47,7 @@
 										Docente: <strong><?php echo $row['firstname']; ?> <?php echo $row['lastname']; ?></strong>
 															<br>
 															<img id="avatar" class="img-polaroid" src="../admin/<?php echo $row['location']; ?>" width>
-															<p><a href=""><i class="icon-search"></i> Más Información</a></p>
+															<p><a href=""><em class="icon-search"></em> Más Información</a></p>
 															<hr>
 										<?php $query = mysqli_query($con,"SELECT * from teacher_class
 											LEFT JOIN class_subject_overview ON class_subject_overview.teacher_class_id = teacher_class.teacher_class_id

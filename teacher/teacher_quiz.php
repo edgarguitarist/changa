@@ -30,10 +30,10 @@
 						<div class="block-content collapse in">
 							<div class="span12">
 								<div class="pull-right">
-									<a href="add_quiz.php" class="btn btn-info"><i class="icon-plus-sign"></i> Crear un Nuevo Examen</a>
-									<td width="30"><a href="add_quiz_to_class.php" class="btn btn-success"><i class="icon-plus-sign"></i> Agregar Examen a Clase</a></td>
+									<a href="add_quiz.php" class="btn btn-info"><em class="icon-plus-sign"></em> Crear un Nuevo Examen</a>
+									<td width="30"><a href="add_quiz_to_class.php" class="btn btn-success"><em class="icon-plus-sign"></em> Agregar Examen a Clase</a></td>
 								</div>
-								<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i> Eliminar Examen</a>
+								<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em> Eliminar Examen</a>
 <br>
 								<form action="delete_quiz.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
@@ -63,7 +63,7 @@
 													<td><?php echo $row['quiz_description']; ?></td>
 													<td><?php echo $row['date_added']; ?></td>
 													<td><a href="quiz_question.php<?php echo '?id=' . $id; ?>">Preguntas</a></td>
-													<td><a href="edit_quiz.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i></a></td>
+													<td><a href="edit_quiz.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil"></em></a></td>
 												</tr>
 											<?php } ?>
 										</tbody>

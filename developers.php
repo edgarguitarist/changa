@@ -8,7 +8,7 @@
                         <!-- block -->
                         <div class="block mincon">
 								<div class="navbar navbar-inner block-header">
-									<div id="" class="muted pull-right"><a href="index.php"><i class="icon-arrow-left"></i> Volver</a></div>
+									<div id="" class="muted pull-right"><a href="index.php"><em class="icon-arrow-left"></em> Volver</a></div>
 								</div>
                             <div class="block-content collapse in">
 							<h3>Desarrolladores</h3>

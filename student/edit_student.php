@@ -21,7 +21,7 @@
 							<div class="span12">
 								<form action="delete_student.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#student_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+										<a data-toggle="modal" href="#student_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 										<?php include('modal_delete.php'); ?>
 										<thead>
 											<tr>
@@ -54,7 +54,7 @@
 													<td><?php echo $row['paralelo_name']; ?></td>
 													<td width="100"><?php echo $row['class_name']; ?></td>
 
-													<td width="30"><a href="edit_student.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
+													<td width="30"><a href="edit_student.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil"></em> </a></td>
 
 												</tr>
 											<?php } ?>

@@ -127,7 +127,7 @@ normal'><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:
            <p class=msoNormal style='margin-bottom:0in; margin-left:-110px; margin-top:-30px; margin-bottom:.0001pt;line-height:
            normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
            "Times New Roman","serif"'>
-		   <a href="#" onClick="window.print()" class="btn btn-info" id="print" data-placement="top" title="Click para imprimir"><i class="icon-print icon-large"></i> Imprimir</a></p>		      
+		   <a href="#" onClick="window.print()" class="btn btn-info" id="print" data-placement="top" title="Click para imprimir"><em class="icon-print icon-large"></em> Imprimir</a></p>		      
 		   <script type="text/javascript">
 		     $(document).ready(function(){
 		     $('#print').tooltip('show');
@@ -137,7 +137,7 @@ normal'><span style='font-size:10.0pt;mso-bidi-font-size:11.0pt;font-family:
             <p class=msoNormal style='margin-bottom:0in; margin-top:-30px; margin-bottom:.0001pt;line-height:
             normal'><span style='font-size:12.0pt;mso-bidi-font-size:11.0pt;font-family:
            "Times New Roman","serif"'>
-			<a id="return" data-placement="top" class="btn btn-success" title="Click para volver" href="class_quiz.php?id=<?php echo $id_class; ?>"><i class="icon-arrow-left"></i> Volver</a></p>		
+			<a id="return" data-placement="top" class="btn btn-success" title="Click para volver" href="class_quiz.php?id=<?php echo $id_class; ?>"><em class="icon-arrow-left"></em> Volver</a></p>		
 			<script type="text/javascript">
 			$(document).ready(function(){
 			$('#return').tooltip('show');

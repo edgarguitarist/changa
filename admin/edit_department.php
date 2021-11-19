@@ -21,7 +21,7 @@
 							<div class="span12">
 								<form action="delete_department.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#department_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+										<a data-toggle="modal" href="#department_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 										<?php include('modal_delete.php'); ?>
 										<thead>
 											<tr>
@@ -45,7 +45,7 @@
 													<td><?php echo $row['department_name']; ?></td>
 													<td><?php echo $row['dean']; ?></td>
 
-													<td width="30"><a href="edit_department.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil icon-large"></i></a></td>
+													<td width="30"><a href="edit_department.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil icon-large"></em></a></td>
 
 
 												</tr>

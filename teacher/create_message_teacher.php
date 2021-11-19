@@ -4,7 +4,7 @@
 				      <!-- block -->
                         <div class="block mincon" style=" min-height:min-content;">
                             <div class="navbar navbar-inner block-header">
-                                <div id="" class="muted pull-left"><h4><i class="icon-pencil"></i> Crear Mensaje</h4></div>
+                                <div id="" class="muted pull-left"><h4><em class="icon-pencil"></em> Crear Mensaje</h4></div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
@@ -43,7 +43,7 @@
                                         </div>
 										<div class="control-group">
                                           <div class="controls"  style="text-align: center;">
-												<button  class="btn btn-info"><i class="icon-envelope-alt"></i> Enviar </button>
+												<button  class="btn btn-info"><em class="icon-envelope-alt"></em> Enviar </button>
 
                                           </div>
                                         </div>

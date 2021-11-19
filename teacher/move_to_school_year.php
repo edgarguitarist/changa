@@ -30,7 +30,7 @@
 										
 											<div class="control-group">
                                           <div class="controls">
-										  	<button name="delete_user" class="btn btn-danger"><i class="icon-copy"></i> Copiar</button>
+										  	<button name="delete_user" class="btn btn-danger"><em class="icon-copy"></em> Copiar</button>
                                           </div>
                                         </div>
 										</center>
@@ -40,7 +40,7 @@
 											<label>------------O----------</label>
                                    		<div class="control-group">
                                           <div class="controls">
-										  	<button name="copy" class="btn btn-info"><i class="icon-copy"></i> Copiar a portafolio</button>
+										  	<button name="copy" class="btn btn-info"><em class="icon-copy"></em> Copiar a portafolio</button>
                                           </div>
                                         </div>
                                         </div>
@@ -74,7 +74,7 @@
                                           </div>
                                         </div>
 										
-										  	<button name="share" class="btn btn-success"><i class="icon-copy"></i> Compartir</button>
+										  	<button name="share" class="btn btn-success"><em class="icon-copy"></em> Compartir</button>
                                           </div>
                                         </div>
                                         </div>
@@ -85,7 +85,7 @@
 		
     </div>
 	<div class="modal-footer">
-		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><em class="icon-remove icon-large"></em> Cerrar</button>
 
 		
 	</div>

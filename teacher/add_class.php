@@ -2,7 +2,7 @@
 						<div class="block mincon" style=" min-height:min-content;">
 							<div class="navbar navbar-inner block-header">
 								<div id="" class="muted pull-left">
-									<h4><i class="icon-plus-sign"></i> Agregar Curso</h4>
+									<h4><em class="icon-plus-sign"></em> Agregar Curso</h4>
 								</div>
 							</div>
 							<div class="block-content collapse in">
@@ -73,7 +73,7 @@
 										</div>
 										<div class="control-group">
 											<div class="controls" style="text-align: center;">
-												<button name="save" class="btn btn-success"><i class="icon-save"></i> Guardar</button>
+												<button name="save" class="btn btn-success"><em class="icon-save"></em> Guardar</button>
 											</div>
 										</div>
 									</form>

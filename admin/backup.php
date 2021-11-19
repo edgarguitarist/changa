@@ -21,7 +21,7 @@
 <br>
 								<a class="btn btn-success f-20 p-10" href="backup_script.php" id="sss">
 									<!-- <img src="images/backup.png" alt="backup" /> -->
-									<i class="fas fa-database"></i>	Click aqui para Respaldar la Base de Datos.
+									<em class="fas fa-database"></em>	Click aqui para Respaldar la Base de Datos.
 								</a>
 								<br>
 								<br>
@@ -52,7 +52,7 @@
 
 											echo "<tr id='eee'>";
 											echo '<td>' . $filenameboth . ".sql" . '</td>';
-											echo "<td style='padding-left: 20px;'>" . "<a href='DB_backup/" . $filenameboth . ".sql' class='view'><i class='fas fa-download'></i> Descargar SQL</a>" . "</td>";
+											echo "<td style='padding-left: 20px;'>" . "<a href='DB_backup/" . $filenameboth . ".sql' class='view'><em class='fas fa-download'></em> Descargar SQL</a>" . "</td>";
 											echo "</tr>";
 										}
 									}

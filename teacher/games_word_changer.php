@@ -1,6 +1,6 @@
 <?php
 include('../admin/dbcon.php');
-$get_game_id = $_GET['id'];
+$get_game_id = $_GET['game'];
 $get_class = $_GET['class'];
 $get_status = $_GET['status'];
 $get_word = $_GET['word'];

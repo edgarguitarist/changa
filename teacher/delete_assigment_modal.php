@@ -18,10 +18,10 @@
     </div>
 	<div class="modal-footer">
 		<form method="post" action="delete_assignment.php">
-		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><em class="icon-remove icon-large"></em> Cerrar</button>
 		<input type="hidden" name="id" value="<?php echo $id; ?>">
 		<input type="hidden" name="get_id" value="<?php echo $get_id; ?>">
-		<button class="btn btn-danger" name="change"><i class="icon-check icon-large"></i> Si</button>
+		<button class="btn btn-danger" name="change"><em class="icon-check icon-large"></em> Si</button>
 		</form>
 	</div>
   </div>

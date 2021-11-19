@@ -23,13 +23,13 @@
 							<p class="class"><?php echo $row['class_name'] . ' - ' . $row['paralelo_name']; ?></p>
 							<p class="subject"><?php echo $row['subject_title']; ?></p>
 							<div>
-								<a class="center" href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-trash"></i> Eliminar</a>
+								<a class="center" href="#<?php echo $id; ?>" data-toggle="modal"><em class="icon-trash"></em> Eliminar</a>
 							</div>
 
 						</li>
 						<?php include("delete_class_modal.php"); ?>
 					<?php }
 				} else { ?>
-					<div class="alert alert-info"><i class="icon-info-sign"></i>No tiene Curso agregado aún</div>
+					<div class="alert alert-info"><em class="icon-info-sign"></em>No tiene Curso agregado aún</div>
 				<?php  } ?>
 			</ul>

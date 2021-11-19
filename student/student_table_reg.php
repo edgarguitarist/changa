@@ -1,7 +1,7 @@
 	<?php include('../admin/dbcon.php'); ?>
 	<form action="delete_student.php" method="post">
 	<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-	<a data-toggle="modal" href="#student_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+	<a data-toggle="modal" href="#student_delete" id="delete"  class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 	<div class="pull-right">
 			    <ul class="nav nav-pills">
 				<li class="">
@@ -50,11 +50,11 @@
 	
 		<td width="100"><?php echo $row['class_name']; ?></td> 
 	
-		<td width="30"><a href="edit_student.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
+		<td width="30"><a href="edit_student.php<?php echo '?id='.$id; ?>" class="btn btn-success"><em class="icon-pencil"></em> </a></td>
 		<?php if ($est_status == "Registered" ){ ?>
-		<td width="120"><a href="es_desactivate.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
+		<td width="120"><a href="es_desactivate.php<?php echo '?id='.$id; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
 		<?php }else{ ?>
-		<td width="120"><a href="es_activate.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>				
+		<td width="120"><a href="es_activate.php<?php echo '?id='.$id; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>				
 		<?php } ?>
 		</tr>
 	<?php } ?>    

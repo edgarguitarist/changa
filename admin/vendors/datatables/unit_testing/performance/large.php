@@ -51,7 +51,7 @@
 	<body id="dt_example">
 		<div id="container">
 			<div class="full_width big">
-				<i>DataTables</i> performance test - draw
+				<em>DataTables</em> performance test - draw
 			</div>
 			<div id="output"></div>
 

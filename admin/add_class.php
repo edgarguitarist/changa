@@ -16,7 +16,7 @@
 
              <div class="control-group">
                <div class="controls tcenter">
-                 <button name="save" class="btn btn-info"><i class="icon-plus-sign icon-large"></i></button>
+                 <button name="save" class="btn btn-info"><em class="icon-plus-sign icon-large"></em></button>
 
                </div>
              </div>

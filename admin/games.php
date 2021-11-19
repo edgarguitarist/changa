@@ -49,9 +49,9 @@
 														echo $estado; ?>
 													</td>
 													<?php if ($status == "Activated") { ?>
-														<td width="120"><a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
+														<td width="120"><a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
 													<?php } else { ?>
-														<td width="120"><a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>
+														<td width="120"><a href="games_changer.php<?php echo '?id=' . $id . '&status=' . $status; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>
 													<?php } ?>
 												</tr>
 											<?php } ?>

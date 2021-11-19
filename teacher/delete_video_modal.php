@@ -19,8 +19,8 @@
 		
     </div>
 	<div class="modal-footer">
-		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
-		<button   id="<?php echo $id2; ?>" class="btn btn-danger remove" data-dismiss="modal" aria-hidden="true"><i class="icon-check icon-large"></i> Si</button>	
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><em class="icon-remove icon-large"></em> Cerrar</button>
+		<button   id="<?php echo $id2; ?>" class="btn btn-danger remove" data-dismiss="modal" aria-hidden="true"><em class="icon-check icon-large"></em> Si</button>	
 	</div>
   </div>
 </div>

@@ -48,13 +48,13 @@
 								$query = mysqli_query($con, "SELECT * FROM files where class_id = '$get_id'  order by fdatein DESC ") or die(mysqli_error($con));
 								$count = mysqli_fetch_array($query);
 								if ($count == '0') { ?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i> Actualmente no has subido ningun material descargable</div>
+									<div class="alert alert-info"><em class="icon-info-sign"></em> Actualmente no has subido ningun material descargable</div>
 
 								<?php	} else {
 								?>
 									<form action="copy_file.php" method="post">
 
-										<a data-toggle="modal" href="#user_delete" id="delete" class="btn btn-info" name=""><i class="icon-file"></i> Copiar el archivo seleccionado</a>
+										<a data-toggle="modal" href="#user_delete" id="delete" class="btn btn-info" name=""><em class="icon-file"></em> Copiar el archivo seleccionado</a>
 										<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
 											<?php include('move_to_school_year.php'); ?>
 											<thead>
@@ -82,9 +82,9 @@
 														<td><?php echo $row['fdesc']; ?></td>
 														<td><?php echo $row['uploaded_by']; ?></td>
 														<td width="40">
-															<!-- <a  data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" href="<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>-->
-															<a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a>
-															<a data-placement="bottom" title="Eliminar" id="<?php echo $id; ?>remove" href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-remove icon-large"></i></a>
+															<!-- <a  data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" href="<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>-->
+															<a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>
+															<a data-placement="bottom" title="Eliminar" id="<?php echo $id; ?>remove" href="#<?php echo $id; ?>" data-toggle="modal"><em class="icon-remove icon-large"></em></a>
 															<?php include('delete_download_modal.php'); ?>
 														</td>
 														<td width="30">

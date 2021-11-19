@@ -7,7 +7,7 @@
 				<?php include('sidebar.php'); ?>
                 <div class="span9" id="content">
                      <div class="row-fluid">
-					 <a href="add_content.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i> Agregar Contenido</a>
+					 <a href="add_content.php" class="btn btn-info"><em class="icon-plus-sign icon-large"></em> Agregar Contenido</a>
                         <!-- block -->
                         <div id="block_bg" class="block mincon">
                             <div class="navbar navbar-inner block-header">
@@ -17,7 +17,7 @@
                                 <div class="span12">
 									<form action="delete_content.php" method="post">
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-									<a data-toggle="modal" href="#content_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+									<a data-toggle="modal" href="#content_delete" id="delete"  class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 									<?php include('modal_delete.php'); ?>									
 									<thead>
 										        <tr>
@@ -42,7 +42,7 @@
 										<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 										</td>
                                          <td><?php echo $row['title']; ?></td>
-                                         <td width="30"><a href="edit_content.php<?php echo '?id='.$id; ?>" class="btn btn-success"><i class="icon-pencil icon-large"></i></a></td>
+                                         <td width="30"><a href="edit_content.php<?php echo '?id='.$id; ?>" class="btn btn-success"><em class="icon-pencil icon-large"></em></a></td>
                                      
                                
                                 </tr>

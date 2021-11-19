@@ -1,6 +1,10 @@
 {
     "cSpell.words": [
-        "dbcon"
+        "adduser",
+        "anio",
+        "dbcon",
+        "selectobject",
+        "wordsearch"
     ],
     "workbench.colorCustomizations": {
         "activityBar.activeBackground": "#ab307e",
@@ -17,10 +21,7 @@
         "titleBar.activeForeground": "#e7e7e7",
         "titleBar.inactiveBackground": "#83256199",
         "titleBar.inactiveForeground": "#e7e7e799",
-        "editorGroup.border": "#ab307e",
-        "panel.border": "#ab307e",
         "sash.hoverBorder": "#ab307e",
-        "sideBar.border": "#ab307e",
         "statusBarItem.remoteBackground": "#832561",
         "statusBarItem.remoteForeground": "#e7e7e7"
     },

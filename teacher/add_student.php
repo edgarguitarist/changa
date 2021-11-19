@@ -26,7 +26,7 @@
 						
 						 </div><!-- end breadcrumb -->
 						 <div class="right">
-							<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
+							<a href="my_students.php<?php echo '?id='.$get_id; ?>" class="btn btn-info"><em class="icon-arrow-left"></em> Atrás</a>
 						</div>
                         <!-- block -->
                         <div id="block_bg" class="block mincon">
@@ -38,8 +38,8 @@
 									<form method="post" action="">
 
 							
-										<button name="submit" type="submit" class="btn btn-success"><i class="icon-save"></i>&nbsp;Agregar Estudiante</button>
-										<!--<a data-toggle="modal" href="#class_agregar" id="agregar"  class="btn btn-info" name=""><i class="icon-save icon-large"></i>&nbsp;Agregar Estudiante</a>-->
+										<button name="submit" type="submit" class="btn btn-success"><em class="icon-save"></em>&nbsp;Agregar Estudiante</button>
+										<!--<a data-toggle="modal" href="#class_agregar" id="agregar"  class="btn btn-info" name=""><em class="icon-save icon-large"></em>&nbsp;Agregar Estudiante</a>-->
 									
 												<br>
 												<br>

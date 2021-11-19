@@ -16,8 +16,8 @@
 
                     <div id="" class="block mincon">
                         <div class="navbar navbar-inner block-header">
-                            <div class="muted pull-left"><i class="icon-dashboard">&nbsp;</i>Inicio </div>
-                            <div class="muted pull-right"><i class="icon-time"></i>&nbsp;</div>
+                            <div class="muted pull-left"><em class="icon-dashboard">&nbsp;</em>Inicio </div>
+                            <div class="muted pull-right"><em class="icon-time"></em>&nbsp;</div>
                         </div>
                         <div class="block-content collapse in">
                             <div class="span12">
@@ -35,7 +35,7 @@
                                                         <div class="container-fluid">
                                                             <div class="row-fluid">
                                                                 <div class="span3"><br />
-                                                                    <i class="fa fa-user fa-5x"></i><br />
+                                                                    <em class="fa fa-user fa-5x"></em><br />
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student; ?></div>
@@ -47,7 +47,7 @@
                                                     <a href="teachers.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Agregar docente</span>
-                                                            <span class="pull-right"><i class="icon-chevron-right"></i></span>
+                                                            <span class="pull-right"><em class="icon-chevron-right"></em></span>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>
@@ -63,7 +63,7 @@
                                                         <div class="container-fluid">
                                                             <div class="row-fluid">
                                                                 <div class="span3"><br />
-                                                                    <i class="fa fa-users  fa-5x" aria-hidden="true"></i><br />
+                                                                    <em class="fa fa-users  fa-5x" aria-hidden="true"></em><br />
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student; ?></div>
@@ -75,7 +75,7 @@
                                                     <a href="students.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Agregar estudiantes</span>
-                                                            <span class="pull-right"><i class="icon-chevron-right"></i></span>
+                                                            <span class="pull-right"><em class="icon-chevron-right"></em></span>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>
@@ -95,7 +95,7 @@
                                                         <div class="container-fluid">
                                                             <div class="row-fluid">
                                                                 <div class="span3"><br />
-                                                                    <i class="fa fa-sitemap  fa-5x" aria-hidden="true"></i>
+                                                                    <em class="fa fa-sitemap  fa-5x" aria-hidden="true"></em>
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student; ?></div>
@@ -107,7 +107,7 @@
                                                     <a href="class.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Agregar Curso</span>
-                                                            <span class="pull-right"><i class="icon-chevron-right"></i></span>
+                                                            <span class="pull-right"><em class="icon-chevron-right"></em></span>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>
@@ -123,7 +123,7 @@
                                                         <div class="container-fluid">
                                                             <div class="row-fluid">
                                                                 <div class="span3"><br />
-                                                                    <i class="fa fa-book  fa-5x"></i><br />
+                                                                    <em class="fa fa-book  fa-5x"></em><br />
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student1; ?></div>
@@ -135,7 +135,7 @@
                                                     <a href="subjects.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Agregar Materia</span>
-                                                            <span class="pull-right"><i class="icon-chevron-right"></i></span>
+                                                            <span class="pull-right"><em class="icon-chevron-right"></em></span>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>
@@ -155,7 +155,7 @@
                                                         <div class="container-fluid">
                                                             <div class="row-fluid">
                                                                 <div class="span3"><br />
-                                                                    <i class="fa fa-graduation-cap  fa-5x" aria-hidden="true"></i>
+                                                                    <em class="fa fa-graduation-cap  fa-5x" aria-hidden="true"></em>
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student; ?></div>
@@ -167,7 +167,7 @@
                                                     <a href="paralelo.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Agregar programa de estudios</span>
-                                                            <span class="pull-right"><i class="icon-chevron-right"></i></span>
+                                                            <span class="pull-right"><em class="icon-chevron-right"></em></span>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>
@@ -183,7 +183,7 @@
                                                         <div class="container-fluid">
                                                             <div class="row-fluid">
                                                                 <div class="span3"><br />
-                                                                    <i class="far fa-file-pdf fa-5x"></i><br />
+                                                                    <em class="far fa-file-pdf fa-5x"></em><br />
                                                                 </div>
                                                                 <div class="span8 text-right"><br />
                                                                     <div class="huge"><?php echo $student1; ?></div>
@@ -195,7 +195,7 @@
                                                     <a href="downloadable.php">
                                                         <div class="modal-footer">
                                                             <span class="pull-left">Prácticas</span>
-                                                            <span class="pull-right"><i class="icon-chevron-right"></i></span>
+                                                            <span class="pull-right"><em class="icon-chevron-right"></em></span>
                                                             <div class="clearfix"></div>
                                                         </div>
                                                     </a>

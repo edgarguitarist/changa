@@ -12,12 +12,12 @@
 								$row = mysqli_fetch_array($query);
 						?>
                             <li class="dropdown">
-                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <i class="icon-user icon-large"></i><?php echo $row['firstname']." ".$row['lastname'];  ?> <i class="caret"></i>
+                                <a href="#" role="button" class="dropdown-toggle" data-toggle="dropdown"> <em class="icon-user icon-large"></em><?php echo $row['firstname']." ".$row['lastname'];  ?> <em class="caret"></em>
 
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li>
-                                        <a tabindex="-1" href="logout.php"><i class="icon-signout"></i>&nbsp;Cerrar Sesión</a>
+                                        <a tabindex="-1" href="logout.php"><em class="icon-signout"></em>&nbsp;Cerrar Sesión</a>
                                     </li>
                                 </ul>
                             </li>

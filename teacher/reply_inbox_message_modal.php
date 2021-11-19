@@ -27,7 +27,7 @@
 		</div>
 		<div class="control-group">
 			<div class="controls">
-			<button type="submit" id="<?php echo $id; ?>" class="btn btn-success reply"><i class="icon-reply"></i> Responder</button>
+			<button type="submit" id="<?php echo $id; ?>" class="btn btn-success reply"><em class="icon-reply"></em> Responder</button>
 			</div>
 		</div>
          </form>				
@@ -35,8 +35,8 @@
 		
     </div>
 	<div class="modal-footer">
-			<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
-		<button   id="<?php echo $id; ?>" class="btn btn-danger remove" data-dismiss="modal" aria-hidden="true"><i class="icon-check icon-large"></i> Si</button>
+			<button class="btn" data-dismiss="modal" aria-hidden="true"><em class="icon-remove icon-large"></em> Cerrar</button>
+		<button   id="<?php echo $id; ?>" class="btn btn-danger remove" data-dismiss="modal" aria-hidden="true"><em class="icon-check icon-large"></em> Si</button>
 	</div>
   </div>
 </div>

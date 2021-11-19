@@ -29,7 +29,7 @@
 	<body id="dt_example">
 		<div id="container">
 			<div class="full_width big">
-				<i>DataTables</i> empty table template
+				<em>DataTables</em> empty table template
 			</div>
 			
 			<h1>Live example</h1>

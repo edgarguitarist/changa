@@ -91,7 +91,7 @@
 	<body id="dt_example">
 		<div id="container">
 			<div class="full_width big">
-				<i>DataTables</i> unit test template for reading DOM data
+				<em>DataTables</em> unit test template for reading DOM data
 			</div>
 			
 			<div id="demo">

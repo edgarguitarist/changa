@@ -44,7 +44,7 @@
                         <!-- block -->
                         <div id="block_bg" class="block mincon">
                             <div class="navbar navbar-inner block-header">
-                                <div id="" class="muted pull-right"><a href="assignment.php<?php echo '?id='.$get_id; ?>"><i class="icon-arrow-left"></i> Atrás</a></div>
+                                <div id="" class="muted pull-right"><a href="assignment.php<?php echo '?id='.$get_id; ?>"><em class="icon-arrow-left"></em> Atrás</a></div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
@@ -85,14 +85,14 @@
                                          <td><?php  echo $row['fname']; ?></td>
                                          <td><?php echo $row['fdesc']; ?></td>                                                                        
                                          <td><?php echo $row['firstname']." ".$row['lastname']; ?></td>                                                                        
-                                         <td><a href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a></td>                                                                        
+                                         <td><a href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a></td>                                                                        
                                          <td width="140">
 										 <form method="post" action="save_grade.php">
 										 <input type="hidden" class="span4" name="id" value="<?php echo $id; ?>">
 										 <input type="hidden" class="span4" name="post_id" value="<?php echo $post_id; ?>">
 										 <input type="hidden" class="span4" name="get_id" value="<?php echo $get_id; ?>">
 										 <input type="text" class="span4" name="grade" value="<?php echo $row['grade']; ?>">
-										 <button name="save" class="btn btn-success" id="btn_s"><i class="icon-save"></i> Guardar</button>
+										 <button name="save" class="btn btn-success" id="btn_s"><em class="icon-save"></em> Guardar</button>
 										 </form>
 										 </td>                                                                        
                                 </tr>

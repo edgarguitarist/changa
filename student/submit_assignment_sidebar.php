@@ -3,7 +3,7 @@
 				      <!-- block -->
                         <div id="block_bg" class="block mincon">
                             <div class="navbar navbar-inner block-header">
-                                <div id="" class="muted pull-left"><h4><i class="icon-plus-sign"></i> Agregar Descargable</h4></div>
+                                <div id="" class="muted pull-left"><h4><em class="icon-plus-sign"></em> Agregar Descargable</h4></div>
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
@@ -35,7 +35,7 @@
                         <div class="control-group">
                             <div class="controls">
 
-                                <button name="Upload" type="submit" value="Upload" class="btn btn-success"><i class="icon-upload-alt"></i>&nbsp;Subir</button>
+                                <button name="Upload" type="submit" value="Upload" class="btn btn-success"><em class="icon-upload-alt"></em>&nbsp;Subir</button>
                             </div>
                         </div>
                     </form>

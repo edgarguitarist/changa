@@ -38,7 +38,7 @@
 								</div>
 								<form action="delete_shared.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-success" name=""><i class="icon-move icon-large"></i> Mover</a>
+										<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-success" name=""><em class="icon-move icon-large"></em> Mover</a>
 										<?php include('modal_share_delete.php');  ?>
 										<thead>
 											<tr>
@@ -67,7 +67,7 @@
 													<td><?php echo $row['fname']; ?></td>
 													<td><?php echo $row['fdesc']; ?></td>
 													<td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
-													<td width="30"><a href="descarga.php?file=<?php echo $row['floc']; ?>"><i class="icon-download icon-large"></i></a></td>
+													<td width="30"><a href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a></td>
 												</tr>
 											<?php } ?>
 										</tbody>

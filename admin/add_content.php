@@ -15,7 +15,7 @@
 							<div class="muted pull-left">Agregar Contenido</div>
 						</div>
 						<div class="block-content collapse in">
-							<a href="content.php"><i class="icon-arrow-left"></i> Atrás</a>
+							<a href="content.php"><em class="icon-arrow-left"></em> Atrás</a>
 
 
 							<form class="form-horizontal" method="POST">
@@ -40,7 +40,7 @@
 								<div class="control-group">
 									<div class="controls tcenter">
 
-										<button name="save" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i> Guardar</button>
+										<button name="save" type="submit" class="btn btn-success"><em class="icon-save icon-large"></em> Guardar</button>
 									</div>
 								</div>
 							</form>

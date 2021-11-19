@@ -31,10 +31,10 @@
   								
 										<ul class="nav nav-pills">
 										<li class="active">
-										<a href="teacher_message.php"><i class="icon-envelope-alt"></i>Bandeja de Entrada</a>
+										<a href="teacher_message.php"><em class="icon-envelope-alt"></em>Bandeja de Entrada</a>
 										</li>
 										<li class="">
-										<a href="sent_message.php"><i class="icon-envelope-alt"></i>Mensajes Enviados</a>
+										<a href="sent_message.php"><em class="icon-envelope-alt"></em>Mensajes Enviados</a>
 										</li>
 										</ul>
 										
@@ -60,12 +60,12 @@
 												
 														<hr>
 												Enviado por: <strong><?php echo $row['sender_name']; ?></strong>
-												<i class="icon-calendar"></i> <?php echo $row['date_sended']; ?>
+												<em class="icon-calendar"></em> <?php echo $row['date_sended']; ?>
 														<div class="pull-right">
-															<a class="btn btn-link"  href="#reply<?php echo $id; ?>" data-toggle="modal" ><i class="icon-reply"></i> Responder </a>
+															<a class="btn btn-link"  href="#reply<?php echo $id; ?>" data-toggle="modal" ><em class="icon-reply"></em> Responder </a>
 														</div>
 														<div class="pull-right">
-														<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><i class="icon-remove"></i> Eliminar </a>
+														<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><em class="icon-remove"></em> Eliminar </a>
 														<?php include("remove_inbox_message_modal.php"); ?>
 														<?php include("reply_inbox_message_modal.php"); ?>
 														</div>
@@ -75,7 +75,7 @@
 								}
 								else
 								{ ?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i> No hay mensajes en buzón de entrada</div>
+									<div class="alert alert-info"><em class="icon-info-sign"></em> No hay mensajes en buzón de entrada</div>
 								<?php
 									
 								} ?>	

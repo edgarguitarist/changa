@@ -144,6 +144,18 @@ select, input[type="text"], input[type="password"], input[type="file"]{
   min-height:min-content !important;
 }
 
+.maxcon{
+  min-height:max-content !important;
+}
+
+.view100{
+  height: 100vh;
+}
+
+.view110{
+  height: 110vh;
+}
+
 .minh{
   min-height: 600px !important;
 }
@@ -358,7 +370,8 @@ font-size: 20px;
 }
 
 .v-center{
-  
+  display: flex;
+  align-items: center;
 }
 
 footer {

@@ -20,7 +20,7 @@
                             <div class="span12">
                                 <form action="delete_teacher.php" method="post">
                                     <table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-                                        <a data-toggle="modal" href="#teacher_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+                                        <a data-toggle="modal" href="#teacher_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
                                         <?php include('modal_delete.php'); ?>
                                         <thead>
                                             <tr>
@@ -48,11 +48,11 @@
                                                     <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
                                                     <td><?php echo $row['username']; ?></td>
                                                     <td><?php echo $row['phone']; ?></td>
-                                                    <td width="50"><a href="edit_teacher.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i></a></td>
+                                                    <td width="50"><a href="edit_teacher.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil"></em></a></td>
                                                     <?php if ($teacher_stat == "Activated") { ?>
-                                                        <td width="120"><a href="de_activate.php<?php echo '?id=' . $id; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
+                                                        <td width="120"><a href="de_activate.php<?php echo '?id=' . $id; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
                                                     <?php } else { ?>
-                                                        <td width="120"><a href="a_activate.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>
+                                                        <td width="120"><a href="a_activate.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>
                                                     <?php } ?>
                                                 </tr>
                                             <?php } ?>

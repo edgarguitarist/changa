@@ -112,7 +112,7 @@ return $minutos;
 												if($hayexamen==true){ 		
 												?>
 											
-												<a  data-placement="bottom" title="Hacer esta practica" id="<?php echo $id; ?>Download" href="take_test.php<?php echo '?id='.$get_id ?>&<?php echo 'class_quiz_id='.$id; ?>&<?php echo 'test=ok' ?>&<?php echo 'quiz_id='.$quiz_id; ?>&<?php echo 'quiz_time='.$quiz_time;	 ?>"><i class="icon-check icon-large"></i> Resolver prueba</a>
+												<a  data-placement="bottom" title="Hacer esta practica" id="<?php echo $id; ?>Download" href="take_test.php<?php echo '?id='.$get_id ?>&<?php echo 'class_quiz_id='.$id; ?>&<?php echo 'test=ok' ?>&<?php echo 'quiz_id='.$quiz_id; ?>&<?php echo 'quiz_time='.$quiz_time;	 ?>"><em class="icon-check icon-large"></em> Resolver prueba</a>
 										
 												<?php 
 												}
@@ -121,7 +121,7 @@ return $minutos;
 													//echo " ".$fecha_actual." ".$fecha_examen."diferencia".$minutos;
 													?>
 												
-												<a href="#" class="btn btn-danger"><i class="icon-exclamation-sign"></i> Desactivado </a>
+												<a href="#" class="btn btn-danger"><em class="icon-exclamation-sign"></em> Desactivado </a>
 										
 												<?php
 												}													

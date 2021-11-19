@@ -1,5 +1,5 @@
    <div class="row-fluid">
-       <a href="teachers.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i> Agregar Profesor</a>
+       <a href="teachers.php" class="btn btn-info"><em class="icon-plus-sign icon-large"></em> Agregar Profesor</a>
                         <!-- block -->
                         <div class="block mincon">
                             <div class="navbar navbar-inner block-header">
@@ -65,7 +65,7 @@
 									
 											<div class="control-group">
                                           <div class="controls">
-												<button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></button>
+												<button name="update" class="btn btn-success"><em class="icon-save icon-large"></em></button>
 
                                           </div>
                                         </div>

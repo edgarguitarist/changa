@@ -21,7 +21,7 @@
 							<div class="span12">
 								<form action="delete_class.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#class_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+										<a data-toggle="modal" href="#class_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 										<?php include('modal_delete.php'); ?>
 										<thead>
 											<tr>
@@ -42,7 +42,7 @@
 														<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 													</td>
 													<td><?php echo $class_row['class_name']; ?></td>
-													<td width="40"><a href="edit_class.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil icon-large"></i> </a></td>
+													<td width="40"><a href="edit_class.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil icon-large"></em> </a></td>
 
 
 												</tr>

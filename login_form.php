@@ -1,7 +1,7 @@
 <!-- block -->
 
 <form id="login_form1" class="form-signin" method="post">
-	<h3 class="form-signin-heading"><i class="icon-lock"></i> Iniciar Sesión</h3>
+	<h3 class="form-signin-heading"><em class="icon-lock"></em> Iniciar Sesión</h3>
 	<div class="control-group">
 		<div class="controls">
 			<input type="text" class="input-block-level" id="username" name="username" placeholder="Usuario" required>
@@ -13,9 +13,9 @@
 		</div>
 	</div>
 
-	<button data-placement="right" title="Iniciar Sesión" id="signin" name="login" class="btn btn-success" type="submit"><i class="icon-signin icon-large"></i> Iniciar Sesión</button>
+	<button data-placement="right" title="Iniciar Sesión" id="signin" name="login" class="btn btn-success" type="submit"><em class="icon-signin icon-large"></em> Iniciar Sesión</button>
 
-	<a href='admin/' class="btn btn-info" style="float: right;"><i class="icon-user icon"></i>&nbsp;Administrador</a>
+	<a href='admin/' class="btn btn-info" style="float: right;"><em class="icon-user icon"></em>&nbsp;Administrador</a>
 	<script>
 		$(document).ready(function() {
 			$('#signin').tooltip('show');
@@ -70,10 +70,10 @@
 		Si ya estas inscrito en el Sistema Lecto-Escritura, no necesitas registrarte!!
 	</h4>
 	<hr>
-	<h3 class="form-signin-heading"><i class="icon-edit"></i> Registro</h3>
-	<button data-placement="top" title="Registrarse como estudiante" id="signin_student" onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-success" type="submit"><i class="icon-group icon"></i>&nbsp;Soy Estudiante</button>
+	<h3 class="form-signin-heading"><em class="icon-edit"></em> Registro</h3>
+	<button data-placement="top" title="Registrarse como estudiante" id="signin_student" onclick="window.location='signup_student.php'" id="btn_student" name="login" class="btn btn-success" type="submit"><em class="icon-group icon"></em>&nbsp;Soy Estudiante</button>
 	<div class="pull-right">
-		<button data-placement="top" title="Registrarse como docente" id="signin_teacher" onclick="window.location='signup_teacher.php'" name="login" class="btn btn-success" type="submit"><i class="icon-user icon"></i>&nbsp;Soy Profesor</button>
+		<button data-placement="top" title="Registrarse como docente" id="signin_teacher" onclick="window.location='signup_teacher.php'" name="login" class="btn btn-success" type="submit"><em class="icon-user icon"></em>&nbsp;Soy Profesor</button>
 	</div>
 
 	<script type="text/javascript">

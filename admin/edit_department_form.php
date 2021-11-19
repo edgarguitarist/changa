@@ -1,5 +1,5 @@
    <div class="row-fluid">
-     <a href="department.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i> Agregar Paralelo</a>
+     <a href="department.php" class="btn btn-info"><em class="icon-plus-sign icon-large"></em> Agregar Paralelo</a>
      <!-- block -->
      <div class="block mincon">
        <div class="navbar navbar-inner block-header">
@@ -27,7 +27,7 @@
 
              <div class="control-group">
                <div class="controls tcenter">
-                 <button name="update" class="btn btn-success"><i class="icon-save icon-large"></i></button>
+                 <button name="update" class="btn btn-success"><em class="icon-save icon-large"></em></button>
 
                </div>
              </div>

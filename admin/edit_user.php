@@ -21,7 +21,7 @@
 							<div class="span12">
 								<form action="delete_users.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#user_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+										<a data-toggle="modal" href="#user_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 										<?php include('modal_delete.php'); ?>
 										<thead>
 											<tr>
@@ -48,7 +48,7 @@
 													<td><?php echo $row['username']; ?></td>
 
 													<td width="40">
-														<a href="edit_user.php<?php echo '?id=' . $id; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
+														<a href="edit_user.php<?php echo '?id=' . $id; ?>" data-toggle="modal" class="btn btn-success"><em class="icon-pencil icon-large"></em></a>
 													</td>
 
 

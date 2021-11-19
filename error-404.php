@@ -278,12 +278,12 @@
             <div class="span12" id="content">
                 <div class="row-fluid">
                     <div class="navbar navbar-inner block-header">
-                        <div id="" class="muted pull-right"><a href="javascript:history.back();"><i class="icon-arrow-left"></i> Volver</a></div>
+                        <div id="" class="muted pull-right"><a href="javascript:history.back();"><em class="icon-arrow-left"></em> Volver</a></div>
                     </div>
                     <!-- block -->
                     <!-- <div class="block mincon">
                         <div class="navbar navbar-inner block-header">
-                            <div id="" class="muted pull-right"><a href="javascript:history.back();"><i class="icon-arrow-left"></i> Volver</a></div>
+                            <div id="" class="muted pull-right"><a href="javascript:history.back();"><em class="icon-arrow-left"></em> Volver</a></div>
                         </div>
                         <div class="block-content collapse in">
                             <center><h1>Pagina no Encontrada</h1></center>

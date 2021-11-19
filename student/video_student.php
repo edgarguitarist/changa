@@ -240,8 +240,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 														</div>
 														<hr>
 																										
-																	<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																	<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																	<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																	<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 													
 													<?php
 													}
@@ -257,8 +257,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 														</div>
 														<hr>
 																										
-																	<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																	<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																	<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																	<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 													
 													<?php
 													}
@@ -279,8 +279,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 															
 															<hr>
 																									
-																<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 													</div>
 											    <?php
 												}
@@ -311,8 +311,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 																
 																	<hr>
 																										
-																	<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																	<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																	<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																	<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 																	
 														</div>
 													<?php 
@@ -340,8 +340,8 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 																	
 																		<hr>
 																											
-																		<strong><i class="icon-calendar"></i> <?php echo $row2['date']; ?></strong>
-																		<strong><i class="icon-user"></i> <?php echo $row2['uploaded_by']; ?></strong>
+																		<strong><em class="icon-calendar"></em> <?php echo $row2['date']; ?></strong>
+																		<strong><em class="icon-user"></em> <?php echo $row2['uploaded_by']; ?></strong>
 																		
 															</div>
 													<?php
@@ -359,7 +359,7 @@ div.bhoechie-tab div.bhoechie-tab-content:not(.active){
 							else
 							{ 
 								?>
-								<div class="alert alert-info"><i class="icon-info-sign"></i> No hay videos subidos.</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> No hay videos subidos.</div>
 								<?php 
 							} 	?>
 						 

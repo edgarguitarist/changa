@@ -30,7 +30,7 @@
                         </div>
                         <div class="block-content collapse in">
                             <div class="span12">
-                                <div class="alert alert-info"><i class="icon-info-sign"></i> Contacto:</div>
+                                <div class="alert alert-info"><em class="icon-info-sign"></em> Contacto:</div>
                                 <?php $query = mysqli_query($con, "SELECT * from teacher where teacher_id = '$session_id'") or die(mysqli_error($con));
                                 $row = mysqli_fetch_array($query);
                                 ?>

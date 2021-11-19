@@ -33,7 +33,7 @@
 								
 								<form action="delete_class_quiz.php<?php echo '?id='.$get_id; ?>" method="post">
   									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 									<?php include('modal_delete_class_quiz.php'); ?>
 										<thead>
 										        <tr>
@@ -64,7 +64,7 @@
                                          <td><?php  echo $row['quiz_time'] / 60; ?></td>
                                          <td><?php echo $row['date_added']; ?></td>                                      
                                          <td><?php echo $row['fecha_p']; ?></td>                                      
-                                         <td><a href="print_results.php?id=<?php echo $id; ?>&idc=<?php echo $get_id; ?>" class="btn btn-success"><i class="icon-search"></i> RESULTADOS</a></td>       
+                                         <td><a href="print_results.php?id=<?php echo $id; ?>&idc=<?php echo $get_id; ?>" class="btn btn-success"><em class="icon-search"></em> RESULTADOS</a></td>       
 										 
                                       
                                                                       

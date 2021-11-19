@@ -9,7 +9,7 @@
 
 			<div class="span9" id="content">
 				<div class="row-fluid">
-					<a href="add_subject.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i> Agregar Materia</a>
+					<a href="add_subject.php" class="btn btn-info"><em class="icon-plus-sign icon-large"></em> Agregar Materia</a>
 					<!-- block -->
 					<div id="block_bg" class="block mincon">
 						<div class="navbar navbar-inner block-header">
@@ -19,7 +19,7 @@
 							<div class="span12">
 								<form action="delete_subject.php" method="post">
 									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#subject_delete" id="delete" class="btn btn-danger" name=""><i class="icon-trash icon-large"></i></a>
+										<a data-toggle="modal" href="#subject_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
 										<?php include('modal_delete.php'); ?>
 										<thead>
 											<tr>
@@ -42,7 +42,7 @@
 													</td>
 													<td><?php echo $row['subject_code']; ?></td>
 													<td><?php echo $row['subject_title']; ?></td>
-													<td width="30"><a href="edit_subject.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><i class="icon-pencil"></i> </a></td>
+													<td width="30"><a href="edit_subject.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil"></em> </a></td>
 												</tr>
 											<?php } ?>
 										</tbody>

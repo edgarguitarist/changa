@@ -1,10 +1,10 @@
  <form id="signin_student" class="form-signin" method="post">
- 	<h4 class="form-signin-heading"><i class="icon-plus-sign"></i> Agregar Evento</h4>
+ 	<h4 class="form-signin-heading"><em class="icon-plus-sign"></em> Agregar Evento</h4>
  	<input type="text" class="input-block-level datepicker" name="date_start" id="date01" placeholder="Fecha Inicio" required />
  	<input type="text" class="input-block-level datepicker" name="date_end" id="date01" placeholder="Fecha Fin" required />
  	<input type="text" class="input-block-level" id="username" name="title" placeholder="Titulo Evento" required />
  	<div class="tcenter">
-		 <button id="signin" name="add" class="btn btn-success" type="submit"><i class="icon-save"></i> Guardar</button>
+		 <button id="signin" name="add" class="btn btn-success" type="submit"><em class="icon-save"></em> Guardar</button>
 	 </div>
  </form>
  <?php
@@ -53,7 +53,7 @@
  					<form method="post" action="delete_class_event.php">
  						<input type="hidden" name="get_id" value="<?php echo $get_id; ?>">
  						<input type="hidden" name="id" value="<?php echo $id; ?>">
- 						<button class="btn btn-danger" name="delete_event"><i class="icon-remove icon-large"></i></button>
+ 						<button class="btn btn-danger" name="delete_event"><em class="icon-remove icon-large"></em></button>
  					</form>
  				</td>
  			</tr>

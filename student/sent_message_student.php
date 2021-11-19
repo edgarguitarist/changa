@@ -28,8 +28,8 @@
                             <div class="block-content collapse in">
                                 <div class="span12">
 										<ul class="nav nav-pills">
-										<li class=""><a href="student_message.php"><i class="icon-envelope-alt"></i>Bandeja de Entrada</a></li>
-										<li class="active"><a href="sent_message_student.php"><i class="icon-envelope-alt"></i>Enviar mensajes</a></li>
+										<li class=""><a href="student_message.php"><em class="icon-envelope-alt"></em>Bandeja de Entrada</a></li>
+										<li class="active"><a href="sent_message_student.php"><em class="icon-envelope-alt"></em>Enviar mensajes</a></li>
 										</ul>
 									
 								<?php
@@ -46,14 +46,14 @@
 											<?php echo $row['content']; ?>
 													<hr>
 											Enviado a: <strong><?php echo $row['reciever_name']; ?></strong>
-											<i class="icon-calendar"></i> <?php echo $row['date_sended']; ?>
+											<em class="icon-calendar"></em> <?php echo $row['date_sended']; ?>
 													<div class="pull-right">
-													<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><i class="icon-remove"></i> Eliminar </a>
+													<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><em class="icon-remove"></em> Eliminar </a>
 													<?php include("remove_sent_message_modal.php"); ?>
 													</div>
 											</div>
 								<?php }}else{ ?>
-								<div class="alert alert-info"><i class="icon-info-sign"></i> No hay mensajes en tus Buzon Enviados</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> No hay mensajes en tus Buzon Enviados</div>
 								<?php } ?>	
                                 </div>
                             </div>

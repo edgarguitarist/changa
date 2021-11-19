@@ -163,7 +163,7 @@ else if($roww['question_type_id']=='3') {
 ?>
 <br/>
 
-<button onclick="return false;" qn="<?php echo $x;?>" class="nextq btn btn-success" id="next_<?php echo $x;?>">Siguiente pregunta <i class="icon-arrow-right"></i> </button>
+<button onclick="return false;" qn="<?php echo $x;?>" class="nextq btn btn-success" id="next_<?php echo $x;?>">Siguiente pregunta <em class="icon-arrow-right"></em> </button>
 <input type="hidden" name="x-<?php echo $x;?>" value="<?php echo $roww['quiz_question_id'];?>">
 </td>
 </tr>
@@ -173,7 +173,7 @@ else if($roww['question_type_id']=='3') {
 <tr>
 <td></td>
 <td>
-<button class="btn btn-info" id="submit-test" name="submit_answer"><i class="icon-check"></i> Enviar respuesta</button>
+<button class="btn btn-info" id="submit-test" name="submit_answer"><em class="icon-check"></em> Enviar respuesta</button>
 <!-- <input type="submit" value="Submit My Answers"  class="btn btn-success" id="submit-test" name="submit_answer"><br /> -->
 </td>
 </tr>
@@ -205,7 +205,7 @@ elseif(isset($_POST['submit_answer'])){
 		}
 		
 	} ?>
-	<a href="student_quiz_list.php<?php echo '?id='.$get_id; ?>"><i class="icon-arrow-left"></i> Atrás</a>
+	<a href="student_quiz_list.php<?php echo '?id='.$get_id; ?>"><em class="icon-arrow-left"></em> Atrás</a>
 	<center>
 	<h3><br>Tu puntaje es <b><?php echo $score; ?></b> de <b><?php echo ($x-1); ?></b><br/></h3>
 	</center>

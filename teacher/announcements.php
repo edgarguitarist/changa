@@ -38,7 +38,7 @@
 									<textarea name="content" id="ckeditor_full"></textarea>
 									<br>
 									<div class="tcenter">
-										<button name="post" class="btn btn-info"><i class="icon-check icon-large"></i> Publicar</button>
+										<button name="post" class="btn btn-info"><em class="icon-check icon-large"></em> Publicar</button>
 									</div>
 								</form>
 							</div>
@@ -79,7 +79,7 @@
 																	") or die(mysqli_error($con));
 							$numero = mysqli_num_rows($query_announcement);
 							if ($numero===0) {
-								echo '<div class="alert alert-info"><i class="icon-info-sign"></i> Aun no hay anuncios agregados.</div>';
+								echo '<div class="alert alert-info"><em class="icon-info-sign"></em> Aun no hay anuncios agregados.</div>';
 							} else {
 								while ($row = mysqli_fetch_array($query_announcement)) {
 									$id = $row['teacher_class_announcements_id'];
@@ -90,16 +90,16 @@
 										<hr>
 
 
-										<strong><i class="icon-calendar"></i> <?php echo $row['date']; ?></strong>
+										<strong><em class="icon-calendar"></em> <?php echo $row['date']; ?></strong>
 
 										<div class="pull-right">
-											<a class="btn btn-link" href="#<?php echo $id; ?>" data-toggle="modal"><i class="icon-remove"></i> </a>
+											<a class="btn btn-link" href="#<?php echo $id; ?>" data-toggle="modal"><em class="icon-remove"></em> </a>
 										</div>
 
 										<div class="pull-right">
 											<form method="post" action="edit_post.php<?php echo '?id=' . $get_id; ?>">
 												<input type="hidden" name="id" value="<?php echo $id; ?>">
-												<button class="btn btn-link" name="edit"><i class="icon-pencil"></i> </button>
+												<button class="btn btn-link" name="edit"><em class="icon-pencil"></em> </button>
 											</form>
 										</div>
 

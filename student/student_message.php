@@ -29,7 +29,7 @@
                                 <div class="span12">
 								<!--<form action="read_message.php" method="post">-->
 										<div class="pull-right">
-											<button class="btn btn-info" name="read"><i class="icon-check"></i> Leer</button>
+											<button class="btn btn-info" name="read"><em class="icon-check"></em> Leer</button>
 													
 							Seleccionar Todo <input type="checkbox"  name="selectAll" id="checkAll" />
 								<script>
@@ -41,8 +41,8 @@
 										</div>
 										
 										<ul class="nav nav-pills">
-										<li class="active"><a href="student_message.php"><i class="icon-envelope-alt"></i>Bandeja de Entrada</a></li>
-										<li class=""><a href="sent_message_student.php"><i class="icon-envelope-alt"></i>Enviar mensajes</a></li>
+										<li class="active"><a href="student_message.php"><em class="icon-envelope-alt"></em>Bandeja de Entrada</a></li>
+										<li class=""><a href="sent_message_student.php"><em class="icon-envelope-alt"></em>Enviar mensajes</a></li>
 										</ul>
 									
 									<?php
@@ -72,19 +72,19 @@
 											</div>
 													<hr>
 											Enviado por: <strong><?php echo $row['sender_name']; ?></strong>
-											<i class="icon-calendar"></i> <?php echo $row['date_sended']; ?>
+											<em class="icon-calendar"></em> <?php echo $row['date_sended']; ?>
 														<div class="pull-right">
-															<a class="btn btn-link"  href="#reply<?php echo $id; ?>" data-toggle="modal" ><i class="icon-reply"></i> Responder </a>
+															<a class="btn btn-link"  href="#reply<?php echo $id; ?>" data-toggle="modal" ><em class="icon-reply"></em> Responder </a>
 														</div>
 													<div class="pull-right">
-													<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><i class="icon-remove"></i> Eliminar </a>
+													<a class="btn btn-link"  href="#<?php echo $id; ?>" data-toggle="modal" ><em class="icon-remove"></em> Eliminar </a>
 													<?php include("remove_inbox_message_modal.php"); ?>
 													<?php include("reply_inbox_message_modal_student.php"); ?>
 													</div>
 											</div>
 											
 								<?php }}else{ ?>
-								<div class="alert alert-info"><i class="icon-info-sign"></i> No hay mensajes en Bandeja de Entrada</div>
+								<div class="alert alert-info"><em class="icon-info-sign"></em> No hay mensajes en Bandeja de Entrada</div>
 								<?php } ?>		
 								<!--</form>-->		
                                 </div>

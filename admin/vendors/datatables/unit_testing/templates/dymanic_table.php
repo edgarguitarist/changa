@@ -34,7 +34,7 @@
 	<body id="dt_example">
 		<div id="container">
 			<div class="full_width big">
-				<i>DataTables</i> dynamic table template
+				<em>DataTables</em> dynamic table template
 			</div>
 			
 			<h1>Live example</h1>

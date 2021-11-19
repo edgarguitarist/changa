@@ -145,8 +145,8 @@ body {font-family: "Lato", sans-serif;}
 														<hr>
 														
 													
-														<strong><i class="icon-calendar"></i> <?php echo $row['date']; ?></strong>
-														<strong><i class="icon-user"></i> <?php echo $row['uploaded_by']; ?></strong>
+														<strong><em class="icon-calendar"></em> <?php echo $row['date']; ?></strong>
+														<strong><em class="icon-user"></em> <?php echo $row['uploaded_by']; ?></strong>
 													</div>
 												  
 												  
@@ -161,7 +161,7 @@ body {font-family: "Lato", sans-serif;}
 								else
 								{ 
 									?>
-									<div class="alert alert-info"><i class="icon-info-sign"></i> No hay videos subidos.</div>
+									<div class="alert alert-info"><em class="icon-info-sign"></em> No hay videos subidos.</div>
 									<?php 
 								} 	?>
                                 </div>

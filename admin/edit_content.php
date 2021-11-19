@@ -9,14 +9,14 @@
 			<?php include('sidebar.php'); ?>
 			<div class="span9" id="content">
 				<div class="row-fluid">
-					<a href="" class="btn btn-info"><i class="icon-plus-sign icon-large"></i> Agregar Contenido</a>
+					<a href="" class="btn btn-info"><em class="icon-plus-sign icon-large"></em> Agregar Contenido</a>
 					<!-- block -->
 					<div class="block mincon">
 						<div class="navbar navbar-inner block-header">
 							<div class="muted pull-left">Editar Contenido</div>
 						</div>
 						<div class="block-content collapse in">
-							<a href="content.php"><i class="icon-arrow-left"></i> Volver</a>
+							<a href="content.php"><em class="icon-arrow-left"></em> Volver</a>
 							<?php
 							$query = mysqli_query($con, "select * from content where content_id = '$get_id'") or die(mysqli_error($con));
 							$row = mysqli_fetch_array($query);
@@ -44,7 +44,7 @@
 								<div class="control-group">
 									<div class="controls tcenter">
 
-										<button name="update" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i> Actualizar</button>
+										<button name="update" type="submit" class="btn btn-success"><em class="icon-save icon-large"></em> Actualizar</button>
 									</div>
 								</div>
 							</form>

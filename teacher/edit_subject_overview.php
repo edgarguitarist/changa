@@ -29,7 +29,7 @@
                         <div id="block_bg" class="block mincon">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right">
-								<a href="subject_overview.php<?php echo '?id='.$get_id; ?>" class="btn btn-success"><i class="icon-arrow-left"></i> Atrás</a>
+								<a href="subject_overview.php<?php echo '?id='.$get_id; ?>" class="btn btn-success"><em class="icon-arrow-left"></em> Atrás</a>
 								</div>
                             </div>
                             <div class="block-content collapse in">
@@ -48,7 +48,7 @@
 														<div class="control-group">
 														<div class="controls">
 														
-														<button name="save" type="submit" class="btn btn-success"><i class="icon-save"></i> Guardar</button>
+														<button name="save" type="submit" class="btn btn-success"><em class="icon-save"></em> Guardar</button>
 														</div>
 														</div>
 														</form>

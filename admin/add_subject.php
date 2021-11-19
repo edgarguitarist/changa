@@ -16,7 +16,7 @@
 							<div class="muted pull-left">Agregar Materia</div>
 						</div>
 						<div class="block-content collapse in">
-							<a href="subjects.php"><i class="icon-arrow-left"></i> Atrás</a>
+							<a href="subjects.php"><em class="icon-arrow-left"></em> Atrás</a>
 							<form class="form-horizontal" method="post">
 								<div class="control-group">
 									<label class="control-label" for="inputEmail">Codigo Materia</label>
@@ -58,7 +58,7 @@
 
 								<div class="control-group">
 									<div class="controls tcenter">
-										<button name="save" type="submit" class="btn btn-success"><i class="icon-save"></i> Guardar</button>
+										<button name="save" type="submit" class="btn btn-success"><em class="icon-save"></em> Guardar</button>
 									</div>
 								</div>
 							</form>

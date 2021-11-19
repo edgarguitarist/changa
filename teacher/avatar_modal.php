@@ -23,8 +23,8 @@
 		
     </div>
 	<div class="modal-footer">
-		<button class="btn" data-dismiss="modal" aria-hidden="true"><i class="icon-remove icon-large"></i> Cerrar</button>
-		<button class="btn btn-info" name="change"><i class="icon-save icon-large"></i> Guardar</button>
+		<button class="btn" data-dismiss="modal" aria-hidden="true"><em class="icon-remove icon-large"></em> Cerrar</button>
+		<button class="btn btn-info" name="change"><em class="icon-save icon-large"></em> Guardar</button>
 		</form>
 	</div>
   </div>

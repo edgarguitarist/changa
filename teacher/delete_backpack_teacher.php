@@ -7,6 +7,6 @@ for($i=0; $i < $N; $i++)
 {
 	$result = mysqli_query($con,"DELETE FROM teacher_backpack where file_id='$id[$i]'");
 }
-header("location: teacher_backack.php");
+header("location: teacher_backpack.php");
 }
 ?>

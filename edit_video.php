@@ -37,7 +37,7 @@
                             </div>
                             <div class="block-content collapse in">
                                 <div class="span12">
-								<a href="announcements.php<?php echo '?id='.$get_id; ?>"><i class="icon-arrow-left icon-large"></i> Atrás</a>
+								<a href="announcements.php<?php echo '?id='.$get_id; ?>"><em class="icon-arrow-left icon-large"></em> Atrás</a>
 								<br>
 								<br>
 								<form method="post">
@@ -53,7 +53,7 @@
 								<?php echo $row['content']; ?>
 								</textarea>
 								<br>
-								<button name="post" class="btn btn-info"><i class="icon-check icon-large"></i> Guardar video</button>
+								<button name="post" class="btn btn-info"><em class="icon-check icon-large"></em> Guardar video</button>
 								</form>
                                 </div>
 								

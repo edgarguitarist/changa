@@ -4,7 +4,7 @@
 	<div class="container">
 
 		<form id="login_form" class="form-signin" method="post">
-			<h3 class="form-signin-heading"><i class="icon-lock"></i> Identificarse</h3>
+			<h3 class="form-signin-heading"><em class="icon-lock"></em> Identificarse</h3>
 			<div class="control-group">
 				<div class="controls">
 					<input type="text" class="input-block-level" id="usernmae" name="username" placeholder="Usuario" required>
@@ -15,9 +15,9 @@
 					<input type="password" class="input-block-level" id="password" name="password" placeholder="Contraseña" required>
 				</div>
 			</div>
-			<button name="login" class="btn btn-success" type="submit"><i class="icon-signin icon-large"></i> Iniciar Sesión</button>
+			<button name="login" class="btn btn-success" type="submit"><em class="icon-signin icon-large"></em> Iniciar Sesión</button>
 
-			<a href='../index.php' class="btn btn-info"><i class="icon-backward icon"></i>&nbsp;Volver</a>
+			<a href='../index.php' class="btn btn-info"><em class="icon-backward icon"></em>&nbsp;Volver</a>
 		</form>
 		<script>
 			jQuery(document).ready(function() {

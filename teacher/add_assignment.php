@@ -139,7 +139,7 @@
 								<center>
 									<div class="control-group">
 										<div class="controls tcenter">
-											<button name="Upload" type="submit" value="Upload" class="btn btn-success"><i class="icon-upload-alt"></i>&nbsp;Subir</button>
+											<button name="Upload" type="submit" value="Upload" class="btn btn-success"><em class="icon-upload-alt"></em>&nbsp;Subir</button>
 										</div>
 									</div>
 								</center>

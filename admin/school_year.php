@@ -20,7 +20,7 @@
 							<div class="span12">
 								<form action="delete_sy.php" method="post">
 									<table border="0" class="table" id="example" aria-describedby="tabla">
-										<a data-toggle="modal" href="#anio_delete" id="delete" class="btn btn-danger"><i class="icon-trash icon-large"></i></a>
+										<a data-toggle="modal" href="#anio_delete" id="delete" class="btn btn-danger"><em class="icon-trash icon-large"></em></a>
 										<?php include('modal_delete.php'); ?>
 										<thead>
 											<tr>
@@ -45,13 +45,13 @@
 													<td><?php echo $row['school_year']; ?></td>
 
 													<td width="40">
-														<a href="edit_year.php<?php echo '?id=' . $id; ?>" data-toggle="modal" class="btn btn-success"><i class="icon-pencil icon-large"></i></a>
+														<a href="edit_year.php<?php echo '?id=' . $id; ?>" data-toggle="modal" class="btn btn-success"><em class="icon-pencil icon-large"></em></a>
 													</td>
 
 													<?php if ($year_status == "Activated") { ?>
-														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-danger"><i class="icon-remove"></i> Desactivar</a></td>
+														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
 													<?php } else { ?>
-														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-success"><i class="icon-check"></i> Activar</a></td>
+														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>
 													<?php } ?>
 												</tr>
 											<?php } ?>

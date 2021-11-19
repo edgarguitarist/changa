@@ -28,7 +28,7 @@
 						</div>
 						<div class="block-content collapse in">
 							<div class="pull-right">
-								<a href="teacher_quiz.php" class="btn btn-info"><i class="icon-arrow-left"></i> Atrás</a>
+								<a href="teacher_quiz.php" class="btn btn-info"><em class="icon-arrow-left"></em> Atrás</a>
 							</div>
 							<div class="span12">
 								<br>
@@ -99,7 +99,7 @@
 									<div class="control-group">
 										<div class="controls">
 
-											<button name="save" type="submit" class="btn btn-success"><i class="icon-save"></i> Guardar</button>
+											<button name="save" type="submit" class="btn btn-success"><em class="icon-save"></em> Guardar</button>
 										</div>
 									</div>
 								</form>

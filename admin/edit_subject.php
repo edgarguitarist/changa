@@ -10,14 +10,14 @@
 
 			<div class="span9" id="content">
 				<div class="row-fluid">
-					<a href="add_subject.php" class="btn btn-info"><i class="icon-plus-sign icon-large"></i> Agregar Materia</a>
+					<a href="add_subject.php" class="btn btn-info"><em class="icon-plus-sign icon-large"></em> Agregar Materia</a>
 					<!-- block -->
 					<div id="" class="block mincon">
 						<div class="navbar navbar-inner block-header">
 							<div class="muted pull-left">Editar Materia</div>
 						</div>
 						<div class="block-content collapse in">
-							<a href="subjects.php"><i class="icon-arrow-left"></i> Atrás</a>
+							<a href="subjects.php"><em class="icon-arrow-left"></em> Atrás</a>
 
 							<?php
 							$query = mysqli_query($con, "select * from subject where subject_id = '$get_id'") or die(mysqli_error($con));
@@ -57,7 +57,7 @@
 								<div class="control-group">
 									<div class="controls tcenter">
 
-										<button name="update" type="submit" class="btn btn-success"><i class="icon-save icon-large"></i> Actualizar</button>
+										<button name="update" type="submit" class="btn btn-success"><em class="icon-save icon-large"></em> Actualizar</button>
 									</div>
 								</div>
 							</form>

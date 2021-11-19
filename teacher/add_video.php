@@ -137,7 +137,7 @@
 									<center>
 									<div class="control-group">
 												<div class="controls">
-													<button name="Upload" type="submit" value="Upload" class="btn btn-success"><i class="icon-check"></i>&nbsp;Publicar</button>
+													<button name="Upload" type="submit" value="Upload" class="btn btn-success"><em class="icon-check"></em>&nbsp;Publicar</button>
 												</div>
 									</div>
 									</center>

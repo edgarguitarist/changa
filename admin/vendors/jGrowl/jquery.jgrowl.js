@@ -176,7 +176,7 @@
 			easing: 		'swing',
 			closer: 		true,
 			closeTemplate: '&times;',
-			closerTemplate: '<div>[ close all ]</div>',
+			closerTemplate: '<div>[ Cerrar Todos ]</div>',
 			log: 			function(e,m,o) {},
 			beforeOpen: 	function(e,m,o) {},
 			afterOpen: 		function(e,m,o) {},

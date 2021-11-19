@@ -33,9 +33,9 @@
 									if ($count > 0){										
 										$id = $row['class_subject_overview_id'];
 									?>
-										  <a href="edit_subject_overview.php<?php echo '?id='.$get_id; ?>&<?php echo 'subject_id='.$id; ?>" class="btn btn-info"><i class="icon-pencil"></i> Editar Descripción de Curso</a>
+										  <a href="edit_subject_overview.php<?php echo '?id='.$get_id; ?>&<?php echo 'subject_id='.$id; ?>" class="btn btn-info"><em class="icon-pencil"></em> Editar Descripción de Curso</a>
 									 <?php }else{ ?>
-										     <a href="add_subject_overview.php<?php echo '?id='.$get_id; ?>" class="btn btn-success"><i class="icon-plus-sign"></i> Agregar Descripción de Curso</a>
+										     <a href="add_subject_overview.php<?php echo '?id='.$get_id; ?>" class="btn btn-success"><em class="icon-plus-sign"></em> Agregar Descripción de Curso</a>
 									 <?php } ?>
 								</div>
                             </div>
@@ -45,7 +45,7 @@
 										if($count>0){
 											echo $row['content'];
 										 }else{
-											 echo '<div class="alert alert-info"><i class="icon-info-sign"></i> Aun no hay una descripcion de este curso.</div>';
+											 echo '<div class="alert alert-info"><em class="icon-info-sign"></em> Aun no hay una descripcion de este curso.</div>';
 										 }
 										 ?>
                                 </div>
