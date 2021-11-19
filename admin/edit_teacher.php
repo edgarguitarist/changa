@@ -29,8 +29,8 @@
                                                 <th>Foto</th>
                                                 <th>Nombre</th>
                                                 <th>Usuario</th>
-
                                                 <th>Teléfono</th>
+                                                <th></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -46,7 +46,7 @@
                                                     <td width="40"><img class="img-rounded" src="<?php echo $row['location']; ?>" height="50" width="50"></td>
                                                     <td><?php echo $row['firstname'] . " " . $row['lastname']; ?></td>
                                                     <td><?php echo $row['username']; ?></td>
-                                                    <td><?php echo $row['about']; ?></td>
+                                                    <td><?php echo $row['phone']; ?></td>
                                                     <td width="30"><a href="edit_teacher.php<?php echo '?id=' . $id; ?>" class="btn btn-success"><em class="icon-pencil"></em></a></td>
                                                 </tr>
                                             <?php } ?>

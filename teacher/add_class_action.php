@@ -5,11 +5,14 @@ $subject_id = $_POST['subject_id'];
 $class_id = $_POST['class_id'];
 $school_year = $_POST['school_year'];
 $paralelo_id = $_POST['paralelo_id'];
+$code = $_POST['code'];
 
 $query = mysqli_query($con, "SELECT * from teacher_class where subject_id = '$subject_id' and class_id = '$class_id' and teacher_id = '$session_id' and school_year = '$school_year' and paralelo_id = '$paralelo_id' ") or die(mysqli_error($con));
 $count = mysqli_num_rows($query);
+$row = mysqli_fetch_array($query);
 if ($count > 0) {
-    echo "true";
+    $resp =  $row['code'] == $code ? "false" : "true";
+    echo $resp;
 } else {
 
     mysqli_query($con, "insert into teacher_class (teacher_id,subject_id,class_id,thumbnails,school_year,paralelo_id) values('$session_id','$subject_id','$class_id','admin/uploads/thumbnails.jpg','$school_year','$paralelo_id')") or die(mysqli_error($con));

@@ -72,7 +72,7 @@
 
 			
 		
-			<a onclick="window.location='index.php'" id="btn_login" name="login" class="btn btn-success" type="submit"><em class="icon-signin icon-large"></em> Clic para Iniciar Sesión</a>
+			<a onclick="window.location='index.php'" id="btn_login" name="login" class="btn btn-success" type="submit"><em class="icon-signin icon-large"></em> Regresar</a>
 			
 			
 			

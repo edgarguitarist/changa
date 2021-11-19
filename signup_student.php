@@ -1,9 +1,6 @@
 <?php include('header.php'); ?>
 
 <body id="login">
-
-	<?php //sads include('teacher/navbar_teacher.php'); 
-	?>
 	<div class="container-fluid">
 		<div class="row-fluid">
 			<div class="span2" id="">

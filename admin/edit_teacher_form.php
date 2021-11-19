@@ -58,7 +58,7 @@
    					</div>
    					<div class="control-group">
    						<div class="controls">
-   							<input class="input focused" value="<?php echo $row['about']; ?>" name="phone" id="focusedInput" type="text" placeholder="Teléfono/Celular">
+   							<input class="input focused" value="<?php echo $row['phone']; ?>" name="phone" id="focusedInput" type="text" placeholder="Teléfono/Celular">
    						</div>
    					</div>
 

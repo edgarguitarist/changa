@@ -72,6 +72,12 @@
 											</div>
 										</div>
 										<div class="control-group">
+											<label for="code">Codigo (6 Caracteres)</label>
+											<div class="controls">
+												<input minlength="6" maxlength="6" type="text" name="code" class="form-control" required>
+											</div>
+										</div>
+										<div class="control-group">
 											<div class="controls" style="text-align: center;">
 												<button name="save" class="btn btn-success"><em class="icon-save"></em> Guardar</button>
 											</div>
@@ -92,6 +98,10 @@
 														if (html == "true") {
 															$.jGrowl("Curso existente", {
 																header: 'El Curso ya existe'
+															});
+														} else if( html == "false") {
+															$.jGrowl("Codigo ya existe en otro Curso", {
+																header: 'El Codigo ya existe'
 															});
 														} else {
 															$.jGrowl("Curso agregado exitosamente", {
