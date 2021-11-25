@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" class="no-js">
 
+<?php $role = 'teacher'; ?>
 <head>
 	<title>Sistema Lecto-Escritura</title>
 	<meta name="Descripcion" content="Sistema Lecto-Escritura">
-	<meta name="keywords" content="CEPU Virtual,CEPU Aula Virtual,CEPU UNJBG,CEPU,UNJBG.">
+	<meta name="keywords" content="">
 	<meta name="author" content="Genesis Lizano - Andres Jurado">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta content="text/html; charset=utf-8">

@@ -9,6 +9,7 @@
 			<!-- <li class=""><a href="video.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="icon-play"></em>&nbsp;Videos</a></li> -->
 			<!-- <li class=""><a href="downloadable.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="icon-book"></em>&nbsp;Material Adicional</a></li> -->
 			<li class=""><a href="games_teacher.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="fa fa-puzzle-piece ml5px"></em>&nbsp;Juegos</a></li>
+			<li class=""><a href="histories_teacher.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="icon-book"></em>&nbsp;Historias</a></li>
 			<li class=""><a href="announcements.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="icon-info-sign"></em>&nbsp;Avisos</a></li>
 			<li class=""><a href="class_calendar.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="icon-calendar"></em><span>Calendario de &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;Eventos</span></a></li>
 			<li class=""><a href="class_quiz.php<?php echo '?id=' . $get_id; ?>"><em class="icon-chevron-right"></em><em class="icon-list"></em>&nbsp;Examenes</a></li>
@@ -16,3 +17,15 @@
 		<?php include('search_other_class.php'); ?>
 	</center>
 </div>
+
+<script>
+	$(document).ready(function() {
+		$('.nav-list').find('a').each(function() {
+			if (this.href == window.location.href) {
+				$(this).parent().addClass('active');
+				$(this).parent().parent().parent().addClass('active');
+				$(this).parent().parent().parent().parent().parent().addClass('active');
+			}
+		});
+	});
+</script>

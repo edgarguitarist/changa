@@ -45,10 +45,7 @@ $get_id = $_GET['id']; ?>
 												<tr>
 													<td width="140"><?php echo $row['name']; ?></td>
 													<td><?php echo $row['description']; ?></td>
-
-
 													<?php
-
 													$other = mysqli_query($con, "SELECT
 														*, (SELECT word FROM games_words  WHERE gwc.game_word_id = game_word_id) AS word, (SELECT clue FROM games_words_clue WHERE gwc.games_words_class_id = games_words_class_id) AS clue
 													FROM
@@ -81,7 +78,7 @@ $get_id = $_GET['id']; ?>
 													<?php
 													}  else {
 													?>
-														<td width="130">														
+														<td width="130">													
 															<a href="games_check.php?id=<?php echo $get_class_id . '&game=' . $game_id . '&words=' . $palabras . '&clues=' . $pistas ?>" class="btn btn-success"><em class="icon-check"></em> Revisar Juego</a>
 														</td>
 													<?php

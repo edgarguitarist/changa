@@ -4,7 +4,7 @@
 		<?php include('navbar_student.php'); ?>
         <div class="container-fluid">
             <div class="row-fluid">
-				<?php include('student_message_sidebar.php'); ?>
+				<?php include('student_sidebar.php'); ?>
                <div class="span6" id="content">
                      <div class="row-fluid">
 					    <!-- breadcrumb -->	

@@ -28,7 +28,7 @@
 						</div>
 						<div class="block-content collapse in">
 							<div class="span3"></div>
-							<div class="span6">
+							<div class="span6 border_span">
 								<div class="alert alert-info"><em class="icon-info-sign"></em> Porfavor rellene los campos indicados:</div>
 								<?php
 								$query = mysqli_query($con, "SELECT * from teacher where teacher_id = '$session_id'") or die(mysqli_error($con));

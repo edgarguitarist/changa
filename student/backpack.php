@@ -1,88 +1,92 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('../session.php'); ?>
+
 <body>
-		<?php include('navbar_student.php'); ?>
-        <div class="container-fluid">
-            <div class="row-fluid">
-				<?php include('backpack_sidebar.php'); ?>
-                <div class="span9" id="content">
-                     <div class="row-fluid">
-					    <!-- breadcrumb -->	
-									<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button><ul class="breadcrumb">
-										<?php
-										$school_year_query = mysqli_query($con,"SELECT * from school_year where status='Activated' order by school_year DESC")or die(mysqli_error($con));
-										$school_year_query_row = mysqli_fetch_array($school_year_query);
-										$school_year_id = $school_year_query_row['school_year_id'];
-										?>
-											<li><a href="#"><b>Mis cursos</b></a><span class="divider">/</span></li>
-										<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
-										<li><a href="#"><b>Backpack</b></a></li>
-									</ul>
-						 </div><!-- end breadcrumb -->
-                        <!-- block -->
-                        <div id="block_bg" class="block mincon">
-                            <div class="navbar navbar-inner block-header">
-                                <div id="" class="muted pull-right"></div>
-                            </div>
-                            <div class="block-content collapse in">
-                                <div class="span12">
-							<div class="pull-right">
-								Seleccionar Todo <input type="checkbox"  name="selectAll" id="checkAll" />
-								<script>
-								$("#checkAll").click(function () {
-									$('input:checkbox').not(this).prop('checked', this.checked);
-								});
-								</script>					
-							</div>
+	<?php include('navbar_student.php'); ?>
+	<div class="container-fluid">
+		<div class="row-fluid">
+			<?php include('student_sidebar.php'); ?>
+			<div class="span9" id="content">
+				<div class="row-fluid">
+					<!-- breadcrumb -->
+					<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+						<ul class="breadcrumb">
+							<?php
+							$school_year_query = mysqli_query($con, "SELECT * from school_year where status='Activated' order by school_year DESC") or die(mysqli_error($con));
+							$school_year_query_row = mysqli_fetch_array($school_year_query);
+							$school_year_id = $school_year_query_row['school_year_id'];
+							?>
+							<li><a href="#"><b>Mis cursos</b></a><span class="divider">/</span></li>
+							<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
+							<li><a href="#"><b>Backpack</b></a></li>
+						</ul>
+					</div><!-- end breadcrumb -->
+					<!-- block -->
+					<div id="block_bg" class="block mincon">
+						<div class="navbar navbar-inner block-header">
+							<div id="" class="muted pull-right"></div>
+						</div>
+						<div class="block-content collapse in">
+							<div class="span12">
+								
 								<?php
-								$query_backpack = mysqli_query($con,"SELECT * FROM student_backpack where student_id = '$session_id'  order by fdatein DESC ")or die(mysqli_error($con));
+								$query_backpack = mysqli_query($con, "SELECT * FROM student_backpack where student_id = '$session_id'  order by fdatein DESC ") or die(mysqli_error($con));
 								$num_row = mysqli_num_rows($query_backpack);
-								if ($num_row > 0){
+								if ($num_row > 0) {
 								?>
+								<div class="pull-right">
+									Seleccionar Todo <input type="checkbox" name="selectAll" id="checkAll" />
+									<script>
+										$("#checkAll").click(function() {
+											$('input:checkbox').not(this).prop('checked', this.checked);
+										});
+									</script>
+								</div>
 									<form action="delete_backpack.php" method="post">
-  									<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
-									<a data-toggle="modal" href="#backup_delete" id="delete"  class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
-									<?php include('modal_backpack_delete.php'); ?>
-										<thead>
-										        <tr>
-												<th></th>
-												<th>Fecha Subida</th>
-												<th>Nombre de Archivo</th>
-												<th>Descripcion</th>
-												<th></th>
+										<table cellpadding="0" cellspacing="0" border="0" class="table" id="">
+											<a data-toggle="modal" href="#backup_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
+											<?php include('modal_backpack_delete.php'); ?>
+											<thead>
+												<tr>
+													<th></th>
+													<th>Fecha Subida</th>
+													<th>Nombre de Archivo</th>
+													<th>Descripcion</th>
+													<th></th>
 												</tr>
-										</thead>
-										<tbody>
-                              		<?php
-										$query = mysqli_query($con,"SELECT * FROM student_backpack where student_id = '$session_id'  order by fdatein DESC ")or die(mysqli_error($con));
-										while($row = mysqli_fetch_array($query)){
-										$id  = $row['file_id'];
-									?>                              
-										<tr id="del<?php echo $id; ?>">
-										<td width="30">
-											<input id="" class="" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
-										</td>
-										 <td><?php echo $row['fdatein']; ?></td>
-                                         <td><?php  echo $row['fname']; ?></td>
-                                         <td><?php echo $row['fdesc']; ?></td>                                      
-                                         <td width="30"><a href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a></td>                                      
-										</tr>
-									<?php } ?>
-										</tbody>
-									</table>
+											</thead>
+											<tbody>
+												<?php
+												$query = mysqli_query($con, "SELECT * FROM student_backpack where student_id = '$session_id'  order by fdatein DESC ") or die(mysqli_error($con));
+												while ($row = mysqli_fetch_array($query)) {
+													$id  = $row['file_id'];
+												?>
+													<tr id="del<?php echo $id; ?>">
+														<td width="30">
+															<input id="" class="" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
+														</td>
+														<td><?php echo $row['fdatein']; ?></td>
+														<td><?php echo $row['fname']; ?></td>
+														<td><?php echo $row['fdesc']; ?></td>
+														<td width="30"><a href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a></td>
+													</tr>
+												<?php } ?>
+											</tbody>
+										</table>
 									</form>
-									<?php }else{ ?>
+								<?php } else { ?>
 									<div class="alert alert-info"><em class="icon-info-sign"></em> No hay archivos en tu portafolio</div>
-									<?php } ?>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /block -->
-                    </div>
-                </div>
-            </div>
+								<?php } ?>
+							</div>
+						</div>
+					</div>
+					<!-- /block -->
+				</div>
+			</div>
+		</div>
 		<?php include('footer.php'); ?>
-        </div>
-		<?php include('script.php'); ?>
-    </body>
+	</div>
+	<?php include('script.php'); ?>
+</body>
+
 </html>

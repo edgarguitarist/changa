@@ -28,7 +28,19 @@
             <li class=""><a href="teacher_quiz.php"><em class="icon-chevron-right"></em><em class="icon-list"></em>&nbsp;Examenes</a></li>
             <li class=""><a href="teacher_share.php"><em class="icon-chevron-right"></em><em class="icon-file"></em>&nbsp;Documentos &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; Compartidos</a></li> <!-- Sacar Posiblemente-->
         </ul>
-        <? php // include('search_other_class.php'); 
+        <?php // include('search_other_class.php'); 
         ?>
     </center>
 </div>
+
+<script>
+	$(document).ready(function() {
+		$('.nav-list').find('a').each(function() {
+			if (this.href == window.location.href) {
+				$(this).parent().addClass('active');
+				$(this).parent().parent().parent().addClass('active');
+				$(this).parent().parent().parent().parent().parent().addClass('active');
+			}
+		});
+	});
+</script>

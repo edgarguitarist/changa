@@ -375,9 +375,10 @@ font-size: 20px;
 }
 
 footer {
+  color: #0285b8 !important; font-family:'TR Century Gothic', Arial, sans-serif !important; 
   position: absolute;
-  bottom: 20;
-  left: 0;
+  /* bottom: 20px; */
+  left: 0px;
   width: 100%;
   /* align-self: flex-end; */
   /* height: 40px; */
@@ -385,4 +386,12 @@ footer {
   font-weight: bold !important;
   /* margin-right: 35px !important; */
   text-transform: uppercase !important;
+}
+
+footer p {
+  color: #3B5998 !important;
+}
+
+.footer-bottom {
+  bottom: 20px;
 }

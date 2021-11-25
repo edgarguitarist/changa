@@ -18,7 +18,7 @@ $(function() {
 	});
 });
 
-const element = externalRef ? externalRef.current : fromRef.current
+//const element = externalRef ? externalRef.current : fromRef.current;
 
 function mostrar_select() {
 	$("#sel-all").show();

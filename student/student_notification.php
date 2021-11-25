@@ -5,7 +5,7 @@
 	<?php include('navbar_student.php'); ?>
 	<div class="container-fluid">
 		<div class="row-fluid">
-			<?php include('student_notification_sidebar.php'); ?>
+			<?php include('student_sidebar.php'); ?>
 			<div class="span9" id="content">
 				<div class="row-fluid">
 					<!-- breadcrumb -->
@@ -31,33 +31,29 @@
 						<div class="block-content collapse in">
 							<div class="span12">
 
+								<!-- <h1>not read <?= $not_read; ?></h1>
+								<h1>session id <?= $session_id; ?></h1>
+								<h1>school year <?= $school_year_id; ?></h1> -->
 
 								<form action="read.php" method="post">
-									<?php if ($not_read == '0') {
-									} else { ?>
-										<button id="delete" class="btn btn-info" name="read"><em class="icon-check"></em> Leer</button>
-										<div class="pull-right">
-											<div id="sel-all">
-												Seleccionar Todo <input type="checkbox" name="selectAll" id="checkAll" />
-											</div>
-											<script>
-												$("#checkAll").click(function() {
+
+								<div style="margin-bottom: 10px;">
+									<button id="read" class="btn btn-info" name="read"><em class="icon-check"></em> Leer</button>
+									<button id="clear" class="ml-5px btn btn-danger" name="clear"><em class="icon-trash"></em> Eliminar</button>
+									
+									<div class="pull-right">
+										<div id="sel-all">
+											Seleccionar Todo <input type="checkbox" class="margin-0" name="selectAll" id="checkAll" />
+										</div>
+										<script>
+												$("#checkAll").click(function() { //check all checkboxes
 													$('input:checkbox').not(this).prop('checked', this.checked);
 												});
+										</script>
+									</div>
+								</div>
 
-												function mostrar_select() {
-													$("#sel-all").show();
-													//$("#checkAll").css("display", "none");
-												}
-
-												function ocultar_select() {
-													$("#sel-all").hide();
-													//$("#checkAll").css("display", "block mincon");
-												}
-											</script>
-										</div>
-
-									<?php } ?>
+<br>
 
 									<?php $query = mysqli_query($con, "SELECT * from teacher_class_student
 					LEFT JOIN teacher_class ON teacher_class.teacher_class_id = teacher_class_student.teacher_class_id 
@@ -74,27 +70,26 @@
 
 
 											$query_yes_read = mysqli_query($con, "SELECT * from notification_read where notification_id = '$id' and student_id = '$session_id'") or die(mysqli_error($con));
-											$read_row = mysqli_fetch_array($query_yes_read);
+											$read_row = mysqli_fetch_array($query_yes_read);						
 
+											$yes = isset($read_row['student_read']) ? $read_row['student_read'] : 'no';
+											$hided = isset($read_row['hided']) ? $read_row['hided'] : 'no';
 
-											if (isset($read_row['student_read'])) {
-												$yes = $read_row['student_read'];
-											} else {
-												$yes = 'no';
-											}
-
+											if ($hided == 'no'){
+												
 									?>
 											<div class="post" id="del<?php echo $id; ?>">
 												<?php
 												if ($yes == 'yes') { ?>
 													<div class="pull-right mr25px s-success">
 														<span>Mensaje leido</span>
+														<input id="" class="margin-0" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 													</div>
 												<?php
 												} else { ?>
 													<div class="pull-right mr25px s-warning-check">
 														<span>Mensaje no leido</span>
-														<input id="" class="" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
+														<input id="" class="margin-0" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
 													</div>
 												<?php
 												} ?>
@@ -103,7 +98,6 @@
 												<a href="<?php echo $row['link']; ?><?php echo '?id=' . $get_id; ?>">
 													<?php echo $row['class_name']; ?>
 													<?php echo $row['subject_code']; ?>
-
 												</a>
 												<hr>
 												<div class="pull-right">
@@ -111,17 +105,14 @@
 
 												</div>
 											</div>
-											<script>
-												mostrar_select();
-											</script>
+											
 										<?php
+											}
 										}
 									} else {
 										?>
 										<div class="alert alert-info"><strong><em class="icon-info-sign"></em> No tiene notificaciones</strong></div>
-										<script>
-											ocultar_select();
-										</script>
+										
 									<?php
 									}
 									?>

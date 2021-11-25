@@ -7,5 +7,11 @@ if (!isset($_SESSION['id']) || ($_SESSION['id'] == '')) {
     exit();
 }
 
+if($role != $_SESSION['role']){
+    //header("location: index.php");
+    //exit();
+}
+
+
 $session_id=$_SESSION['id'];
 ?>

@@ -34,7 +34,7 @@
                                 <?php $query = mysqli_query($con, "SELECT * from teacher where teacher_id = '$session_id'") or die(mysqli_error($con));
                                 $row = mysqli_fetch_array($query);
                                 ?>
-                                <?php echo $row['about']; ?>
+                                <?php echo '0' . $row['phone']; ?>
 
                             </div>
                         </div>
