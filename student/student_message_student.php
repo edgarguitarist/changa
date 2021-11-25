@@ -115,7 +115,7 @@
                 </div>
 				<?php include('create_message_student_student.php') ?>
             </div>
-		<?php include('footer.php'); ?>
+		<?php include('footer-b.php'); ?>
         </div>
 		<?php include('script.php'); ?>
     </body>

@@ -48,7 +48,7 @@
 		</div>
 	</div>
 	</div>
-	<?php include('footer.php'); ?>
+	<?php include('footer-b.php'); ?>
 	</div>
 	<?php include('script.php'); ?>
 	<?php include('class_calendar_script.php'); ?>

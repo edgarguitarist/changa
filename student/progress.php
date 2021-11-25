@@ -171,7 +171,7 @@
 
 			<?php /* include('downloadable_sidebar.php') */ ?>
 		</div>
-		<?php include('footer.php'); ?>
+		<?php include('footer-b.php'); ?>
 	</div>
 	<?php include('script.php'); ?>
 </body>

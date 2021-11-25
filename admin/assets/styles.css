@@ -388,7 +388,7 @@ footer {
   text-transform: uppercase !important;
 }
 
-footer p {
+footer > p {
   color: #3B5998 !important;
 }
 
