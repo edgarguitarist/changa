@@ -59,7 +59,7 @@ $get_class_id = $_GET['id']; ?>
 											g.name") or die(mysqli_error($con));
 										$contador = 0;
 									while ($row = mysqli_fetch_array($user_query)) {
-										$contador++;
+									
 										$id_game_class = $row['games_class_id'];
 										$game_id = $row['game_id'];
 										$status = $row['status'];
@@ -67,6 +67,7 @@ $get_class_id = $_GET['id']; ?>
 										$existe = $row['existe'];
 
 										if ($existe == 'si' && $game_class_id == $get_class_id) {
+											
 											$other = mysqli_query($con, "SELECT
 												*, (SELECT word FROM games_words  WHERE gwc.game_word_id = game_word_id) AS word, (SELECT clue FROM games_words_clue WHERE gwc.games_words_class_id = games_words_class_id) AS clue
 											FROM
@@ -92,6 +93,7 @@ $get_class_id = $_GET['id']; ?>
 											$num_rows = mysqli_num_rows($other);
 
 											if ($num_rows < 5) {
+												$contador++;
 											?>
 												<li id="del<?php echo $id_game_class; ?>">
 												<p class="s-error center" style="color: white;" >No Disponible</p>
@@ -103,6 +105,7 @@ $get_class_id = $_GET['id']; ?>
 												</li>
 											<?php
 											} else if ($num_pistas != $num_palabras && $game_id == 2) {
+												$contador++;
 											?>
 												<li id="del<?php echo $id_game_class; ?>">
 												<p class="s-error center" style="color: white;" >No Disponible</p>
@@ -114,6 +117,7 @@ $get_class_id = $_GET['id']; ?>
 												</li>
 											<?php
 											} else {
+												$contador++;
 											?>
 												<li id="del<?php echo $id_game_class; ?>">
 												<p class="s-success center" style="color: white;" >Disponible</p>
