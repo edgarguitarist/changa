@@ -57,7 +57,9 @@ $get_class_id = $_GET['id']; ?>
 											g.status = 'Activated'
 										ORDER BY
 											g.name") or die(mysqli_error($con));
+										$contador = 0;
 									while ($row = mysqli_fetch_array($user_query)) {
+										$contador++;
 										$id_game_class = $row['games_class_id'];
 										$game_id = $row['game_id'];
 										$status = $row['status'];
@@ -125,7 +127,14 @@ $get_class_id = $_GET['id']; ?>
 											}
 										}
 									} ?>
+
 								</ul>
+
+									<?php if($contador == 0){
+										?>
+											<h1 class="s-error center "> Aun no hay juegos Disponibles</h1>
+										<?
+									} ?>
 
 							</div>
 						</div>
