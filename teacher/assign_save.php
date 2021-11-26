@@ -30,7 +30,7 @@ if ($input_name == "") {
     $name_notification  = 'Agregó archivo de práctica' . " " . '<b>' . $name . '</b>';
 
     mysqli_query($con, "INSERT INTO assignment (fdesc,fdatein,teacher_id,class_id,fname) VALUES ('$filedesc',NOW(),'$session_id','$id_class','$name')") or die(mysqli_error($con));
-    mysqli_query($con, "insert into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','$name_notification',NOW(),'assignment_student.php')") or die(mysqli_error($con));
+    mysqli_query($con, "INSERT into notification (teacher_class_id,notification,date_of_notification,link) value('$get_id','$name_notification',NOW(),'assignment_student.php')") or die(mysqli_error($con));
 ?>
     <script>
         window.location = 'assignment.php<?php echo '?id=' . $get_id;  ?>';

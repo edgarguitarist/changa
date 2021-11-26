@@ -4,7 +4,7 @@ date_default_timezone_set('America/Guayaquil');
 class Date {
 	public function __construct($year, $month, $day, $hour, $min, $sec) {
 		if(!php_Boot::$skip_constructor) {
-		$this->__t = mktime($hour, $min, $sec, $month + 1, $day, $year);
+		$this->__t = date_default_timezone_get();//mktime($hour, $min, $sec, $month + 1, $day, $year);
 	}}
 	public function toString() {
 		return date("Y-m-d H:i:s", $this->__t);
