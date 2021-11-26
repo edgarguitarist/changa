@@ -409,3 +409,7 @@ footer > p {
   bottom: 20px;
 }
 
+.bold{
+  font-weight: bold !important;
+}
+
