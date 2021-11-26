@@ -4,7 +4,7 @@
         <div id="block_bg" class="block mincon">
             <div class="navbar navbar-inner block-header">
                 <div id="" class="muted pull-left">
-                    <h4><em class="icon-plus-sign"></em> Agregar Practica</h4>
+                    <h4><em class="icon-plus-sign"></em> Agregar Tarea</h4>
                 </div>
             </div>
             <div class="block-content collapse in">

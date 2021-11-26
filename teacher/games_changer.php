@@ -12,7 +12,7 @@ if($get_status == "Activated"){
 $user_query = mysqli_query($con, "SELECT * FROM games_class WHERE teacher_class_id= $get_class AND game_id= $get_id") or die(mysqli_error($con));
 
 if (mysqli_num_rows($user_query)>0){
-    mysqli_query($con,"update games_class set status = '$status' where game_id = '$get_id'");
+    mysqli_query($con,"UPDATE games_class set status = '$status' where game_id = '$get_id' AND teacher_class_id = '$get_class'");
     header('location:games_teacher.php?id='.$get_class);
 }else{
     mysqli_query($con,"INSERT INTO games_class (teacher_class_id, game_id) VALUES ($get_class, $get_id)");

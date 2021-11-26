@@ -68,19 +68,23 @@ $get_game_id = $_GET['game']; ?>
                                                         </td>
                                                         <td><?php echo $row['word']; ?></td>
                                                         <?php if ($status == "Activated" && $clase == $get_class_id) { ?>
-                                                            <td>En uso</td>
+                                                            <td>En uso </td>
                                                             <?php if ($get_game_id == 2 && $clue != null) { ?>
                                                                 <td id="clue"><?= $clue ?></td>
-                                                            <?php }else{?>
-                                                                <td id="clue">Sin Pista</td>
+                                                            <?php }else if($get_game_id == 1){?>
+                                                                <!-- <td id="clue">Sin Pista</td> -->
+                                                            <?php } else {?>
+                                                                <td id="clue">Sin Pista</td> <!-- DOIT: AGREGAR BOTON PARA PONER LAS PISTAS DE LAS PALABRAS DEL CRUCIGRAMA -->
                                                             <?php } ?>
                                                             <td width="120"><a href="games_word_changer.php<?php echo '?game=' . $game_id . '&class=' . $get_class_id . '&status=' . $status . '&word=' . $gwi; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
                                                         <?php } else { ?>
                                                             <td>No usada</td>
                                                             <?php if ($get_game_id == 2 && $clue != null) { ?>
                                                                 <td id="clue"><?= $clue ?></td>
-                                                            <?php }else{?>
-                                                                <td id="clue">Sin Pista</td>
+                                                            <?php }else if($get_game_id == 1){?>
+                                                                <!-- <td id="clue">Sin Pista</td> -->
+                                                            <?php } else {?>
+                                                                <td id="clue">Sin Pista</td> <!-- DOIT: AGREGAR BOTON PARA PONER LAS PISTAS DE LAS PALABRAS DEL CRUCIGRAMA -->
                                                             <?php } ?>
                                                             <td width="120"><a href="games_word_changer.php<?php echo '?game=' . $game_id . '&class=' . $get_class_id . '&status=' . $status . '&word=' . $gwi; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>
                                                         <?php } ?>

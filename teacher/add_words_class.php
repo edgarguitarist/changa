@@ -54,10 +54,10 @@
         $words = array();
         $clues = array();
 
-        while ($row = mysqli_fetch_assoc($other)) {
-            $words[] = $row['word'];
-            if($row['clue'] != null){
-                $clues[] = $row['clue'];
+        while ($rows = mysqli_fetch_assoc($other)) {
+            $words[] = $rows['word'];
+            if($rows['clue'] != null){
+                $clues[] = $rows['clue'];
             }
         }
 
