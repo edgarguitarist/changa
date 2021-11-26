@@ -92,7 +92,7 @@ $get_class_id = $_GET['id']; ?>
 											$num_rows = mysqli_num_rows($other);
 
 											if ($num_rows < 5) {
-									?>
+											?>
 												<li id="del<?php echo $id_game_class; ?>">
 												<p class="s-error center" style="color: white;" >No Disponible</p>
 													<a href="games_check.php?id=<?php echo $get_class_id . '&game=' . $game_id . '&words=' . $palabras . '&clues=' . $pistas ?>" class="center classmate_cursor">
@@ -127,15 +127,10 @@ $get_class_id = $_GET['id']; ?>
 											}
 										}
 									} ?>
-
 								</ul>
-
-									<?php if($contador == 0){
-										?>
-											<h1 class="s-error center "> Aun no hay juegos Disponibles</h1>
-										<?
-									} ?>
-
+								<?php if ($contador == 0) {
+									echo "<h1 class='s-error center'> Aun no hay juegos Disponibles</h1>";
+								} ?>
 							</div>
 						</div>
 					</div>
