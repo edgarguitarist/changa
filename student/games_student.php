@@ -26,7 +26,7 @@ $get_class_id = $_GET['id']; ?>
 							<li><a href="#"><?php echo $row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $row['school_year']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><b>Mis Compañeros</b></a></li>
+							<li><a href="#"><b>Juegos</b></a></li>
 						</ul>
 
 					</div><!-- end breadcrumb -->
