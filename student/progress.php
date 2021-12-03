@@ -45,7 +45,7 @@
 										<thead>
 											<tr>
 												<th>Fecha Subida</th>
-												<th>Practica</th>
+												<th>Tarea</th>
 
 												<th>Nota</th>
 											</tr>
@@ -98,7 +98,7 @@
 						<div id="block_bg" class="block mincon">
 							<div class="navbar navbar-inner block-header">
 								<div id="" class="muted pull-left">
-									<h4> Progreso de Practicas (Calificadas)</h4>
+									<h4> Progreso de Examenes</h4>
 								</div>
 							</div>
 							<div class="block-content collapse in">
@@ -141,8 +141,8 @@
 														</td>
 														<script type="text/javascript">
 															$(document).ready(function() {
-																$('#<?php echo $id; ?>Hacer esta practica').tooltip('show');
-																$('#<?php echo $id; ?>Hacer esta practica').tooltip('hide');
+																$('#<?php echo $id; ?>Hacer esta tarea').tooltip('show');
+																$('#<?php echo $id; ?>Hacer esta tarea').tooltip('hide');
 															});
 														</script>
 													</tr>

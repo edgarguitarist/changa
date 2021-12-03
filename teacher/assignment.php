@@ -22,7 +22,7 @@
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><b>Practicas Subidas</b></a></li>
+							<li><a href="#"><b>Tareas Subidas</b></a></li>
 						</ul>
 					</div><!-- end breadcrumb -->
 					<!-- block -->
@@ -55,7 +55,7 @@
 												<td><?php echo $row['fdesc']; ?></td>
 												<td width="150">
 													<form method="post" action="view_submit_assignment.php<?php echo '?id=' . $get_id ?>&<?php echo 'post_id=' . $id ?>">
-														<button data-placement="bottom" title="Ver estudiante que envío practica" id="<?php echo $id; ?>view" class="btn btn-success"><em class="icon-folder-open-alt icon-large"></em></button>
+														<button data-placement="bottom" title="Ver estudiante que envío tarea" id="<?php echo $id; ?>view" class="btn btn-success"><em class="icon-folder-open-alt icon-large"></em></button>
 													</form>
 													<?php
 													if ($floc == "") {

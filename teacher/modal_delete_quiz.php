@@ -3,14 +3,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true" style="color:#ffffff; opacity:0.7"><em class="icon-remove icon-large"></em> </button>
-        <h4 class="modal-title" id="exampleModalLabel">¿Esta seguro de eliminar la practica?</h4>
+        <h4 class="modal-title" id="exampleModalLabel">¿Esta seguro de eliminar la tarea?</h4>
 
 
       </div>
       <div class="modal-body">
 
         <div class="alert alert-danger">
-          ¿Esta seguro de eliminar la practica?
+          ¿Esta seguro de eliminar la tarea?
         </div>
 
 

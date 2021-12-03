@@ -18,7 +18,7 @@
 							?>
 							<li><a href="#"><b>Mis Cursos</b></a><span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $school_year_query_row['school_year']; ?></a><span class="divider">/</span></li>
-							<li><a href="#"><b>Practica</b></a></li>
+							<li><a href="#"><b>Tarea</b></a></li>
 						</ul>
 					</div><!-- end breadcrumb -->
 					<!-- block -->

@@ -31,7 +31,7 @@ return $minutos;
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><b>Practica de Examen</b></a></li>
+							<li><a href="#"><b>Examen</b></a></li>
 						</ul>
 						 </div><!-- end breadcrumb -->
 					 
@@ -112,7 +112,7 @@ return $minutos;
 												if($hayexamen==true){ 		
 												?>
 											
-												<a  data-placement="bottom" title="Hacer esta practica" id="<?php echo $id; ?>Download" href="take_test.php<?php echo '?id='.$get_id ?>&<?php echo 'class_quiz_id='.$id; ?>&<?php echo 'test=ok' ?>&<?php echo 'quiz_id='.$quiz_id; ?>&<?php echo 'quiz_time='.$quiz_time;	 ?>"><em class="icon-check icon-large"></em> Resolver prueba</a>
+												<a  data-placement="bottom" title="Resolver prueba" id="<?php echo $id; ?>Download" href="take_test.php<?php echo '?id='.$get_id ?>&<?php echo 'class_quiz_id='.$id; ?>&<?php echo 'test=ok' ?>&<?php echo 'quiz_id='.$quiz_id; ?>&<?php echo 'quiz_time='.$quiz_time;	 ?>"><em class="icon-check icon-large"></em> Resolver prueba</a>
 										
 												<?php 
 												}
@@ -130,8 +130,8 @@ return $minutos;
 										</td>            
 														<script type="text/javascript">
 														$(document).ready(function(){
-															$('#<?php echo $id; ?>Hacer esta practica').tooltip('show');
-															$('#<?php echo $id; ?>Hacer esta practica').tooltip('hide');
+															$('#<?php echo $id; ?>Hacer esta tarea').tooltip('show');
+															$('#<?php echo $id; ?>Hacer esta tarea').tooltip('hide');
 														});
 														</script>										 
 										</tr>

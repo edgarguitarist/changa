@@ -66,7 +66,7 @@ if ((!empty($_FILES["uploaded_file"])) && ($_FILES['uploaded_file']['error'] == 
         $newname = "../admin/uploads/" . $rd2 . "_" . $filename;
 		$newname1 = $rd2 . "_" . $filename;
 		//$newname = $rd2 . "_" . $filename;
-		$name_notification  = 'agrego practica'." ".'<b>'.$name.'</b>';
+		$name_notification  = 'agrego tarea'." ".'<b>'.$name.'</b>';
         //Check if the file with the same name is already exists on the server
         if (!file_exists($newname)) {
             //Attempt to move the uploaded file to it's new place

@@ -20,7 +20,7 @@
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><b>Practica de Examen</b></a></li>
+							<li><a href="#"><b>Examen</b></a></li>
 						</ul>
 						 </div><!-- end breadcrumb -->
                         <!-- block -->

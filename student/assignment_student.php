@@ -23,7 +23,7 @@
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><b>Practicas Subidas</b></a></li>
+							<li><a href="#"><b>Tareas Subidas</b></a></li>
 						</ul>
 						 </div><!-- end breadcrumb -->
 						
@@ -80,7 +80,7 @@
 										  <!--<a data-placement="bottom" title="Descagar" id="<?php echo $id; ?>download"  class="btn btn-info" href="<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>-->
 										  <a data-placement="bottom" title="Descargar" id="<?php echo $id; ?>download" class="btn btn-info" href="descarga.php?file=<?php echo $row['floc']; ?>"><em class="icon-download icon-large"></em></a>
 										 <?php } ?>
-										 <button  data-placement="bottom" title="Enviar practica" id="<?php echo $id; ?>submit" class="btn btn-success" name="btn_assign"><em class="icon-upload icon-large"></em> Enviar Practica</button>
+										 <button  data-placement="bottom" title="Enviar Tarea" id="<?php echo $id; ?>submit" class="btn btn-success" name="btn_assign"><em class="icon-upload icon-large"></em> Enviar Tarea</button>
 										 </form>
 										 </td>                                      
 														<script type="text/javascript">

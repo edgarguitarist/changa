@@ -31,7 +31,7 @@
 							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#">Periodo: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><b>Practicas Subidas</b></a></li>
+							<li><a href="#"><b>Tareas Subidas</b></a></li>
 						</ul>
 						 </div><!-- end breadcrumb -->
 						
@@ -48,7 +48,7 @@
 										$row1 = mysqli_fetch_array($query1);
 									
 									?>
-									<div class="alert alert-info">Practica a desarrollar y enviar : <?php echo $row1['fname']; ?></div>
+									<div class="alert alert-info">Tarea a desarrollar y enviar : <?php echo $row1['fname']; ?></div>
 									
 									<div id="">
   											
