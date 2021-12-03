@@ -8,9 +8,9 @@ $username2 = 'root';
 $password2 = '';
 
 $dbname = 'u103247758_changa';
+#Para simplificar el codigo la base se llama igual en local y en online 
 
 $selector='online';
-#Para efectos del ejemplo supondremos que es la misma base de datos en ambas bases de datos tanto la remota como la local 
 
 $con = @mysqli_connect($hostname, $username, $password);
 #notese el @ antes del comando mysql_connect para evitar que arroje mensaje de error de PHP 
