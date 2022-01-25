@@ -141,7 +141,7 @@ select, input[type="text"], input[type="password"], input[type="file"]{
 }
 
 .mincon{
-  min-height:min-content !important;
+  /* min-height:min-content !important; */
 }
 
 .maxcon{
