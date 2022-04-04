@@ -1,9 +1,13 @@
-<form id="signin_student" class="form-signin" method="post">
+<form id="signin_student" onkeyup="crearUsername()" class="form-signin" method="post">
 	<h3 class="form-signin-heading"><em class="icon-lock"></em> Registrar como Estudiante</h3>
 	<input type="text" class="input-block-level" id="code" name="code" placeholder="Código del Curso (06 Caracteres)" minlength="6" maxlength="6" required>
-	<input type="text" class="input-block-level" maxlength="10" id="dni" name="dni" placeholder="Cedula" required>
-	<input type="text" class="input-block-level" id="lastname" name="lastname" placeholder="Apellidos" required>
-	<input type="text" class="input-block-level" id="firstname" name="firstname" placeholder="Nombres" required>
+	<input type="text" onkeyup="checkCedula(this, 'signin')" class="input-block-level solo-numeros" maxlength="10" id="dni" name="dni" placeholder="Cedula" required>
+	<span id="dni_error" style="margin: 0; margin-top: -10px; color:red; font-size:smaller; font-weight: bold;"></span>
+	<input type="text" class="input-block-level solo-letras" id="firstname" name="firstname" placeholder="Nombre" required>
+	<input type="text" class="input-block-level solo-letras" id="lastname" name="lastname" placeholder="Apellido" required>
+	<input type="text" class="input-block-level" id="username2" name="username2" placeholder="Nombre de usuario" disabled >
+	<input type="hidden" class="input-block-level" id="username" name="username" placeholder="Nombre de usuario" required>
+	
 	<!-- <label>Curso</label>
 	<select name="class_id" class="input-block-level span5">
 		<option></option>
@@ -26,6 +30,17 @@
 
 
 <script>
+
+	function crearUsername(){
+		var dni = $("#dni").val();
+		var lastname = $("#lastname").val();
+		var firstname = $("#firstname").val();
+		var username = firstname.substring(0,1).toLowerCase() + "." + lastname.toLowerCase() + dni.substring(7,10);
+		username = username == "." ? "" : username;
+		$("#username").val(username);
+		$("#username2").val(username);
+	}
+
 	jQuery(document).ready(function() {
 		jQuery("#signin_student").submit(function(e) {
 			e.preventDefault();

@@ -21,7 +21,7 @@
 						</ul>
 					</div><!-- end breadcrumb -->
 					<!-- block -->
-					<div class="block mincon">
+					<div class="block">
 						<div class="navbar navbar-inner block-header">
 							<div id="count_class" class="muted pull-right">
 

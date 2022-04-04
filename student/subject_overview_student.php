@@ -54,7 +54,7 @@
 											where class_subject_overview.teacher_class_id = '$get_id'") or die(mysqli_error($con));
 								$row_subject = mysqli_fetch_array($query); ?>
 								<h3>Descripción del Curso</h3>
-								<?php echo $row_subject['content']; ?>
+								<?php echo $row_subject['content'] ?? 'Este curso aún no tiene una descripción'; ?>
 							</div>
 						</div>
 					</div>

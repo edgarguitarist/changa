@@ -42,7 +42,7 @@
 									$query = mysqli_query($con,"SELECT * FROM assignment where class_id = '$get_id'  order by fdatein DESC")or die(mysqli_error($con));
 									$count = mysqli_num_rows($query);
 									if ($count == '0'){?>
-									<div class="alert alert-info">No hay material de prácticas aún</div>
+									<div class="alert alert-info">Aún no hay tareas en este curso</div>
 									<?php
 									}else{
 								?>

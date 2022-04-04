@@ -1,4 +1,4 @@
-			<ul id="da-thumbs" class="da-thumbs">
+			<ul id="da-thumbs" class="da-thumbs w-100">
 				<?php $query = mysqli_query($con, "SELECT * from teacher_class
 										LEFT JOIN class ON class.class_id = teacher_class.class_id
 										LEFT JOIN subject ON subject.subject_id = teacher_class.subject_id
@@ -30,6 +30,6 @@
 						<?php include("delete_class_modal.php"); ?>
 					<?php }
 				} else { ?>
-					<div class="alert alert-info"><em class="icon-info-sign"></em>No tiene Curso agregado aún</div>
+					<div class="alert alert-info w-100"><em class="icon-info-sign"></em> No tiene ningún Curso agregado aún</div>
 				<?php  } ?>
 			</ul>

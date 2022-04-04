@@ -42,7 +42,7 @@
 						<div class="block-content collapse in">
 							<div class="span12">
 
-								<ul id="da-thumbs" class="da-thumbs">
+								<ul id="da-thumbs" class="da-thumbs w-100">
 									<?php
 									if ($count != '0') {
 										while ($row = mysqli_fetch_array($query)) {
@@ -68,10 +68,10 @@
 
 										<?php }
 									} else { ?>
-										<div class="alert alert-info"><em class="icon-info-sign"></em> Aún no hay nada en este Curso</div>
+										<div class="alert alert-info w-100"><em class="icon-info-sign"></em> Aún no hay nada en este Curso</div>
 									<?php } ?>
 								</ul>
-
+								
 							</div>
 						</div>
 					</div>

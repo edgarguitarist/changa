@@ -133,7 +133,7 @@ $get_class_id = $_GET['id']; ?>
 									} ?>
 								</ul>
 								<?php if ($contador == 0) {
-									echo "<h1 class='error_critic center bold'> Aun no hay juegos Disponibles</h1>";
+									echo "<h1 class='error_critic center bold'> Aún no hay juegos Disponibles</h1>";
 								} ?>
 							</div>
 						</div>

@@ -14,7 +14,7 @@
 							<a onclick="window.open('print_student.php<?php echo '?id='.$get_id; ?>')"  class="btn btn-success"><em class="icon-list"></em> Lista Estudiantes</a>
 						</div>
                         <!-- block -->
-                        <div id="block_bg" class="block mincon">
+                        <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right">
 								<?php 

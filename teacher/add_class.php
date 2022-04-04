@@ -99,7 +99,7 @@
 															$.jGrowl("Curso existente", {
 																header: 'El Curso ya existe'
 															});
-														} else if( html == "false") {
+														} else if (html == "false") {
 															$.jGrowl("Codigo ya existe en otro Curso", {
 																header: 'El Codigo ya existe'
 															});

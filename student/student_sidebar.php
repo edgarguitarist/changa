@@ -26,7 +26,7 @@
 			</li>
 			<li class=""><a href="backpack.php"><em class="icon-chevron-right"></em><em class="icon-suitcase"></em>&nbsp;Portafolio</a></li>
 		</ul>
-		<?php /* include('search_other_class.php');  */ ?>
+		<?php include('enroll_class.php'); ?>
 	</center>
 </div>
 

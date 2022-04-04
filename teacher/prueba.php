@@ -7,4 +7,7 @@ $my_message = $_POST['my_message'];
 echo $teacher_id;
 echo $my_message;
 
+
+
+
 ?>

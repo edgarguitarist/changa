@@ -22,7 +22,7 @@
 						</ul>
 					</div><!-- end breadcrumb -->
 					<!-- block -->
-					<div id="block_bg" class="block mincon">
+					<div id="block_bg" class="block">
 						<div class="navbar navbar-inner block-header">
 							<div id="" class="muted pull-left"></div>
 						</div>

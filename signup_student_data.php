@@ -10,7 +10,8 @@ $password = $_POST['password'];
 $firstname = $_POST['firstname'];
 $lastname = $_POST['lastname'];
 $code = $_POST['code'];
-$username = $dni;
+//$dni = $dni;
+$username = $_POST['username'];
 
 $consulta = mysqli_query($con, "SELECT * FROM teacher_class WHERE code = '$code'") or die(mysqli_error($con));
 $rows = mysqli_num_rows($consulta);

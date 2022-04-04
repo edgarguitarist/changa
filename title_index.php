@@ -3,15 +3,19 @@
 				</div>
 				<div class="row-fluid">
 					<div class="span2">
-						<img class="index_logo" src="admin/images/logo.png">
+						<a href="./">
+							<img class="index_logo" src="admin/images/logo.png">
+						</a>
 					</div>
 					<div class="span10">
 						<div class="title" style="margin: 0px auto; margin-top: 20px;">
-							<h1>
-								<strong>
-									<p style="color: #3B5998; text-align: left ">Sistema Lecto-Escritura</p>
-								</strong>
-							</h1>
+							<a class="no-pointer-hover" href="./">
+								<h1>
+									<strong>
+										<p style="color: #3B5998; text-align: left ">Sistema Lecto-Escritura</p>
+									</strong>
+								</h1>
+							</a>
 						</div>
 					</div>
 				</div>

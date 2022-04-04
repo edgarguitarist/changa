@@ -74,3 +74,8 @@ $(".remove-preview").on("click", function () {
   previewZone.addClass("hidden");
   reset(dropzone);
 });
+
+
+function setUpperCase(input) {
+  input.value = input.value.toUpperCase();
+}

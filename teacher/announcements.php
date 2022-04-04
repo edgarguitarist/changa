@@ -79,7 +79,7 @@
 																	") or die(mysqli_error($con));
 							$numero = mysqli_num_rows($query_announcement);
 							if ($numero===0) {
-								echo '<div class="alert alert-info"><em class="icon-info-sign"></em> Aun no hay anuncios agregados.</div>';
+								echo '<div class="alert alert-info"><em class="icon-info-sign"></em> Aún no hay anuncios agregados.</div>';
 							} else {
 								while ($row = mysqli_fetch_array($query_announcement)) {
 									$id = $row['teacher_class_announcements_id'];

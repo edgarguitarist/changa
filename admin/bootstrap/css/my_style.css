@@ -96,6 +96,9 @@ body {
     width: 93px;
   }
 }
+.no-pointer-hover:hover{
+  text-decoration: none !important;
+}
 
 #msg {
   font-size: 20px;
@@ -124,6 +127,11 @@ body {
 @font-face {
   font-family: "ProximaNova-Light";
   src: url("ProximaNova-Light.otf");
+}
+
+@font-face {
+  font-family: "Fabula";
+  src: url("fabula.otf");
 }
 
 @font-face {
@@ -811,4 +819,28 @@ user agent stylesheet div {
 .border_span{
   border: 1px solid #3b5998;
   border-radius: 10px;
+}
+
+.title-fabula{
+  font-family: "Fabula";
+  font-size: 50px;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.image-fabula{
+  width: 450px !important;
+  height: 300px !important;
+  float: left;
+  border-radius: 25px !important;
+  margin: 0 20px 35px 10px;
+}
+.content-fabula{
+  font-family: sans-serif;
+  font-size: 30px;
+  color: #333;
+  text-align: left;
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: normal;
 }

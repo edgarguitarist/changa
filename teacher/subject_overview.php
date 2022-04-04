@@ -22,7 +22,7 @@
 						</ul>
 						 </div><!-- end breadcrumb -->
                         <!-- block -->
-                        <div id="block_bg" class="block mincon">
+                        <div id="block_bg" class="block">
                             <div class="navbar navbar-inner block-header">
                                 <div id="" class="muted pull-right">
 									<?php $query = mysqli_query($con,"SELECT * from teacher_class
@@ -45,7 +45,7 @@
 										if($count>0){
 											echo $row['content'];
 										 }else{
-											 echo '<div class="alert alert-info"><em class="icon-info-sign"></em> Aun no hay una descripcion de este curso.</div>';
+											 echo '<div class="alert alert-info"><em class="icon-info-sign"></em> Aún no hay una descripcion de este curso.</div>';
 										 }
 										 ?>
                                 </div>

@@ -1,7 +1,8 @@
 <?php include('header_dashboard.php'); ?>
 <?php include('../session.php'); ?>
 <?php $get_class_id = $_GET['id'];
-$get_id = $_GET['id']; ?>
+$get_id = $_GET['id'];
+$get_teacher_id = $_SESSION['id']; ?>
 
 <body>
 	<?php include('navbar_teacher.php') ?>
@@ -18,18 +19,17 @@ $get_id = $_GET['id']; ?>
 					<!-- block -->
 
 					<div id="block_bg" class="block mincon">
-						<div class="navbar navbar-inner block-header">
-							<div class="muted pull-left">Juegos</div>
-						</div>
-						<div class="block-content collapse in">
-							<div class="span12">
-								<div class="control-group">
-									<h2>Tablas de Cuentos</h2>
-									
-								</div>
-							</div>
-						</div>
-					</div>
+                        <div class="navbar navbar-inner block-header">
+                            <div id="" class="muted pull-left">
+                                <h1 class="control-label">Tus Historias</h1>
+                            </div>
+                        </div>
+                        <div class="block-content collapse in">
+                            <div class="span12">
+                                <iframe title="" width="100%" style="height: 90vh !important;" class="maxcon" src="../admin/games/histories/index2.php?id_teacher=<?= $get_teacher_id ?>&id_class=<?= $get_class_id ?>" frameborder="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
 					<!-- /block  -->
 				</div>
 			</div>

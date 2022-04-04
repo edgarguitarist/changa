@@ -30,11 +30,22 @@
                         </div>
                         <div class="block-content collapse in">
                             <div class="span12">
-                                <div class="alert alert-info"><em class="icon-info-sign"></em> Contacto:</div>
+                                <div class="alert alert-info"><em class="icon-info-sign"></em> Mi Información:</div>
                                 <?php $query = mysqli_query($con, "SELECT * from teacher where teacher_id = '$session_id'") or die(mysqli_error($con));
                                 $row = mysqli_fetch_array($query);
+                                $cedula = $row['dni'] != '' ? $row['dni'] : 'N/A';
                                 ?>
-                                <?php echo '0' . $row['phone']; ?>
+
+                                <h3 class="subtitle" for="dni">Cedula:</h3>
+                                <h4 class="" id="dni"><?= $cedula ?></h4>
+                                <h3 class="subtitle" for="firstname">Nombre:</h3>
+                                <h4 id="firstname"><?= $row['firstname']; ?></h4>
+                                <h3 class="subtitle" for="lastname">Apellido:</h3>
+                                <h4 id="lastname"><?= $row['lastname']; ?></h4>
+                                <h3 class="subtitle" for="phone">Celular</h3>
+                                <h4 id="phone"><?= $row['phone']; ?></h4>
+
+
 
                             </div>
                         </div>

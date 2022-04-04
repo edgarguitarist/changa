@@ -7,10 +7,11 @@ if (!isset($_SESSION['id']) || ($_SESSION['id'] == '')) {
     exit();
 }
 
-if($role != $_SESSION['role']){
-    //header("location: index.php");
-    //exit();
-}
+//TODO: REVISAR SI UN ESTUDIANTE PUEDE ACCEDER COMO PROFESOR Y VICEVERSA
+// if($role != $_SESSION['role']){
+//     //header("location: index.php");
+//     //exit();
+// }
 
 
 $session_id=$_SESSION['id'];

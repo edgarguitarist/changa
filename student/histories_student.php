@@ -1,7 +1,11 @@
-<?php include('header_dashboard.php'); ?>
-<?php include('../session.php'); ?>
-<?php $get_id = $_GET['id'];
-$get_class_id = $_GET['id']; ?>
+<?php
+
+include('header_dashboard.php');
+include('../session.php');
+$get_id = $_GET['id'];
+$get_student_id = $_SESSION['id'];
+$get_class_id = $_GET['id'];
+?>
 <link rel="stylesheet" href="../admin/css/form_signup.css">
 
 <body>
@@ -41,16 +45,13 @@ $get_class_id = $_GET['id']; ?>
                         </div>
                         <div class="block-content collapse in">
                             <div class="span12">
-                                <iframe title="" width="100%" style="height: 120vh !important;" class="maxcon" src="../admin/games/histories/" frameborder="0"></iframe>
+                                <iframe title="" width="100%" style="height: 90vh !important;" class="maxcon" src="../admin/games/histories/index.php?id_student=<?= $get_student_id ?>&id_class=<?= $get_class_id ?>" frameborder="0"></iframe>
                             </div>
                         </div>
                     </div>
                     <!-- /block -->
                 </div>
-
-
             </div>
-
         </div>
     </div>
     <?php include('script.php'); ?>
