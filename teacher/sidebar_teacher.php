@@ -26,7 +26,7 @@
             <li class=""><a href="add_announcement.php"><em class="icon-chevron-right"></em><em class="icon-plus-sign"></em>&nbsp;Agregar Noticias</a></li>
             <!-- <li class=""><a href="add_downloadable.php"><em class="icon-chevron-right"></em><em class="icon-plus-sign"></em>&nbsp;Agregar Material Adicional</a></li> -->
             <li class=""><a href="teacher_quiz.php"><em class="icon-chevron-right"></em><em class="icon-list"></em>&nbsp;Examenes</a></li>
-            <li class=""><a href="teacher_share.php"><em class="icon-chevron-right"></em><em class="icon-file"></em>&nbsp;Documentos &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; Compartidos</a></li> <!-- Sacar Posiblemente-->
+            <!-- <li class=""><a href="teacher_share.php"><em class="icon-chevron-right"></em><em class="icon-file"></em>&nbsp;Documentos &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;&nbsp; &nbsp; Compartidos</a></li>  -->
         </ul>
         <?php // include('search_other_class.php'); 
         ?>
