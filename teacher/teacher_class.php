@@ -22,9 +22,9 @@
 							</a>
 							<p class="class"><?php echo $row['class_name'] . ' - ' . $row['paralelo_name']; ?></p>
 							<p class="subject"><?php echo $row['subject_title']; ?></p>
-							<div>
+							<!-- <div>
 								<a class="center" href="#<?php echo $id; ?>" data-toggle="modal"><em class="icon-trash"></em> Eliminar</a>
-							</div>
+							</div> -->
 
 						</li>
 						<?php include("delete_class_modal.php"); ?>

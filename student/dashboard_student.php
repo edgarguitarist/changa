@@ -71,7 +71,7 @@
 										<div class="alert alert-info w-100"><em class="icon-info-sign"></em> Aún no hay nada en este Curso</div>
 									<?php } ?>
 								</ul>
-								
+
 							</div>
 						</div>
 					</div>

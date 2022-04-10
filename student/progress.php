@@ -27,7 +27,7 @@
 					</ul>
 				</div><!-- end breadcrumb -->
 
-				<div id="old">
+				<div style="width: 100%; display:flex;" id="old">
 					<div class="span6" id="content">
 						<div class="row-fluid">
 
@@ -59,6 +59,7 @@
 										RIGHT JOIN assignment on student_assignment.assignment_id  = assignment.assignment_id
 										WHERE student_assignment.student_id = '$session_id'
 										order by fdatein DESC") or die(mysqli_error($con));
+												$rows = mysqli_num_rows($query);
 												while ($row = mysqli_fetch_array($query)) {
 													$id  = $row['student_assignment_id'];
 													$student_id = $row['student_id'];
@@ -77,11 +78,15 @@
 													</tr>
 
 												<?php } ?>
-
+												
 
 											</tbody>
 										</table>
-
+										<?php
+										if($rows === 0){
+											echo '<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Aun no se han enviado tareas.</div>';
+										}
+										?>
 									</div>
 								</div>
 							</div>
@@ -116,6 +121,7 @@
 												$query = mysqli_query($con, "SELECT * FROM class_quiz 
 										LEFT JOIN quiz on class_quiz.quiz_id = quiz.quiz_id
 										where teacher_class_id = '$get_id' order by class_quiz_id DESC ") or die(mysqli_error($con));
+												$rows = mysqli_num_rows($query);
 												while ($row = mysqli_fetch_array($query)) {
 													$id  = $row['class_quiz_id'];
 													$quiz_id  = $row['quiz_id'];
@@ -148,7 +154,11 @@
 												<?php } ?>
 											</tbody>
 										</table>
-
+										<?php
+										if($rows === 0){
+											echo '<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Aun no se ha realizado ningún Examen.</div>';
+										}
+										?>
 									</div>
 								</div>
 							</div>
@@ -156,7 +166,7 @@
 						</div>
 					</div>
 				</div>
-				<div id="new">
+				<div style="width: 100%; display:flex;" id="new">
 					<div class="span6" id="content">
 						<div class="row-fluid">
 
@@ -174,7 +184,7 @@
 											<thead>
 												<tr>
 													<th>Fecha Subida</th>
-													<th>Nombre</th>
+													<th>Juego</th>
 													<th>Tiempo</th>
 												</tr>
 
@@ -182,26 +192,17 @@
 											<tbody>
 
 												<?php
-												$query = mysqli_query($con, "SELECT * FROM student_assignment 
-										LEFT JOIN student on student.student_id  = student_assignment.student_id
-										RIGHT JOIN assignment on student_assignment.assignment_id  = assignment.assignment_id
-										WHERE student_assignment.student_id = '$session_id'
-										order by fdatein DESC") or die(mysqli_error($con));
+												$query = mysqli_query($con, "SELECT * FROM games_class_student gcs INNER JOIN games g ON g.game_id = gcs.id_game
+										WHERE id_student = '$session_id' AND id_class = '$get_id' 
+										order by fecha DESC") or die(mysqli_error($con));
+												$rows = mysqli_num_rows($query);
 												while ($row = mysqli_fetch_array($query)) {
-													$id  = $row['student_assignment_id'];
-													$student_id = $row['student_id'];
+													$student_id = $row['id_student'];
 												?>
 													<tr>
-														<td><?= $row['fdatein']; ?></td>
-														<td><?= $row['fname']; ?></td>
-
-														<?php if ($session_id == $student_id) { ?>
-															<td>
-																<span class="badge badge-success"><?= $row['grade']; ?></span>
-															</td>
-														<?php } else { ?>
-															<td></td>
-														<?php } ?>
+														<td><?= $row['fecha']; ?></td>
+														<td><?= $row['name']; ?></td>
+														<td><?= $row['score']; ?></td>
 													</tr>
 
 												<?php } ?>
@@ -209,7 +210,11 @@
 
 											</tbody>
 										</table>
-
+										<?php
+										if($rows === 0){
+											echo '<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Aun no se ha jugado ningún juego.</div>';
+										}
+										?>
 									</div>
 								</div>
 							</div>
@@ -240,7 +245,8 @@
 											</thead>
 											<tbody>
 												<?php
-												$query = mysqli_query($con, "SELECT * FROM histories WHERE id_student = $session_id ") or die(mysqli_error($con));
+												$query = mysqli_query($con, "SELECT * FROM histories WHERE id_student = $session_id and id_class = $get_id") or die(mysqli_error($con));
+												$rows = mysqli_num_rows($query);
 												while ($row = mysqli_fetch_array($query)) {
 												?>
 													<tr>
@@ -251,7 +257,11 @@
 												<?php } ?>
 											</tbody>
 										</table>
-
+										<?php
+										if($rows === 0){
+											echo '<div class="alert alert-warning alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>Aun no se ha enviado ninguna historia.</div>';
+										}
+										?>
 									</div>
 								</div>
 							</div>

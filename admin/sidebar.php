@@ -17,6 +17,6 @@
             <li> <a href="add_announcement.php"><em class="icon-chevron-right"></em><em class="icon-plus-sign"></em>Avisos</a> </li>
             <li> <a href="user_log.php"><em class="icon-chevron-right"></em><em class="fas fa-user-clock mr5px"></em>Log de Usuarios</a> </li>
             <li> <a href="activity_log.php"><em class="icon-chevron-right"></em><em class="fas fa-clock mr5px"></em>Log de Actividades</a> </li>
-            <li> <a href="backup.php"><em class="icon-chevron-right"></em><em class="icon-file"></em>Copia de Seguridad</a> </li>
+            <!-- <li> <a href="backup.php"><em class="icon-chevron-right"></em><em class="icon-file"></em>Copia de Seguridad</a> </li> -->
         </ul>
 </div>
