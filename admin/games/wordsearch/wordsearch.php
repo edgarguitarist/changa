@@ -12,8 +12,11 @@
     <script src="../../js/icons.js"></script>
     <meta charset="UTF-8" />
     <script>
-      var wordList = <?php echo $words; ?>;
-      console.log(wordList);
+      var wordList = <?= $words; ?>;
+      var game = <?= $_GET['game']; ?>;
+      var user = <?= $_GET['user']; ?>;
+      var class_id = <?= $_GET['class']; ?>;
+      //console.log(wordList);
     </script>
   </head>
 

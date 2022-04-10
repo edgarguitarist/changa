@@ -296,12 +296,14 @@ function output() {
   document.writeln("</table>");
   document.writeln("<div>");
   document.writeln("<button style='display:none;' class='btn-warning' id='reiniciar'><em class='fas fa-sync'></em> Reiniciar</button>");
-  document.writeln("<button style='display:none;' class='btn-start' id='guardar'><em class='fas fa-save'></em> Guardar</button>");
+  document.writeln("<button style='display:none;' onclick='saveScore()' class='btn-start' id='guardar'><em class='fas fa-save'></em> Guardar</button>");
   document.writeln("</div>");
   document.writeln("</div>");
 }
 
 output();
+
+
 
 function main() {
   var selectedArray = [];
@@ -496,6 +498,28 @@ function main() {
     });
     for (var k = selectedArray.length - 1; k >= 0; k--) {
       selectedArray.splice(k, 1);
+    }
+  });
+}
+
+function saveScore () {
+  console.log("Guardando...");
+  console.log(timer);
+  console.log(user);
+  console.log(class_id);
+  console.log(game)
+  //enviar a la base por ajax
+  $.ajax({
+    url: "scores.php",
+    type: "POST",
+    data: {
+      user_id: user,
+      class_id: class_id,
+      game_id: game,
+      score: timer,
+    },
+    success: function (data) {
+      console.log(data);
     }
   });
 }
