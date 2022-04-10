@@ -56,7 +56,7 @@
 												<?php
 												$query = mysqli_query($con, "SELECT * FROM student_assignment 
 										LEFT JOIN student on student.student_id  = student_assignment.student_id
-										RIGHT JOIN assignment on student_assignment.assignment_id  = assignment.assignment_id
+										RIGHT JOIN assignment on student_assignment.assignment_id  = assignment.assignment_id  AND assignment.class_id = '$class_id'
 										WHERE student_assignment.student_id = '$session_id'
 										order by fdatein DESC") or die(mysqli_error($con));
 												$rows = mysqli_num_rows($query);
