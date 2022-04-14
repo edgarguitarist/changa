@@ -503,23 +503,31 @@ function main() {
 }
 
 function saveScore () {
-  console.log("Guardando...");
-  console.log(timer);
-  console.log(user);
-  console.log(class_id);
-  console.log(game)
-  //enviar a la base por ajax
-  $.ajax({
-    url: "scores.php",
-    type: "POST",
-    data: {
-      user_id: user,
-      class_id: class_id,
-      game_id: game,
-      score: timer,
-    },
-    success: function (data) {
-      console.log(data);
-    }
-  });
+  alert("Felicidades tu tiempo fue de: " + timer);  
+  if(!teacher){
+    $.ajax({
+      url: "../scores.php",
+      type: "POST",
+      data: {
+        user_id: user,
+        class_id: class_id,
+        game_id: game,
+        score: timer,
+      },
+      success: function (data) {
+        
+        confetti({
+          particleCount: 200,
+          spread: 70,
+          origin: { y: 0.6 },
+        });        
+      }
+    });
+  }else{
+    confetti({
+      particleCount: 200,
+      spread: 70,
+      origin: { y: 0.6 },
+    }); 
+  }
 }

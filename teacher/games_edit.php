@@ -25,15 +25,15 @@ $get_game_id = $_GET['game']; ?>
                         <div class="block-content collapse in">
                             <div class="span12">
                                 <div class="control-group">
-                                    <form action="delete_game_words.php<?php echo '?id=' . $get_id . '&game=' . $get_game_id; ?>" method="post">
+                                    <!-- <form action="delete_game_words.php<?php echo '?id=' . $get_id . '&game=' . $get_game_id; ?>" method="post"> -->
                                         <?php
                                         $user_query = mysqli_query($con, "SELECT * FROM games WHERE game_id= $get_game_id") or die(mysqli_error($con));
                                         $rows = mysqli_fetch_array($user_query)
                                         ?>
                                         <h2> Palabras para el <?php echo $rows['name']; ?> </h2>
                                         <table border="0" class="table" id="example" aria-describedby="tabla">
-                                            <a data-toggle="modal" href="#word_delete" id="delete" class="btn btn-danger"><em class="icon-trash icon-large"></em></a>
-                                            <?php include('modal_delete_game_word.php'); ?>
+                                            <!-- <a data-toggle="modal" href="#word_delete" id="delete" class="btn btn-danger"><em class="icon-trash icon-large"></em></a>
+                                            <?php #include('modal_delete_game_word.php'); ?> -->
                                             <thead>
                                                 <tr>
                                                     <th> </th>
@@ -60,31 +60,43 @@ $get_game_id = $_GET['game']; ?>
                                                     $clase = $row['games_class_id'];
                                                     $id = $row['games_words_class_id'];
                                                     $clue = $row['clue'];
+                                                    $form_clue = '                                                    
+                                                    <form style="display:flex;" action="games_add_clue.php" method="post">
+                                                        <input type="hidden" name="games_words_class_id" value="' . $id . '"></input>
+                                                        <input type="hidden" name="id" value="' . $get_id . '"></input>
+                                                        <input type="hidden" name="game" value="' . $get_game_id . '"></input>
+                                                        <input style="width:25%; height:35px; margin-right:5%;" type="text" name="clue" max="40" min="1" placeholder="Su Pista" required></input>
+                                                        <button type="submit" class="btn btn-primary">Agregar</button> 
+                                                    </form>';
+                                                    $delete_clue = '<a class"btn btn-danger" style="margin-left:10px;" href="games_delete_clue.php?games_words_class_id='.$id.'&id='.$get_id.'&game='.$get_game_id.'">Borrar Pista</a>';
                                                 ?>
 
                                                     <tr id="del<?php echo $id; ?>">
-                                                        <td width="30">
+                                                        <!-- <td width="30">
                                                             <input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
-                                                        </td>
+                                                        </td> -->
                                                         <td><?php echo $row['word']; ?></td>
                                                         <?php if ($status == "Activated" && $clase == $get_class_id) { ?>
                                                             <td>En uso </td>
                                                             <?php if ($get_game_id == 2 && $clue != null) { ?>
-                                                                <td id="clue"><?= $clue ?></td>
-                                                            <?php }else if($get_game_id == 1){?>
+                                                                <td style="display: flex; justify-content: space-between;" id="clue"><?php echo $clue . $delete_clue; ?></td>
+                                                            <?php } else if ($get_game_id == 1) { ?>
                                                                 <!-- <td id="clue">Sin Pista</td> -->
-                                                            <?php } else {?>
-                                                                <td id="clue">Sin Pista</td> <!-- DOIT: AGREGAR BOTON PARA PONER LAS PISTAS DE LAS PALABRAS DEL CRUCIGRAMA -->
+                                                            <?php } else { ?>
+                                                                
+                                                                <td id="clue">
+                                                                    
+                                                                <?= $form_clue ?></td> <!-- TODO: Revisar que funcione el formulario correctamente -->
                                                             <?php } ?>
                                                             <td width="120"><a href="games_word_changer.php<?php echo '?game=' . $game_id . '&class=' . $get_class_id . '&status=' . $status . '&word=' . $gwi; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
                                                         <?php } else { ?>
                                                             <td>No usada</td>
                                                             <?php if ($get_game_id == 2 && $clue != null) { ?>
-                                                                <td id="clue"><?= $clue ?></td>
-                                                            <?php }else if($get_game_id == 1){?>
+                                                                <td style="display: flex; justify-content: space-between;" id="clue2"><?php echo $clue . $delete_clue; ?></td>
+                                                            <?php } else if ($get_game_id == 1) { ?>
                                                                 <!-- <td id="clue">Sin Pista</td> -->
-                                                            <?php } else {?>
-                                                                <td id="clue">Sin Pista</td> <!-- DOIT: AGREGAR BOTON PARA PONER LAS PISTAS DE LAS PALABRAS DEL CRUCIGRAMA -->
+                                                            <?php } else { ?>
+                                                                <td id="clue"><?= $form_clue ?></td> 
                                                             <?php } ?>
                                                             <td width="120"><a href="games_word_changer.php<?php echo '?game=' . $game_id . '&class=' . $get_class_id . '&status=' . $status . '&word=' . $gwi; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>
                                                         <?php } ?>
@@ -92,7 +104,7 @@ $get_game_id = $_GET['game']; ?>
                                                 <?php } ?>
                                             </tbody>
                                         </table>
-                                    </form>
+                                    <!-- </form> -->
                                 </div>
                             </div>
                         </div>

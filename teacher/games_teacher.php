@@ -132,7 +132,7 @@ $get_id = $_GET['id']; ?>
 															} else {
 															?>
 																<td width="130">
-																	<a href="games_check.php?id=<?php echo $get_class_id . '&game=' . $game_id . '&words=' . $palabras . '&clues=' . $pistas ?>" class="btn btn-success"><em class="icon-check"></em> Revisar Juego</a>
+																	<a href="games_check.php?id=<?php echo $get_class_id . '&game=' . $game_id . '&clues=' . $pistas . '&words=' . $palabras  ?>" class="btn btn-success"><em class="icon-check"></em> Revisar Juego</a>
 																</td>
 															<?php
 															}

@@ -1,5 +1,9 @@
 <?php $words = base64_decode($_GET['words']); ?>
 <?php $clues = base64_decode($_GET['clues']); ?>
+<?php
+$teacher = $_GET['teacher'];
+echo '<script> var teacher = ' . $teacher . '</script>';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -10,8 +14,11 @@
   <script>
     let words = <?php echo $words; ?>;
     let clues = <?php echo $clues; ?>;
-
+    var game = <?= $_GET['game']; ?>;
+    var user = <?= $_GET['user']; ?>;
+    var class_id = <?= $_GET['class']; ?>;
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
 </head>
 
 <body>
@@ -63,6 +70,7 @@
     </table>
   </div>
   <!-- partial -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="./script.js"></script>
 
 </body>

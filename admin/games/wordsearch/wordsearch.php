@@ -1,4 +1,8 @@
-<?php $words = base64_decode($_GET['words']);?>
+<?php $words = base64_decode($_GET['words']);
+echo '<script> var wordList = '.$words.'</script>';
+$teacher = $_GET['teacher'];
+echo '<script> var teacher = '.$teacher.'</script>';
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -11,12 +15,12 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="../../js/icons.js"></script>
     <meta charset="UTF-8" />
+    
     <script>
-      var wordList = <?= $words; ?>;
       var game = <?= $_GET['game']; ?>;
       var user = <?= $_GET['user']; ?>;
-      var class_id = <?= $_GET['class']; ?>;
-      //console.log(wordList);
+      var class_id = <?= $_GET['class']; ?>; 
+      
     </script>
   </head>
 
@@ -28,6 +32,7 @@
   </div>
 
   </body>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.5.1/dist/confetti.browser.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/knockout/2.2.0/knockout-min.js"></script>

@@ -23,12 +23,12 @@ $get_game_id = $_GET['game'];
                         <?php
                         if ($get_game_id == '1') { //wordsearch
                         ?>
-                            <iframe title="wordsearch" width="100%" class="maxcon view110" src="../admin/games/wordsearch/wordsearch.php?words=<?= $_GET['words'];?>&clues=<?= $get_clues;?>&class=<?= $get_class_id ?> &user=<?= $_SESSION['id'] ?>&game=<?= $get_game_id?>" frameborder="0">
+                            <iframe title="wordsearch" width="100%" class="maxcon view110" src="../admin/games/wordsearch/wordsearch.php?words=<?= $_GET['words'];?>&clues=<?= $get_clues;?>&class=<?= $get_class_id ?> &user=<?= $_SESSION['id'] ?>&game=<?= $get_game_id?>&teacher=false" frameborder="0">
                             </iframe>
                         <?php
                         } else if ($get_game_id == '2') { //crossword
                         ?>
-                            <iframe title="crossword" width="100%" class="maxcon view110" src="../admin/games/crossword/crossword.php?words=<?= $_GET['words']; ?>&clues=<?= $get_clues;?>&class=<?= $get_class_id ?> &user=<?= $_SESSION['id'] ?>&game=<?= $get_game_id?>" frameborder="0">
+                            <iframe title="crossword" width="100%" class="maxcon view110" src="../admin/games/crossword/crossword.php?words=<?= $_GET['words']; ?>&clues=<?= $get_clues;?>&class=<?= $get_class_id ?> &user=<?= $_SESSION['id'] ?>&game=<?= $get_game_id?>&teacher=false" frameborder="0">
                             </iframe>
                         <?php
                         } ?>

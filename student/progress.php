@@ -185,7 +185,7 @@
 												<tr>
 													<th>Fecha Subida</th>
 													<th>Juego</th>
-													<th>Tiempo</th>
+													<th>Tiempo/Puntaje</th>
 												</tr>
 
 											</thead>
