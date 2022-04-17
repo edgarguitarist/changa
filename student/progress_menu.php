@@ -1,6 +1,6 @@
 <style>
     #p_container {
-        margin: 40% 0% 20%;
+        margin: 30% 0% 20%;
         padding: 0;
         width: 100%;
     }
