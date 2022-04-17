@@ -20,9 +20,9 @@
 
 					<div class="alert alert-success alert-dismissable"><button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
 						<ul class="breadcrumb">
-							<li><a href="#"><?php echo $class_row['class_name']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#"><?php echo $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
-							<li><a href="#">Periodo: <?php echo $class_row['school_year']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#"><?= $class_row['class_name']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#"><?= $class_row['subject_code']; ?></a> <span class="divider">/</span></li>
+							<li><a href="#">Periodo: <?= $class_row['school_year']; ?></a> <span class="divider">/</span></li>
 							<li><a href="#"><b>Mi Calendario de Clases</b></a></li>
 						</ul>
 					</div><!-- end breadcrumb -->
