@@ -6,7 +6,7 @@ if (isset($_GET["usuario"]) && isset($_GET["contrasena"])) {
     $username = $_GET["usuario"];
     $contrasena = $_GET["contrasena"];
 
-    $consulta = "SELECT * FROM student stu INNER JOIN student_observation so ON stu.student_id = so.id_student INNER JOIN teacher_class tc ON tc.class_id = stu.class_id WHERE username = '$username' AND password = '$contrasena'";
+    $consulta = "SELECT * FROM student stu LEFT JOIN student_observation so ON stu.student_id = so.id_student INNER JOIN teacher_class tc ON tc.class_id = stu.class_id WHERE stu.username = '$username' AND stu.password = '$contrasena'";
     $resultado = mysqli_query($con, $consulta);
     if ($resultado) {
 
