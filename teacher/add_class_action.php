@@ -15,7 +15,7 @@ if ($count > 0) {
     echo $resp;
 } else {
 
-    mysqli_query($con, "INSERT INTO teacher_class (teacher_id,subject_id,class_id,thumbnails,school_year,paralelo_id) VALUES('$session_id','$subject_id','$class_id','admin/uploads/thumbnails.jpg','$school_year','$paralelo_id')") or die(mysqli_error($con));
+    mysqli_query($con, "INSERT INTO teacher_class (teacher_id,subject_id,class_id,thumbnails,school_year,paralelo_id,code) VALUES('$session_id','$subject_id','$class_id','admin/uploads/thumbnails.jpg','$school_year','$paralelo_id', $code)") or die(mysqli_error($con));
 
     $teacher_class = mysqli_query($con, "SELECT * FROM teacher_class ORDER BY teacher_class_id DESC") or die(mysqli_error($con));
     $teacher_row = mysqli_fetch_array($teacher_class);
