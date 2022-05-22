@@ -20,7 +20,7 @@
 						$query = mysqli_query($con, "select * from teacher where teacher_id = '$get_id' ") or die(mysqli_error($con));
 						$row = mysqli_fetch_array($query);
 						?>
-
+   					<!--
    					<div class="control-group">
    						<label>Paralelo</label>
    						<div class="controls">
@@ -44,7 +44,7 @@
    							</select>
    						</div>
    					</div>
-
+									-->
    					<div class="control-group">
    						<div class="controls">
    							<input class="input focused" value="<?php echo $row['firstname']; ?>" name="firstname" id="focusedInput" type="text" placeholder="Nombres">
@@ -95,7 +95,7 @@
    	<?php
 		} else {
 
-			mysqli_query($con, "update teacher set firstname = '$firstname' , lastname = '$lastname' , paralelo_id = '$paralelo_id' , about = '$phone' where teacher_id = '$get_id' ") or die(mysqli_error($con));
+			mysqli_query($con, "update teacher set firstname = '$firstname' , lastname = '$lastname', phone = '$phone' where teacher_id = '$get_id' ") or die(mysqli_error($con));
 
 		?>
    		<script>
