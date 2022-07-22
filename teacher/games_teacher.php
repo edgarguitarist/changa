@@ -68,7 +68,7 @@ $get_id = $_GET['id']; ?>
 														*, (SELECT word FROM games_words  WHERE gwc.game_word_id = game_word_id) AS word, (SELECT clue FROM games_words_clue WHERE gwc.games_words_class_id = games_words_class_id) AS clue
 													FROM
 														games_words_class gwc
-													WHERE gwc.games_class_id = $get_class_id AND gwc.game_id = $game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
+													WHERE gwc.games_class_id = (SELECT games_class_id from games_class where teacher_class_id = $get_class_id AND game_id = $game_id) AND gwc.game_id = $game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
 
 														?>
 
@@ -97,7 +97,7 @@ $get_id = $_GET['id']; ?>
 														*, (SELECT word FROM games_words  WHERE gwc.game_word_id = game_word_id) AS word, (SELECT clue FROM games_words_clue WHERE gwc.games_words_class_id = games_words_class_id) AS clue
 													FROM
 														games_words_class gwc
-													WHERE gwc.games_class_id = $get_class_id AND gwc.game_id = $game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
+													WHERE gwc.games_class_id = (SELECT games_class_id from games_class where teacher_class_id = $get_class_id AND game_id = $game_id) AND gwc.game_id = $game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
 
 															$words = array();
 															$clues = array();

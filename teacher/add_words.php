@@ -41,11 +41,11 @@
             <?php
             } else {
                 //                
-                mysqli_query($con, "insert into games_words (word, game_id) values('$palabra', '$game')") or die(mysqli_error($con));
+                mysqli_query($con, "INSERT into games_words (word, game_id) values('$palabra', '$game')") or die(mysqli_error($con));
                 $query = mysqli_query($con, "SELECT * FROM games_words WHERE word  =  '$palabra' ") or die(mysqli_error($con));
                 $rows = mysqli_fetch_array($query);
                 $game_word = $rows['game_word_id'];
-                mysqli_query($con, "insert into games_words_class (games_class_id, game_id, game_word_id) values('$class', '$game', '$game_word')") or die(mysqli_error($con));
+                mysqli_query($con, "INSERT INTO games_words_class ((SELECT games_class_id from games_class where teacher_class_id = $class AND game_id = $game), game_id, game_word_id) values('$class', '$game', '$game_word')") or die(mysqli_error($con));
 
             ?>
                 <script>

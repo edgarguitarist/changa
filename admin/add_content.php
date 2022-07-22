@@ -29,7 +29,7 @@
 								<div class="control-group">
 									<label class="control-label" for="inputPassword">Content</label>
 									<div class="controls">
-										<textarea name="content" id="ckeditor_full">
+										<textarea name="content" id="ckeditor_standard">
 
 												</textarea>
 									</div>

@@ -33,7 +33,7 @@
 								<div class="control-group">
 									<label class="control-label" for="inputPassword">Contenido</label>
 									<div class="controls">
-										<textarea name="content" id="ckeditor_full">
+										<textarea name="content" id="ckeditor_standard">
 												<?php echo $row['content']; ?>
 												</textarea>
 									</div>

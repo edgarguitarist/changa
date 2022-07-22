@@ -8,6 +8,8 @@ if($get_status == "Activated"){
     $status = "Activated";
 }
 
-mysqli_query($con,"update school_year set status = '$status' where school_year_id = '$get_id'");
+mysqli_query($con,"UPDATE school_year SET status = '$get_status' WHERE school_year_id != '$get_id'");
+mysqli_query($con,"UPDATE school_year SET status = '$status' WHERE school_year_id = '$get_id' AND STATUS = '$get_status'");
+
 header('location:school_year.php');
 ?>

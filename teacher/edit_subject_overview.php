@@ -42,7 +42,7 @@
 																<div class="control-group">
 																	<label class="control-label" for="inputPassword">Descripción de Curso:</label>
 																	<div class="controls">
-																			<textarea name="content" id="ckeditor_full"><?php echo $subject_row['content']; ?></textarea>
+																			<textarea name="content" id="ckeditor_standard"><?php echo $subject_row['content']; ?></textarea>
 																	</div>
 																</div>
 														<div class="control-group">

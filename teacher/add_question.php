@@ -37,7 +37,7 @@
 									<div class="control-group">
 										<label class="control-label" for="inputPassword">Pregunta</label>
 										<div class="controls">
-											<textarea name="question" id="ckeditor_full" required></textarea>
+											<textarea name="question" id="ckeditor_standard" required></textarea>
 										</div>
 									</div>
 									<!--<div class="control-group">

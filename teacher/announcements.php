@@ -35,7 +35,7 @@
 						<div class="block-content collapse in">
 							<div class="span12">
 								<form method="post">
-									<textarea name="content" id="ckeditor_full"></textarea>
+									<textarea name="content" id="ckeditor_standard"></textarea>
 									<br>
 									<div class="tcenter">
 										<button name="post" class="btn btn-info"><em class="icon-check icon-large"></em> Publicar</button>

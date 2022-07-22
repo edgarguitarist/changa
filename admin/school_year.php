@@ -38,20 +38,20 @@
 												$year_status = $row['status'];
 											?>
 
-												<tr>
+												<tr >
 													<td width="30">
-														<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?php echo $id; ?>">
+														<input id="optionsCheckbox" class="uniform_on" name="selector[]" type="checkbox" value="<?= $id; ?>">
 													</td>
-													<td><?php echo $row['school_year']; ?></td>
+													<td><?= $row['school_year']; ?></td>
 
 													<td width="40">
-														<a href="edit_year.php<?php echo '?id=' . $id; ?>" data-toggle="modal" class="btn btn-success"><em class="icon-pencil icon-large"></em></a>
+														<a href="edit_year.php<?= '?id=' . $id; ?>" data-toggle="modal" class="btn btn-success"><em class="icon-pencil icon-large"></em></a>
 													</td>
 
 													<?php if ($year_status == "Activated") { ?>
-														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-danger"><em class="icon-remove"></em> Desactivar</a></td>
+														<td width="150"><button class="btn btn-success" disabled><em class="icon-check"></em> Periodo Actual</button></td>
 													<?php } else { ?>
-														<td width="120"><a href="year_changer.php<?php echo '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-success"><em class="icon-check"></em> Activar</a></td>
+														<td width="120"><a href="year_changer.php<?= '?id=' . $id . '&status=' . $year_status; ?>" class="btn btn-info"><em class="icon-check"></em> Seleccionar</a></td>
 													<?php } ?>
 												</tr>
 											<?php } ?>

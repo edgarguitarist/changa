@@ -11,7 +11,7 @@
                         <div class="controls">
                             <select id="word" name="word" class="" required>
                                 <?php
-                                $user_query = mysqli_query($con, "SELECT *, IF( gw.game_word_id IN (SELECT gwc.game_word_id FROM games_words_class gwc WHERE gwc.games_class_id = $get_class_id AND gwc.game_id = $get_game_id), 'existe', 'no_existe') AS estado
+                                $user_query = mysqli_query($con, "SELECT *, IF( gw.game_word_id IN (SELECT gwc.game_word_id FROM games_words_class gwc WHERE gwc.games_class_id = (SELECT games_class_id from games_class where teacher_class_id = $get_class_id AND game_id = $get_game_id) AND gwc.game_id = $get_game_id), 'existe', 'no_existe') AS estado
                             FROM
                                 games_words gw	
                             ORDER BY gw.word") or die(mysqli_error($con));
@@ -49,14 +49,14 @@
         *, (SELECT word FROM games_words  WHERE gwc.game_word_id = game_word_id) AS word, (SELECT clue FROM games_words_clue WHERE gwc.games_words_class_id = games_words_class_id) AS clue
     FROM
         games_words_class gwc
-    WHERE gwc.games_class_id = $get_class_id AND gwc.game_id = $get_game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
+    WHERE gwc.games_class_id = (SELECT games_class_id from games_class where teacher_class_id = $get_class_id AND game_id = $get_game_id) AND gwc.game_id = $get_game_id AND status='Activated' ORDER BY word") or die(mysqli_error($con));
 
         $words = array();
         $clues = array();
 
         while ($rows = mysqli_fetch_assoc($other)) {
             $words[] = $rows['word'];
-            if($rows['clue'] != null){
+            if ($rows['clue'] != null) {
                 $clues[] = $rows['clue'];
             }
         }
@@ -93,13 +93,13 @@
             $game_word = $_POST['word'];
 
             //hacer una consulta para preguntar si ya existe la palabra en la clase
-            $check_word = mysqli_query($con, "SELECT * FROM games_words_class WHERE games_class_id = $class AND game_word_id = $game_word AND game_id = $game") or die(mysqli_error($con));
+            $check_word = mysqli_query($con, "SELECT * FROM games_words_class WHERE games_class_id = (SELECT games_class_id from games_class where teacher_class_id = '$class' AND game_id = $game) AND game_word_id = $game_word AND game_id = $game") or die(mysqli_error($con));
             $num_rows = mysqli_num_rows($check_word);
             if ($num_rows > 0) {
                 echo "<script>window.location = 'games_edit.php?id=" . $class . "&game=" . $game . "</script>";
             } else {
 
-                mysqli_query($con, "insert into games_words_class (games_class_id, game_id, game_word_id) values('$class', '$game', '$game_word')") or die(mysqli_error($con));
+                mysqli_query($con, "INSERT INTO games_words_class (games_class_id, game_id, game_word_id) VALUES((SELECT games_class_id from games_class where teacher_class_id = $class AND game_id = $game), $game, $game_word)") or die(mysqli_error($con));
             }
         ?>
     <script>

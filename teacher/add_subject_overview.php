@@ -41,7 +41,7 @@
 										<div class="control-group">
 											<label class="control-label" for="inputPassword">Descripción de Curso:</label>
 											<div class="controls">
-													<textarea name="content" id="ckeditor_full"></textarea>
+													<textarea name="content" id="ckeditor_standard"></textarea>
 											</div>
 										</div>
 												

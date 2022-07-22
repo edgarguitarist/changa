@@ -42,7 +42,7 @@
 								        <div class="control-group">
 											<label class="control-label" for="inputPassword">Enunciado</label>
 											<div class="controls">
-													<textarea name="question" id="ckeditor_full" required><?php echo $row['question_text']; ?></textarea>
+													<textarea name="question" id="ckeditor_standard" required><?php echo $row['question_text']; ?></textarea>
 											</div>
 										</div>
 										<!-- <div class="control-group">

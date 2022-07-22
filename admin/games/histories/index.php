@@ -63,12 +63,12 @@
                     <tr>
                         <td><img style="width: 80px; border-radius:10px;" src="../../<?= $row['imagen']; ?>" alt=""></td>
                         <td><?= $row['title']; ?></td>
-                        <td style="display: flex; padding-top:28px;"><?php echo substr($row['content'], 0, 50) . ' ...'; ?></td>
+                        <td style="min-width:150px; padding-top:1rem;"><span style="display: flex;"><?= substr($row['content'], 0, 50) . ' ...'; ?></span></td>
                         <td><?= $row['fecha_subida']; ?></td>
                         <td><?= $row['revisado'] == 1 ? 'Revisado' : 'Sin Revisar'; ?></td>
                         <td><?= $row['revisado'] == 1 ? $row['calificacion'] : 'Sin Nota'; ?></td>
-                        <td style="min-width:140px; display:flex;"><a href="viewhistories.php?id_history=<?= $row['id_history'] ?>&id_student=<?= $id_student ?>&id_class=<?= $id_class ?>"><em class="fas fa-eye"></em> Ver</a>
-                        <a style="margin-left: 15px; color:red;" href="deletehistory.php?id_history=<?= $row['id_history'] ?>&id_student=<?= $id_student ?>&id_class=<?= $id_class ?>"><em class="fas fa-trash"></em> Eliminar</a>
+                        <td style="min-width:140px;"><a href="viewhistories.php?id_history=<?= $row['id_history'] ?>&id_student=<?= $id_student ?>&id_class=<?= $id_class ?>"><em class="fas fa-eye"></em> Ver</a>
+                            <a style="margin-left: 15px; color:red;" href="deletehistory.php?id_history=<?= $row['id_history'] ?>&id_student=<?= $id_student ?>&id_class=<?= $id_class ?>"><em class="fas fa-trash"></em> Eliminar</a>
                         </td>
                     </tr>
                 <?php

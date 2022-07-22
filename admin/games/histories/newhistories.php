@@ -121,6 +121,7 @@ $success = $_GET['success'] ?? '';
           name: "links",
           items: ["Link", "Unlink", "Anchor"],
         },
+        { name: 'insert', items: [ 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak' ] },	
         [
           "Cut",
           "Copy",
@@ -158,7 +159,7 @@ $success = $_GET['success'] ?? '';
         },
       ],
     })
-    $("textarea#ckeditor_full").ckeditor({
+    $("textarea#ckeditor_standard").ckeditor({
       width: "100%",
       height: "150px",
     })

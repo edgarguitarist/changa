@@ -77,24 +77,63 @@
 		<script type="text/javascript" src="vendors/tinymce/js/tinymce/tinymce.min.js"></script>
 
         <script>
-        $(function() {
-            // Bootstrap
-         
+  $(function() {
+    // Ckeditor standard
+    $("textarea#ckeditor_standard").ckeditor({
+      width: "100%",
+      height: "150px",
+      toolbar: [{
+          name: "document",
+          items: ["Source", "-", "NewPage", "Preview"],
+        }, // Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
+        {
+          name: "links",
+          items: ["Link", "Unlink", "Anchor"],
+        },
+        { name: 'insert', items: [ 'Table', 'HorizontalRule', 'Smiley', 'SpecialChar', 'PageBreak' ] },	
+        [
+          "Cut",
+          "Copy",
+          "Paste",
+          "PasteText",
+          "PasteFromWord",
+          "-",
+          "Undo",
+          "Redo",
+        ], // Defines toolbar group without name.
+        {
+          name: "basicstyles",
+          items: ["Bold", "Italic", "Strike"],
+        },
+        {
+          name: "paragraph",
+          items: [
+            "NumberedList",
+            "BulletedList",
+            "-",
+            "Outdent",
+            "Indent",
+            "-",
+            "Blockquote",
+          ],
+        },
 
-            // Ckeditor standard
-            $( 'textarea#ckeditor_standard' ).ckeditor({width:'98%', height: '150px', toolbar: [
-				{ name: 'document', items: [ 'Source', '-', 'NewPage', 'Preview', '-', 'Templates' ] },	// Defines toolbar group with name (used to create voice label) and items in 3 subgroups.
-				[ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ],			// Defines toolbar group without name.
-				{ name: 'basicstyles', items: [ 'Bold', 'Italic' ] }
-			]});
-            $( 'textarea#ckeditor_full' ).ckeditor({width:'98%', height: '150px'});
-        });
-
-
-
-		
-
-        </script>
+        {
+          name: "styles",
+          items: ["Format", "Font", "FontSize"],
+        },
+        {
+          name: "colors",
+          items: ["TextColor", "BGColor"]
+        },
+      ],
+    })
+    $("textarea#ckeditor_full").ckeditor({
+      width: "100%",
+      height: "150px",
+    })
+  })
+</script>
 		
 		<script src="vendors/fullcalendar/fullcalendar.js"></script>
         <script src="vendors/fullcalendar/gcal.js"></script>

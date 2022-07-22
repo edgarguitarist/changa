@@ -10,12 +10,12 @@ if($get_status == "Activated"){
     $status = "Activated";
 }
 
-$query = mysqli_query($con, "SELECT * FROM games_words_class WHERE game_word_id= $get_word AND game_id= $get_game_id AND games_class_id= $get_class") or die(mysqli_error($con));
+$query = mysqli_query($con, "SELECT * FROM games_words_class WHERE game_word_id= $get_word AND game_id= $get_game_id AND games_class_id= (SELECT games_class_id from games_class where teacher_class_id = $get_class AND game_id = $get_game_id)") or die(mysqli_error($con));
 
 if (mysqli_num_rows($query)>0){
-    mysqli_query($con,"UPDATE games_words_class SET status = '$status' WHERE game_word_id = $get_word AND game_id = $get_game_id AND games_class_id = $get_class");
+    mysqli_query($con,"UPDATE games_words_class SET status = '$status' WHERE game_word_id = $get_word AND game_id = $get_game_id AND games_class_id = (SELECT games_class_id from games_class where teacher_class_id = $get_class AND game_id = $get_game_id)");
     header('location:games_edit.php?id='.$get_class.'&game='.$get_game_id);
 }else{
-    mysqli_query($con,"INSERT INTO games_words_class (games_class_id, game_id, game_word_id) VALUES ($get_class, $get_game_id, $get_word)");
+    mysqli_query($con,"INSERT INTO games_words_class (games_class_id, game_id, game_word_id) VALUES ((SELECT games_class_id from games_class where teacher_class_id = $get_class AND game_id = $get_game_id), $get_game_id, $get_word)");
     header('location:games_edit.php?id='.$get_class.'&game='.$get_game_id);
 }

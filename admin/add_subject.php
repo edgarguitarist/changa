@@ -50,7 +50,7 @@
 								<div class="control-group">
 									<label class="control-label" for="inputPassword">Descripcion</label>
 									<div class="controls">
-										<textarea name="description" id="ckeditor_full"></textarea>
+										<textarea name="description" id="ckeditor_standard"></textarea>
 									</div>
 								</div>
 

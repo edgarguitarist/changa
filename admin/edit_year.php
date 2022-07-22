@@ -19,15 +19,13 @@
 						</div>
 						<div class="block-content collapse in">
 							<div class="span12">
-								<form action="delete_users.php" method="post">
-									<table cellpadding="0" cellspacing="0" border="0" class="table" id="example">
-										<a data-toggle="modal" href="#user_delete" id="delete" class="btn btn-danger" name=""><em class="icon-trash icon-large"></em></a>
-										<?php include('modal_delete.php'); ?>
+								<form action="delete_sy.php" method="post">
+									<table border="0" class="table" id="example" aria-describedby="tabla">
+										
 										<thead>
 											<tr>
 												<th></th>
 												<th>Periodo</th>
-
 												<th></th>
 											</tr>
 										</thead>
